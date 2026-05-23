@@ -182,3 +182,207 @@ When changing prompts:
 - update tests if prompt fields change,
 - verify context remains compact,
 - verify judge still cannot return a tie.
+
+## 13. Project Conversation and User-Requested Prompt Decisions
+
+This section records the important prompt and behavior decisions requested during the
+project build. It is included so the submission documents not only the final templates,
+but also the reasoning behind the current user experience.
+
+### 13.1 Initial Build Request
+
+User request:
+
+```text
+Build me a project in:
+C:\Users\Aisha\Desktop\AI\uoh-ay26-ai-agent-debate
+
+Follow the attached files:
+- software_submission_guidelines-V3.pdf
+- main-v4-Agents-Subagents-Commands.pdf
+- HW2_prompt_debate.txt
+```
+
+Prompt decision:
+
+- Treat the PDFs and prompt guide as assignment authority.
+- Implement three agents: judge, pro, con.
+- Use multiprocessing queues for IPC.
+- Use JSON messages.
+- Include context window engineering.
+- Include tests, linting, README, CLI, logs, and config.
+
+### 13.2 Repeated Mock Sentence Problem
+
+User feedback:
+
+```text
+WHATS THE POINT OF REPEATING THE SAME SENTENCE?
+YOU SHOULD PICK A TOPIC FIRST TO DISCUSS
+FIX THIS
+```
+
+Observed problem:
+
+- Mock mode repeated the same generic sentence for every round.
+- The CLI started a debate without asking the user for a topic.
+- Transcript display appended previous runs and looked duplicated.
+
+Prompt and behavior changes:
+
+- CLI now asks for a topic before each debate.
+- Pressing Enter uses the default topic.
+- Mock provider generates role-specific and round-specific content.
+- New debate runs reset the latest transcript.
+- Transcript export keeps saved copies separately.
+
+### 13.3 Topic Mismatch Problem
+
+User feedback:
+
+```text
+Debate should match the topic, if not default was selected.
+```
+
+Example user topic:
+
+```text
+What is better sport: pilates or yoga?
+```
+
+Observed problem:
+
+- The topic string changed, but mock arguments still discussed AI in education.
+
+Prompt and behavior changes:
+
+- `Config.with_topic()` now frames runtime topics into debate propositions.
+- A-or-B topics become explicit opposing stances:
+  - Pro: argue for the first option.
+  - Con: argue for the second option.
+- Mock provider includes topic-specific argument banks for Pilates vs Yoga.
+- Generic topics still produce coherent pro/con content.
+
+### 13.4 Transcript Saving Request
+
+User request:
+
+```text
+ADD OPTION TO SAVE TRANSCRIPT
+```
+
+Behavior change:
+
+- CLI now includes:
+
+```text
+3. Save transcript
+```
+
+- `DebateLogger.export_transcript()` saves timestamped transcript files:
+
+```text
+logs/transcript-YYYYMMDD-HHMMSS.txt
+```
+
+Prompt-book relevance:
+
+- Saved transcripts are the human-readable evidence of one complete debate session.
+- They should be attached or screenshotted for submission if required.
+
+### 13.5 API Key and Provider Discussion
+
+User question:
+
+```text
+what is OPENAI_API_KEY?
+how i can know my api?
+```
+
+Decision:
+
+- Explain that OpenAI API keys are created from the OpenAI developer platform.
+- Do not ask the user to paste secrets into chat.
+- Keep `.env` ignored by Git.
+
+Then the user asked for free alternatives because OpenAI required billing.
+
+Prompt and provider decision:
+
+- Add Gemini support through `GEMINI_API_KEY`.
+- Keep OpenAI support as optional.
+- Use `provider: auto`:
+  - Gemini first when `GEMINI_API_KEY` exists.
+  - OpenAI second when only `OPENAI_API_KEY` exists.
+  - Mock when no real key exists.
+
+### 13.6 Gemini Warning and Quota Handling
+
+Observed user output:
+
+```text
+Using LLM provider: gemini
+Gemini failed, so this run used mock fallback.
+Provider error: Gemini API error: 429 RESOURCE_EXHAUSTED ...
+```
+
+Problems:
+
+- Google warning messages cluttered the terminal.
+- Gemini quota errors printed a huge JSON payload.
+- Fallback notices originally said OpenAI even when Gemini failed.
+
+Prompt and behavior changes:
+
+- Suppress noisy third-party FutureWarning output in CLI and child processes.
+- Summarize Gemini quota errors into one readable line.
+- Print provider-specific fallback messages:
+
+```text
+Gemini failed, so this run used mock fallback.
+```
+
+- Store provider fallback details in message metadata instead of injecting them into
+  debate speech.
+
+### 13.7 Documentation Expansion Request
+
+User request:
+
+```text
+TODO must contain 800-1000 tasks.
+Make it more clear... say task clearly and in which file.
+Files PLAN, PRD, PROMPT_BOOK should be more professional.
+Make them longer and containing more details.
+```
+
+Documentation decisions:
+
+- `docs/TODO.md` now contains exactly 900 tasks.
+- Every TODO task names the related file or directory.
+- `docs/PRD.md` was expanded with stakeholders, functional requirements,
+  non-functional requirements, risks, test map, and release criteria.
+- `docs/PLAN.md` was expanded with milestones, verification commands, provider plan,
+  testing strategy, and submission checklist.
+- `docs/PROMPT_BOOK.md` now records prompt templates, context engineering, provider
+  behavior, and this conversation-derived decision log.
+
+### 13.8 Commit Strategy Request
+
+User request:
+
+```text
+I want to commit changes, but I want to make several commits for better and clearer
+commit messages.
+```
+
+Commit decision:
+
+- Split commits by concern:
+  - scaffolding and config,
+  - source implementation,
+  - tests,
+  - documentation pack.
+
+This improves reviewability and makes the repository history easier for a grader to
+understand.
