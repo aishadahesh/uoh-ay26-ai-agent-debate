@@ -1,0 +1,980 @@
+﻿# TODO
+
+This backlog is organized by file or directory. Every checklist item names the exact file or folder to inspect and states the concrete work area. It intentionally contains exactly 900 tasks, which is within the requested 800-1000 task range for submission readiness.
+
+## Package metadata and dependency management — `pyproject.toml`
+
+- [ ] 001. File `pyproject.toml`: Verify Package metadata and dependency management task 001.
+- [ ] 002. File `pyproject.toml`: Add or refine a test for Package metadata and dependency management task 002.
+- [ ] 003. File `pyproject.toml`: Document Package metadata and dependency management task 003.
+- [ ] 004. File `pyproject.toml`: Review error handling for Package metadata and dependency management task 004.
+- [ ] 005. File `pyproject.toml`: Confirm configuration coverage for Package metadata and dependency management task 005.
+- [ ] 006. File `pyproject.toml`: Check assignment-rubric coverage for Package metadata and dependency management task 006.
+- [ ] 007. File `pyproject.toml`: Inspect maintainability of Package metadata and dependency management task 007.
+- [ ] 008. File `pyproject.toml`: Validate terminal workflow impact of Package metadata and dependency management task 008.
+- [ ] 009. File `pyproject.toml`: Confirm security or secret-safety for Package metadata and dependency management task 009.
+- [ ] 010. File `pyproject.toml`: Record submission evidence for Package metadata and dependency management task 010.
+- [ ] 011. File `pyproject.toml`: Cross-check README references for Package metadata and dependency management task 011.
+- [ ] 012. File `pyproject.toml`: Confirm screenshot or transcript evidence for Package metadata and dependency management task 012.
+- [ ] 013. File `pyproject.toml`: Verify Package metadata and dependency management task 013.
+- [ ] 014. File `pyproject.toml`: Add or refine a test for Package metadata and dependency management task 014.
+- [ ] 015. File `pyproject.toml`: Document Package metadata and dependency management task 015.
+- [ ] 016. File `pyproject.toml`: Review error handling for Package metadata and dependency management task 016.
+- [ ] 017. File `pyproject.toml`: Confirm configuration coverage for Package metadata and dependency management task 017.
+- [ ] 018. File `pyproject.toml`: Check assignment-rubric coverage for Package metadata and dependency management task 018.
+- [ ] 019. File `pyproject.toml`: Inspect maintainability of Package metadata and dependency management task 019.
+- [ ] 020. File `pyproject.toml`: Validate terminal workflow impact of Package metadata and dependency management task 020.
+- [ ] 021. File `pyproject.toml`: Confirm security or secret-safety for Package metadata and dependency management task 021.
+- [ ] 022. File `pyproject.toml`: Record submission evidence for Package metadata and dependency management task 022.
+- [ ] 023. File `pyproject.toml`: Cross-check README references for Package metadata and dependency management task 023.
+- [ ] 024. File `pyproject.toml`: Confirm screenshot or transcript evidence for Package metadata and dependency management task 024.
+- [ ] 025. File `pyproject.toml`: Verify Package metadata and dependency management task 025.
+- [ ] 026. File `pyproject.toml`: Add or refine a test for Package metadata and dependency management task 026.
+- [ ] 027. File `pyproject.toml`: Document Package metadata and dependency management task 027.
+- [ ] 028. File `pyproject.toml`: Review error handling for Package metadata and dependency management task 028.
+- [ ] 029. File `pyproject.toml`: Confirm configuration coverage for Package metadata and dependency management task 029.
+- [ ] 030. File `pyproject.toml`: Check assignment-rubric coverage for Package metadata and dependency management task 030.
+- [ ] 031. File `pyproject.toml`: Inspect maintainability of Package metadata and dependency management task 031.
+- [ ] 032. File `pyproject.toml`: Validate terminal workflow impact of Package metadata and dependency management task 032.
+- [ ] 033. File `pyproject.toml`: Confirm security or secret-safety for Package metadata and dependency management task 033.
+- [ ] 034. File `pyproject.toml`: Record submission evidence for Package metadata and dependency management task 034.
+- [ ] 035. File `pyproject.toml`: Cross-check README references for Package metadata and dependency management task 035.
+- [ ] 036. File `pyproject.toml`: Confirm screenshot or transcript evidence for Package metadata and dependency management task 036.
+
+## runtime configuration and debate defaults — `configs/debate_config.yaml`
+
+- [ ] 037. File `configs/debate_config.yaml`: Verify runtime configuration and debate defaults task 001.
+- [ ] 038. File `configs/debate_config.yaml`: Add or refine a test for runtime configuration and debate defaults task 002.
+- [ ] 039. File `configs/debate_config.yaml`: Document runtime configuration and debate defaults task 003.
+- [ ] 040. File `configs/debate_config.yaml`: Review error handling for runtime configuration and debate defaults task 004.
+- [ ] 041. File `configs/debate_config.yaml`: Confirm configuration coverage for runtime configuration and debate defaults task 005.
+- [ ] 042. File `configs/debate_config.yaml`: Check assignment-rubric coverage for runtime configuration and debate defaults task 006.
+- [ ] 043. File `configs/debate_config.yaml`: Inspect maintainability of runtime configuration and debate defaults task 007.
+- [ ] 044. File `configs/debate_config.yaml`: Validate terminal workflow impact of runtime configuration and debate defaults task 008.
+- [ ] 045. File `configs/debate_config.yaml`: Confirm security or secret-safety for runtime configuration and debate defaults task 009.
+- [ ] 046. File `configs/debate_config.yaml`: Record submission evidence for runtime configuration and debate defaults task 010.
+- [ ] 047. File `configs/debate_config.yaml`: Cross-check README references for runtime configuration and debate defaults task 011.
+- [ ] 048. File `configs/debate_config.yaml`: Confirm screenshot or transcript evidence for runtime configuration and debate defaults task 012.
+- [ ] 049. File `configs/debate_config.yaml`: Verify runtime configuration and debate defaults task 013.
+- [ ] 050. File `configs/debate_config.yaml`: Add or refine a test for runtime configuration and debate defaults task 014.
+- [ ] 051. File `configs/debate_config.yaml`: Document runtime configuration and debate defaults task 015.
+- [ ] 052. File `configs/debate_config.yaml`: Review error handling for runtime configuration and debate defaults task 016.
+- [ ] 053. File `configs/debate_config.yaml`: Confirm configuration coverage for runtime configuration and debate defaults task 017.
+- [ ] 054. File `configs/debate_config.yaml`: Check assignment-rubric coverage for runtime configuration and debate defaults task 018.
+- [ ] 055. File `configs/debate_config.yaml`: Inspect maintainability of runtime configuration and debate defaults task 019.
+- [ ] 056. File `configs/debate_config.yaml`: Validate terminal workflow impact of runtime configuration and debate defaults task 020.
+- [ ] 057. File `configs/debate_config.yaml`: Confirm security or secret-safety for runtime configuration and debate defaults task 021.
+- [ ] 058. File `configs/debate_config.yaml`: Record submission evidence for runtime configuration and debate defaults task 022.
+- [ ] 059. File `configs/debate_config.yaml`: Cross-check README references for runtime configuration and debate defaults task 023.
+- [ ] 060. File `configs/debate_config.yaml`: Confirm screenshot or transcript evidence for runtime configuration and debate defaults task 024.
+- [ ] 061. File `configs/debate_config.yaml`: Verify runtime configuration and debate defaults task 025.
+- [ ] 062. File `configs/debate_config.yaml`: Add or refine a test for runtime configuration and debate defaults task 026.
+- [ ] 063. File `configs/debate_config.yaml`: Document runtime configuration and debate defaults task 027.
+- [ ] 064. File `configs/debate_config.yaml`: Review error handling for runtime configuration and debate defaults task 028.
+- [ ] 065. File `configs/debate_config.yaml`: Confirm configuration coverage for runtime configuration and debate defaults task 029.
+- [ ] 066. File `configs/debate_config.yaml`: Check assignment-rubric coverage for runtime configuration and debate defaults task 030.
+- [ ] 067. File `configs/debate_config.yaml`: Inspect maintainability of runtime configuration and debate defaults task 031.
+- [ ] 068. File `configs/debate_config.yaml`: Validate terminal workflow impact of runtime configuration and debate defaults task 032.
+- [ ] 069. File `configs/debate_config.yaml`: Confirm security or secret-safety for runtime configuration and debate defaults task 033.
+- [ ] 070. File `configs/debate_config.yaml`: Record submission evidence for runtime configuration and debate defaults task 034.
+- [ ] 071. File `configs/debate_config.yaml`: Cross-check README references for runtime configuration and debate defaults task 035.
+- [ ] 072. File `configs/debate_config.yaml`: Confirm screenshot or transcript evidence for runtime configuration and debate defaults task 036.
+
+## environment variable placeholders and secret handling — `.env.example`
+
+- [ ] 073. File `.env.example`: Verify environment variable placeholders and secret handling task 001.
+- [ ] 074. File `.env.example`: Add or refine a test for environment variable placeholders and secret handling task 002.
+- [ ] 075. File `.env.example`: Document environment variable placeholders and secret handling task 003.
+- [ ] 076. File `.env.example`: Review error handling for environment variable placeholders and secret handling task 004.
+- [ ] 077. File `.env.example`: Confirm configuration coverage for environment variable placeholders and secret handling task 005.
+- [ ] 078. File `.env.example`: Check assignment-rubric coverage for environment variable placeholders and secret handling task 006.
+- [ ] 079. File `.env.example`: Inspect maintainability of environment variable placeholders and secret handling task 007.
+- [ ] 080. File `.env.example`: Validate terminal workflow impact of environment variable placeholders and secret handling task 008.
+- [ ] 081. File `.env.example`: Confirm security or secret-safety for environment variable placeholders and secret handling task 009.
+- [ ] 082. File `.env.example`: Record submission evidence for environment variable placeholders and secret handling task 010.
+- [ ] 083. File `.env.example`: Cross-check README references for environment variable placeholders and secret handling task 011.
+- [ ] 084. File `.env.example`: Confirm screenshot or transcript evidence for environment variable placeholders and secret handling task 012.
+- [ ] 085. File `.env.example`: Verify environment variable placeholders and secret handling task 013.
+- [ ] 086. File `.env.example`: Add or refine a test for environment variable placeholders and secret handling task 014.
+- [ ] 087. File `.env.example`: Document environment variable placeholders and secret handling task 015.
+- [ ] 088. File `.env.example`: Review error handling for environment variable placeholders and secret handling task 016.
+- [ ] 089. File `.env.example`: Confirm configuration coverage for environment variable placeholders and secret handling task 017.
+- [ ] 090. File `.env.example`: Check assignment-rubric coverage for environment variable placeholders and secret handling task 018.
+- [ ] 091. File `.env.example`: Inspect maintainability of environment variable placeholders and secret handling task 019.
+- [ ] 092. File `.env.example`: Validate terminal workflow impact of environment variable placeholders and secret handling task 020.
+- [ ] 093. File `.env.example`: Confirm security or secret-safety for environment variable placeholders and secret handling task 021.
+- [ ] 094. File `.env.example`: Record submission evidence for environment variable placeholders and secret handling task 022.
+- [ ] 095. File `.env.example`: Cross-check README references for environment variable placeholders and secret handling task 023.
+- [ ] 096. File `.env.example`: Confirm screenshot or transcript evidence for environment variable placeholders and secret handling task 024.
+- [ ] 097. File `.env.example`: Verify environment variable placeholders and secret handling task 025.
+- [ ] 098. File `.env.example`: Add or refine a test for environment variable placeholders and secret handling task 026.
+- [ ] 099. File `.env.example`: Document environment variable placeholders and secret handling task 027.
+- [ ] 100. File `.env.example`: Review error handling for environment variable placeholders and secret handling task 028.
+- [ ] 101. File `.env.example`: Confirm configuration coverage for environment variable placeholders and secret handling task 029.
+- [ ] 102. File `.env.example`: Check assignment-rubric coverage for environment variable placeholders and secret handling task 030.
+- [ ] 103. File `.env.example`: Inspect maintainability of environment variable placeholders and secret handling task 031.
+- [ ] 104. File `.env.example`: Validate terminal workflow impact of environment variable placeholders and secret handling task 032.
+- [ ] 105. File `.env.example`: Confirm security or secret-safety for environment variable placeholders and secret handling task 033.
+- [ ] 106. File `.env.example`: Record submission evidence for environment variable placeholders and secret handling task 034.
+- [ ] 107. File `.env.example`: Cross-check README references for environment variable placeholders and secret handling task 035.
+- [ ] 108. File `.env.example`: Confirm screenshot or transcript evidence for environment variable placeholders and secret handling task 036.
+
+## JSON message schema validation — `src/agent_debate/ipc/messages.py`
+
+- [ ] 109. File `src/agent_debate/ipc/messages.py`: Verify JSON message schema validation task 001.
+- [ ] 110. File `src/agent_debate/ipc/messages.py`: Add or refine a test for JSON message schema validation task 002.
+- [ ] 111. File `src/agent_debate/ipc/messages.py`: Document JSON message schema validation task 003.
+- [ ] 112. File `src/agent_debate/ipc/messages.py`: Review error handling for JSON message schema validation task 004.
+- [ ] 113. File `src/agent_debate/ipc/messages.py`: Confirm configuration coverage for JSON message schema validation task 005.
+- [ ] 114. File `src/agent_debate/ipc/messages.py`: Check assignment-rubric coverage for JSON message schema validation task 006.
+- [ ] 115. File `src/agent_debate/ipc/messages.py`: Inspect maintainability of JSON message schema validation task 007.
+- [ ] 116. File `src/agent_debate/ipc/messages.py`: Validate terminal workflow impact of JSON message schema validation task 008.
+- [ ] 117. File `src/agent_debate/ipc/messages.py`: Confirm security or secret-safety for JSON message schema validation task 009.
+- [ ] 118. File `src/agent_debate/ipc/messages.py`: Record submission evidence for JSON message schema validation task 010.
+- [ ] 119. File `src/agent_debate/ipc/messages.py`: Cross-check README references for JSON message schema validation task 011.
+- [ ] 120. File `src/agent_debate/ipc/messages.py`: Confirm screenshot or transcript evidence for JSON message schema validation task 012.
+- [ ] 121. File `src/agent_debate/ipc/messages.py`: Verify JSON message schema validation task 013.
+- [ ] 122. File `src/agent_debate/ipc/messages.py`: Add or refine a test for JSON message schema validation task 014.
+- [ ] 123. File `src/agent_debate/ipc/messages.py`: Document JSON message schema validation task 015.
+- [ ] 124. File `src/agent_debate/ipc/messages.py`: Review error handling for JSON message schema validation task 016.
+- [ ] 125. File `src/agent_debate/ipc/messages.py`: Confirm configuration coverage for JSON message schema validation task 017.
+- [ ] 126. File `src/agent_debate/ipc/messages.py`: Check assignment-rubric coverage for JSON message schema validation task 018.
+- [ ] 127. File `src/agent_debate/ipc/messages.py`: Inspect maintainability of JSON message schema validation task 019.
+- [ ] 128. File `src/agent_debate/ipc/messages.py`: Validate terminal workflow impact of JSON message schema validation task 020.
+- [ ] 129. File `src/agent_debate/ipc/messages.py`: Confirm security or secret-safety for JSON message schema validation task 021.
+- [ ] 130. File `src/agent_debate/ipc/messages.py`: Record submission evidence for JSON message schema validation task 022.
+- [ ] 131. File `src/agent_debate/ipc/messages.py`: Cross-check README references for JSON message schema validation task 023.
+- [ ] 132. File `src/agent_debate/ipc/messages.py`: Confirm screenshot or transcript evidence for JSON message schema validation task 024.
+- [ ] 133. File `src/agent_debate/ipc/messages.py`: Verify JSON message schema validation task 025.
+- [ ] 134. File `src/agent_debate/ipc/messages.py`: Add or refine a test for JSON message schema validation task 026.
+- [ ] 135. File `src/agent_debate/ipc/messages.py`: Document JSON message schema validation task 027.
+- [ ] 136. File `src/agent_debate/ipc/messages.py`: Review error handling for JSON message schema validation task 028.
+- [ ] 137. File `src/agent_debate/ipc/messages.py`: Confirm configuration coverage for JSON message schema validation task 029.
+- [ ] 138. File `src/agent_debate/ipc/messages.py`: Check assignment-rubric coverage for JSON message schema validation task 030.
+- [ ] 139. File `src/agent_debate/ipc/messages.py`: Inspect maintainability of JSON message schema validation task 031.
+- [ ] 140. File `src/agent_debate/ipc/messages.py`: Validate terminal workflow impact of JSON message schema validation task 032.
+- [ ] 141. File `src/agent_debate/ipc/messages.py`: Confirm security or secret-safety for JSON message schema validation task 033.
+- [ ] 142. File `src/agent_debate/ipc/messages.py`: Record submission evidence for JSON message schema validation task 034.
+- [ ] 143. File `src/agent_debate/ipc/messages.py`: Cross-check README references for JSON message schema validation task 035.
+- [ ] 144. File `src/agent_debate/ipc/messages.py`: Confirm screenshot or transcript evidence for JSON message schema validation task 036.
+
+## queue routing and child communication rules — `src/agent_debate/ipc/queues.py`
+
+- [ ] 145. File `src/agent_debate/ipc/queues.py`: Verify queue routing and child communication rules task 001.
+- [ ] 146. File `src/agent_debate/ipc/queues.py`: Add or refine a test for queue routing and child communication rules task 002.
+- [ ] 147. File `src/agent_debate/ipc/queues.py`: Document queue routing and child communication rules task 003.
+- [ ] 148. File `src/agent_debate/ipc/queues.py`: Review error handling for queue routing and child communication rules task 004.
+- [ ] 149. File `src/agent_debate/ipc/queues.py`: Confirm configuration coverage for queue routing and child communication rules task 005.
+- [ ] 150. File `src/agent_debate/ipc/queues.py`: Check assignment-rubric coverage for queue routing and child communication rules task 006.
+- [ ] 151. File `src/agent_debate/ipc/queues.py`: Inspect maintainability of queue routing and child communication rules task 007.
+- [ ] 152. File `src/agent_debate/ipc/queues.py`: Validate terminal workflow impact of queue routing and child communication rules task 008.
+- [ ] 153. File `src/agent_debate/ipc/queues.py`: Confirm security or secret-safety for queue routing and child communication rules task 009.
+- [ ] 154. File `src/agent_debate/ipc/queues.py`: Record submission evidence for queue routing and child communication rules task 010.
+- [ ] 155. File `src/agent_debate/ipc/queues.py`: Cross-check README references for queue routing and child communication rules task 011.
+- [ ] 156. File `src/agent_debate/ipc/queues.py`: Confirm screenshot or transcript evidence for queue routing and child communication rules task 012.
+- [ ] 157. File `src/agent_debate/ipc/queues.py`: Verify queue routing and child communication rules task 013.
+- [ ] 158. File `src/agent_debate/ipc/queues.py`: Add or refine a test for queue routing and child communication rules task 014.
+- [ ] 159. File `src/agent_debate/ipc/queues.py`: Document queue routing and child communication rules task 015.
+- [ ] 160. File `src/agent_debate/ipc/queues.py`: Review error handling for queue routing and child communication rules task 016.
+- [ ] 161. File `src/agent_debate/ipc/queues.py`: Confirm configuration coverage for queue routing and child communication rules task 017.
+- [ ] 162. File `src/agent_debate/ipc/queues.py`: Check assignment-rubric coverage for queue routing and child communication rules task 018.
+- [ ] 163. File `src/agent_debate/ipc/queues.py`: Inspect maintainability of queue routing and child communication rules task 019.
+- [ ] 164. File `src/agent_debate/ipc/queues.py`: Validate terminal workflow impact of queue routing and child communication rules task 020.
+- [ ] 165. File `src/agent_debate/ipc/queues.py`: Confirm security or secret-safety for queue routing and child communication rules task 021.
+- [ ] 166. File `src/agent_debate/ipc/queues.py`: Record submission evidence for queue routing and child communication rules task 022.
+- [ ] 167. File `src/agent_debate/ipc/queues.py`: Cross-check README references for queue routing and child communication rules task 023.
+- [ ] 168. File `src/agent_debate/ipc/queues.py`: Confirm screenshot or transcript evidence for queue routing and child communication rules task 024.
+- [ ] 169. File `src/agent_debate/ipc/queues.py`: Verify queue routing and child communication rules task 025.
+- [ ] 170. File `src/agent_debate/ipc/queues.py`: Add or refine a test for queue routing and child communication rules task 026.
+- [ ] 171. File `src/agent_debate/ipc/queues.py`: Document queue routing and child communication rules task 027.
+- [ ] 172. File `src/agent_debate/ipc/queues.py`: Review error handling for queue routing and child communication rules task 028.
+- [ ] 173. File `src/agent_debate/ipc/queues.py`: Confirm configuration coverage for queue routing and child communication rules task 029.
+- [ ] 174. File `src/agent_debate/ipc/queues.py`: Check assignment-rubric coverage for queue routing and child communication rules task 030.
+- [ ] 175. File `src/agent_debate/ipc/queues.py`: Inspect maintainability of queue routing and child communication rules task 031.
+- [ ] 176. File `src/agent_debate/ipc/queues.py`: Validate terminal workflow impact of queue routing and child communication rules task 032.
+- [ ] 177. File `src/agent_debate/ipc/queues.py`: Confirm security or secret-safety for queue routing and child communication rules task 033.
+- [ ] 178. File `src/agent_debate/ipc/queues.py`: Record submission evidence for queue routing and child communication rules task 034.
+- [ ] 179. File `src/agent_debate/ipc/queues.py`: Cross-check README references for queue routing and child communication rules task 035.
+- [ ] 180. File `src/agent_debate/ipc/queues.py`: Confirm screenshot or transcript evidence for queue routing and child communication rules task 036.
+
+## shared process-agent behavior — `src/agent_debate/agents/base.py`
+
+- [ ] 181. File `src/agent_debate/agents/base.py`: Verify shared process-agent behavior task 001.
+- [ ] 182. File `src/agent_debate/agents/base.py`: Add or refine a test for shared process-agent behavior task 002.
+- [ ] 183. File `src/agent_debate/agents/base.py`: Document shared process-agent behavior task 003.
+- [ ] 184. File `src/agent_debate/agents/base.py`: Review error handling for shared process-agent behavior task 004.
+- [ ] 185. File `src/agent_debate/agents/base.py`: Confirm configuration coverage for shared process-agent behavior task 005.
+- [ ] 186. File `src/agent_debate/agents/base.py`: Check assignment-rubric coverage for shared process-agent behavior task 006.
+- [ ] 187. File `src/agent_debate/agents/base.py`: Inspect maintainability of shared process-agent behavior task 007.
+- [ ] 188. File `src/agent_debate/agents/base.py`: Validate terminal workflow impact of shared process-agent behavior task 008.
+- [ ] 189. File `src/agent_debate/agents/base.py`: Confirm security or secret-safety for shared process-agent behavior task 009.
+- [ ] 190. File `src/agent_debate/agents/base.py`: Record submission evidence for shared process-agent behavior task 010.
+- [ ] 191. File `src/agent_debate/agents/base.py`: Cross-check README references for shared process-agent behavior task 011.
+- [ ] 192. File `src/agent_debate/agents/base.py`: Confirm screenshot or transcript evidence for shared process-agent behavior task 012.
+- [ ] 193. File `src/agent_debate/agents/base.py`: Verify shared process-agent behavior task 013.
+- [ ] 194. File `src/agent_debate/agents/base.py`: Add or refine a test for shared process-agent behavior task 014.
+- [ ] 195. File `src/agent_debate/agents/base.py`: Document shared process-agent behavior task 015.
+- [ ] 196. File `src/agent_debate/agents/base.py`: Review error handling for shared process-agent behavior task 016.
+- [ ] 197. File `src/agent_debate/agents/base.py`: Confirm configuration coverage for shared process-agent behavior task 017.
+- [ ] 198. File `src/agent_debate/agents/base.py`: Check assignment-rubric coverage for shared process-agent behavior task 018.
+- [ ] 199. File `src/agent_debate/agents/base.py`: Inspect maintainability of shared process-agent behavior task 019.
+- [ ] 200. File `src/agent_debate/agents/base.py`: Validate terminal workflow impact of shared process-agent behavior task 020.
+- [ ] 201. File `src/agent_debate/agents/base.py`: Confirm security or secret-safety for shared process-agent behavior task 021.
+- [ ] 202. File `src/agent_debate/agents/base.py`: Record submission evidence for shared process-agent behavior task 022.
+- [ ] 203. File `src/agent_debate/agents/base.py`: Cross-check README references for shared process-agent behavior task 023.
+- [ ] 204. File `src/agent_debate/agents/base.py`: Confirm screenshot or transcript evidence for shared process-agent behavior task 024.
+- [ ] 205. File `src/agent_debate/agents/base.py`: Verify shared process-agent behavior task 025.
+- [ ] 206. File `src/agent_debate/agents/base.py`: Add or refine a test for shared process-agent behavior task 026.
+- [ ] 207. File `src/agent_debate/agents/base.py`: Document shared process-agent behavior task 027.
+- [ ] 208. File `src/agent_debate/agents/base.py`: Review error handling for shared process-agent behavior task 028.
+- [ ] 209. File `src/agent_debate/agents/base.py`: Confirm configuration coverage for shared process-agent behavior task 029.
+- [ ] 210. File `src/agent_debate/agents/base.py`: Check assignment-rubric coverage for shared process-agent behavior task 030.
+- [ ] 211. File `src/agent_debate/agents/base.py`: Inspect maintainability of shared process-agent behavior task 031.
+- [ ] 212. File `src/agent_debate/agents/base.py`: Validate terminal workflow impact of shared process-agent behavior task 032.
+- [ ] 213. File `src/agent_debate/agents/base.py`: Confirm security or secret-safety for shared process-agent behavior task 033.
+- [ ] 214. File `src/agent_debate/agents/base.py`: Record submission evidence for shared process-agent behavior task 034.
+- [ ] 215. File `src/agent_debate/agents/base.py`: Cross-check README references for shared process-agent behavior task 035.
+- [ ] 216. File `src/agent_debate/agents/base.py`: Confirm screenshot or transcript evidence for shared process-agent behavior task 036.
+
+## pro and con child agent behavior — `src/agent_debate/agents/debate_agent.py`
+
+- [ ] 217. File `src/agent_debate/agents/debate_agent.py`: Verify pro and con child agent behavior task 001.
+- [ ] 218. File `src/agent_debate/agents/debate_agent.py`: Add or refine a test for pro and con child agent behavior task 002.
+- [ ] 219. File `src/agent_debate/agents/debate_agent.py`: Document pro and con child agent behavior task 003.
+- [ ] 220. File `src/agent_debate/agents/debate_agent.py`: Review error handling for pro and con child agent behavior task 004.
+- [ ] 221. File `src/agent_debate/agents/debate_agent.py`: Confirm configuration coverage for pro and con child agent behavior task 005.
+- [ ] 222. File `src/agent_debate/agents/debate_agent.py`: Check assignment-rubric coverage for pro and con child agent behavior task 006.
+- [ ] 223. File `src/agent_debate/agents/debate_agent.py`: Inspect maintainability of pro and con child agent behavior task 007.
+- [ ] 224. File `src/agent_debate/agents/debate_agent.py`: Validate terminal workflow impact of pro and con child agent behavior task 008.
+- [ ] 225. File `src/agent_debate/agents/debate_agent.py`: Confirm security or secret-safety for pro and con child agent behavior task 009.
+- [ ] 226. File `src/agent_debate/agents/debate_agent.py`: Record submission evidence for pro and con child agent behavior task 010.
+- [ ] 227. File `src/agent_debate/agents/debate_agent.py`: Cross-check README references for pro and con child agent behavior task 011.
+- [ ] 228. File `src/agent_debate/agents/debate_agent.py`: Confirm screenshot or transcript evidence for pro and con child agent behavior task 012.
+- [ ] 229. File `src/agent_debate/agents/debate_agent.py`: Verify pro and con child agent behavior task 013.
+- [ ] 230. File `src/agent_debate/agents/debate_agent.py`: Add or refine a test for pro and con child agent behavior task 014.
+- [ ] 231. File `src/agent_debate/agents/debate_agent.py`: Document pro and con child agent behavior task 015.
+- [ ] 232. File `src/agent_debate/agents/debate_agent.py`: Review error handling for pro and con child agent behavior task 016.
+- [ ] 233. File `src/agent_debate/agents/debate_agent.py`: Confirm configuration coverage for pro and con child agent behavior task 017.
+- [ ] 234. File `src/agent_debate/agents/debate_agent.py`: Check assignment-rubric coverage for pro and con child agent behavior task 018.
+- [ ] 235. File `src/agent_debate/agents/debate_agent.py`: Inspect maintainability of pro and con child agent behavior task 019.
+- [ ] 236. File `src/agent_debate/agents/debate_agent.py`: Validate terminal workflow impact of pro and con child agent behavior task 020.
+- [ ] 237. File `src/agent_debate/agents/debate_agent.py`: Confirm security or secret-safety for pro and con child agent behavior task 021.
+- [ ] 238. File `src/agent_debate/agents/debate_agent.py`: Record submission evidence for pro and con child agent behavior task 022.
+- [ ] 239. File `src/agent_debate/agents/debate_agent.py`: Cross-check README references for pro and con child agent behavior task 023.
+- [ ] 240. File `src/agent_debate/agents/debate_agent.py`: Confirm screenshot or transcript evidence for pro and con child agent behavior task 024.
+- [ ] 241. File `src/agent_debate/agents/debate_agent.py`: Verify pro and con child agent behavior task 025.
+- [ ] 242. File `src/agent_debate/agents/debate_agent.py`: Add or refine a test for pro and con child agent behavior task 026.
+- [ ] 243. File `src/agent_debate/agents/debate_agent.py`: Document pro and con child agent behavior task 027.
+- [ ] 244. File `src/agent_debate/agents/debate_agent.py`: Review error handling for pro and con child agent behavior task 028.
+- [ ] 245. File `src/agent_debate/agents/debate_agent.py`: Confirm configuration coverage for pro and con child agent behavior task 029.
+- [ ] 246. File `src/agent_debate/agents/debate_agent.py`: Check assignment-rubric coverage for pro and con child agent behavior task 030.
+- [ ] 247. File `src/agent_debate/agents/debate_agent.py`: Inspect maintainability of pro and con child agent behavior task 031.
+- [ ] 248. File `src/agent_debate/agents/debate_agent.py`: Validate terminal workflow impact of pro and con child agent behavior task 032.
+- [ ] 249. File `src/agent_debate/agents/debate_agent.py`: Confirm security or secret-safety for pro and con child agent behavior task 033.
+- [ ] 250. File `src/agent_debate/agents/debate_agent.py`: Record submission evidence for pro and con child agent behavior task 034.
+- [ ] 251. File `src/agent_debate/agents/debate_agent.py`: Cross-check README references for pro and con child agent behavior task 035.
+- [ ] 252. File `src/agent_debate/agents/debate_agent.py`: Confirm screenshot or transcript evidence for pro and con child agent behavior task 036.
+
+## judge decision behavior — `src/agent_debate/agents/judge_agent.py`
+
+- [ ] 253. File `src/agent_debate/agents/judge_agent.py`: Verify judge decision behavior task 001.
+- [ ] 254. File `src/agent_debate/agents/judge_agent.py`: Add or refine a test for judge decision behavior task 002.
+- [ ] 255. File `src/agent_debate/agents/judge_agent.py`: Document judge decision behavior task 003.
+- [ ] 256. File `src/agent_debate/agents/judge_agent.py`: Review error handling for judge decision behavior task 004.
+- [ ] 257. File `src/agent_debate/agents/judge_agent.py`: Confirm configuration coverage for judge decision behavior task 005.
+- [ ] 258. File `src/agent_debate/agents/judge_agent.py`: Check assignment-rubric coverage for judge decision behavior task 006.
+- [ ] 259. File `src/agent_debate/agents/judge_agent.py`: Inspect maintainability of judge decision behavior task 007.
+- [ ] 260. File `src/agent_debate/agents/judge_agent.py`: Validate terminal workflow impact of judge decision behavior task 008.
+- [ ] 261. File `src/agent_debate/agents/judge_agent.py`: Confirm security or secret-safety for judge decision behavior task 009.
+- [ ] 262. File `src/agent_debate/agents/judge_agent.py`: Record submission evidence for judge decision behavior task 010.
+- [ ] 263. File `src/agent_debate/agents/judge_agent.py`: Cross-check README references for judge decision behavior task 011.
+- [ ] 264. File `src/agent_debate/agents/judge_agent.py`: Confirm screenshot or transcript evidence for judge decision behavior task 012.
+- [ ] 265. File `src/agent_debate/agents/judge_agent.py`: Verify judge decision behavior task 013.
+- [ ] 266. File `src/agent_debate/agents/judge_agent.py`: Add or refine a test for judge decision behavior task 014.
+- [ ] 267. File `src/agent_debate/agents/judge_agent.py`: Document judge decision behavior task 015.
+- [ ] 268. File `src/agent_debate/agents/judge_agent.py`: Review error handling for judge decision behavior task 016.
+- [ ] 269. File `src/agent_debate/agents/judge_agent.py`: Confirm configuration coverage for judge decision behavior task 017.
+- [ ] 270. File `src/agent_debate/agents/judge_agent.py`: Check assignment-rubric coverage for judge decision behavior task 018.
+- [ ] 271. File `src/agent_debate/agents/judge_agent.py`: Inspect maintainability of judge decision behavior task 019.
+- [ ] 272. File `src/agent_debate/agents/judge_agent.py`: Validate terminal workflow impact of judge decision behavior task 020.
+- [ ] 273. File `src/agent_debate/agents/judge_agent.py`: Confirm security or secret-safety for judge decision behavior task 021.
+- [ ] 274. File `src/agent_debate/agents/judge_agent.py`: Record submission evidence for judge decision behavior task 022.
+- [ ] 275. File `src/agent_debate/agents/judge_agent.py`: Cross-check README references for judge decision behavior task 023.
+- [ ] 276. File `src/agent_debate/agents/judge_agent.py`: Confirm screenshot or transcript evidence for judge decision behavior task 024.
+- [ ] 277. File `src/agent_debate/agents/judge_agent.py`: Verify judge decision behavior task 025.
+- [ ] 278. File `src/agent_debate/agents/judge_agent.py`: Add or refine a test for judge decision behavior task 026.
+- [ ] 279. File `src/agent_debate/agents/judge_agent.py`: Document judge decision behavior task 027.
+- [ ] 280. File `src/agent_debate/agents/judge_agent.py`: Review error handling for judge decision behavior task 028.
+- [ ] 281. File `src/agent_debate/agents/judge_agent.py`: Confirm configuration coverage for judge decision behavior task 029.
+- [ ] 282. File `src/agent_debate/agents/judge_agent.py`: Check assignment-rubric coverage for judge decision behavior task 030.
+- [ ] 283. File `src/agent_debate/agents/judge_agent.py`: Inspect maintainability of judge decision behavior task 031.
+- [ ] 284. File `src/agent_debate/agents/judge_agent.py`: Validate terminal workflow impact of judge decision behavior task 032.
+- [ ] 285. File `src/agent_debate/agents/judge_agent.py`: Confirm security or secret-safety for judge decision behavior task 033.
+- [ ] 286. File `src/agent_debate/agents/judge_agent.py`: Record submission evidence for judge decision behavior task 034.
+- [ ] 287. File `src/agent_debate/agents/judge_agent.py`: Cross-check README references for judge decision behavior task 035.
+- [ ] 288. File `src/agent_debate/agents/judge_agent.py`: Confirm screenshot or transcript evidence for judge decision behavior task 036.
+
+## context window Select/Write behavior — `src/agent_debate/memory.py`
+
+- [ ] 289. File `src/agent_debate/memory.py`: Verify context window Select/Write behavior task 001.
+- [ ] 290. File `src/agent_debate/memory.py`: Add or refine a test for context window Select/Write behavior task 002.
+- [ ] 291. File `src/agent_debate/memory.py`: Document context window Select/Write behavior task 003.
+- [ ] 292. File `src/agent_debate/memory.py`: Review error handling for context window Select/Write behavior task 004.
+- [ ] 293. File `src/agent_debate/memory.py`: Confirm configuration coverage for context window Select/Write behavior task 005.
+- [ ] 294. File `src/agent_debate/memory.py`: Check assignment-rubric coverage for context window Select/Write behavior task 006.
+- [ ] 295. File `src/agent_debate/memory.py`: Inspect maintainability of context window Select/Write behavior task 007.
+- [ ] 296. File `src/agent_debate/memory.py`: Validate terminal workflow impact of context window Select/Write behavior task 008.
+- [ ] 297. File `src/agent_debate/memory.py`: Confirm security or secret-safety for context window Select/Write behavior task 009.
+- [ ] 298. File `src/agent_debate/memory.py`: Record submission evidence for context window Select/Write behavior task 010.
+- [ ] 299. File `src/agent_debate/memory.py`: Cross-check README references for context window Select/Write behavior task 011.
+- [ ] 300. File `src/agent_debate/memory.py`: Confirm screenshot or transcript evidence for context window Select/Write behavior task 012.
+- [ ] 301. File `src/agent_debate/memory.py`: Verify context window Select/Write behavior task 013.
+- [ ] 302. File `src/agent_debate/memory.py`: Add or refine a test for context window Select/Write behavior task 014.
+- [ ] 303. File `src/agent_debate/memory.py`: Document context window Select/Write behavior task 015.
+- [ ] 304. File `src/agent_debate/memory.py`: Review error handling for context window Select/Write behavior task 016.
+- [ ] 305. File `src/agent_debate/memory.py`: Confirm configuration coverage for context window Select/Write behavior task 017.
+- [ ] 306. File `src/agent_debate/memory.py`: Check assignment-rubric coverage for context window Select/Write behavior task 018.
+- [ ] 307. File `src/agent_debate/memory.py`: Inspect maintainability of context window Select/Write behavior task 019.
+- [ ] 308. File `src/agent_debate/memory.py`: Validate terminal workflow impact of context window Select/Write behavior task 020.
+- [ ] 309. File `src/agent_debate/memory.py`: Confirm security or secret-safety for context window Select/Write behavior task 021.
+- [ ] 310. File `src/agent_debate/memory.py`: Record submission evidence for context window Select/Write behavior task 022.
+- [ ] 311. File `src/agent_debate/memory.py`: Cross-check README references for context window Select/Write behavior task 023.
+- [ ] 312. File `src/agent_debate/memory.py`: Confirm screenshot or transcript evidence for context window Select/Write behavior task 024.
+- [ ] 313. File `src/agent_debate/memory.py`: Verify context window Select/Write behavior task 025.
+- [ ] 314. File `src/agent_debate/memory.py`: Add or refine a test for context window Select/Write behavior task 026.
+- [ ] 315. File `src/agent_debate/memory.py`: Document context window Select/Write behavior task 027.
+- [ ] 316. File `src/agent_debate/memory.py`: Review error handling for context window Select/Write behavior task 028.
+- [ ] 317. File `src/agent_debate/memory.py`: Confirm configuration coverage for context window Select/Write behavior task 029.
+- [ ] 318. File `src/agent_debate/memory.py`: Check assignment-rubric coverage for context window Select/Write behavior task 030.
+- [ ] 319. File `src/agent_debate/memory.py`: Inspect maintainability of context window Select/Write behavior task 031.
+- [ ] 320. File `src/agent_debate/memory.py`: Validate terminal workflow impact of context window Select/Write behavior task 032.
+- [ ] 321. File `src/agent_debate/memory.py`: Confirm security or secret-safety for context window Select/Write behavior task 033.
+- [ ] 322. File `src/agent_debate/memory.py`: Record submission evidence for context window Select/Write behavior task 034.
+- [ ] 323. File `src/agent_debate/memory.py`: Cross-check README references for context window Select/Write behavior task 035.
+- [ ] 324. File `src/agent_debate/memory.py`: Confirm screenshot or transcript evidence for context window Select/Write behavior task 036.
+
+## config loading and topic framing — `src/agent_debate/config.py`
+
+- [ ] 325. File `src/agent_debate/config.py`: Verify config loading and topic framing task 001.
+- [ ] 326. File `src/agent_debate/config.py`: Add or refine a test for config loading and topic framing task 002.
+- [ ] 327. File `src/agent_debate/config.py`: Document config loading and topic framing task 003.
+- [ ] 328. File `src/agent_debate/config.py`: Review error handling for config loading and topic framing task 004.
+- [ ] 329. File `src/agent_debate/config.py`: Confirm configuration coverage for config loading and topic framing task 005.
+- [ ] 330. File `src/agent_debate/config.py`: Check assignment-rubric coverage for config loading and topic framing task 006.
+- [ ] 331. File `src/agent_debate/config.py`: Inspect maintainability of config loading and topic framing task 007.
+- [ ] 332. File `src/agent_debate/config.py`: Validate terminal workflow impact of config loading and topic framing task 008.
+- [ ] 333. File `src/agent_debate/config.py`: Confirm security or secret-safety for config loading and topic framing task 009.
+- [ ] 334. File `src/agent_debate/config.py`: Record submission evidence for config loading and topic framing task 010.
+- [ ] 335. File `src/agent_debate/config.py`: Cross-check README references for config loading and topic framing task 011.
+- [ ] 336. File `src/agent_debate/config.py`: Confirm screenshot or transcript evidence for config loading and topic framing task 012.
+- [ ] 337. File `src/agent_debate/config.py`: Verify config loading and topic framing task 013.
+- [ ] 338. File `src/agent_debate/config.py`: Add or refine a test for config loading and topic framing task 014.
+- [ ] 339. File `src/agent_debate/config.py`: Document config loading and topic framing task 015.
+- [ ] 340. File `src/agent_debate/config.py`: Review error handling for config loading and topic framing task 016.
+- [ ] 341. File `src/agent_debate/config.py`: Confirm configuration coverage for config loading and topic framing task 017.
+- [ ] 342. File `src/agent_debate/config.py`: Check assignment-rubric coverage for config loading and topic framing task 018.
+- [ ] 343. File `src/agent_debate/config.py`: Inspect maintainability of config loading and topic framing task 019.
+- [ ] 344. File `src/agent_debate/config.py`: Validate terminal workflow impact of config loading and topic framing task 020.
+- [ ] 345. File `src/agent_debate/config.py`: Confirm security or secret-safety for config loading and topic framing task 021.
+- [ ] 346. File `src/agent_debate/config.py`: Record submission evidence for config loading and topic framing task 022.
+- [ ] 347. File `src/agent_debate/config.py`: Cross-check README references for config loading and topic framing task 023.
+- [ ] 348. File `src/agent_debate/config.py`: Confirm screenshot or transcript evidence for config loading and topic framing task 024.
+- [ ] 349. File `src/agent_debate/config.py`: Verify config loading and topic framing task 025.
+- [ ] 350. File `src/agent_debate/config.py`: Add or refine a test for config loading and topic framing task 026.
+- [ ] 351. File `src/agent_debate/config.py`: Document config loading and topic framing task 027.
+- [ ] 352. File `src/agent_debate/config.py`: Review error handling for config loading and topic framing task 028.
+- [ ] 353. File `src/agent_debate/config.py`: Confirm configuration coverage for config loading and topic framing task 029.
+- [ ] 354. File `src/agent_debate/config.py`: Check assignment-rubric coverage for config loading and topic framing task 030.
+- [ ] 355. File `src/agent_debate/config.py`: Inspect maintainability of config loading and topic framing task 031.
+- [ ] 356. File `src/agent_debate/config.py`: Validate terminal workflow impact of config loading and topic framing task 032.
+- [ ] 357. File `src/agent_debate/config.py`: Confirm security or secret-safety for config loading and topic framing task 033.
+- [ ] 358. File `src/agent_debate/config.py`: Record submission evidence for config loading and topic framing task 034.
+- [ ] 359. File `src/agent_debate/config.py`: Cross-check README references for config loading and topic framing task 035.
+- [ ] 360. File `src/agent_debate/config.py`: Confirm screenshot or transcript evidence for config loading and topic framing task 036.
+
+## LLM provider auto-selection — `src/agent_debate/llm/factory.py`
+
+- [ ] 361. File `src/agent_debate/llm/factory.py`: Verify LLM provider auto-selection task 001.
+- [ ] 362. File `src/agent_debate/llm/factory.py`: Add or refine a test for LLM provider auto-selection task 002.
+- [ ] 363. File `src/agent_debate/llm/factory.py`: Document LLM provider auto-selection task 003.
+- [ ] 364. File `src/agent_debate/llm/factory.py`: Review error handling for LLM provider auto-selection task 004.
+- [ ] 365. File `src/agent_debate/llm/factory.py`: Confirm configuration coverage for LLM provider auto-selection task 005.
+- [ ] 366. File `src/agent_debate/llm/factory.py`: Check assignment-rubric coverage for LLM provider auto-selection task 006.
+- [ ] 367. File `src/agent_debate/llm/factory.py`: Inspect maintainability of LLM provider auto-selection task 007.
+- [ ] 368. File `src/agent_debate/llm/factory.py`: Validate terminal workflow impact of LLM provider auto-selection task 008.
+- [ ] 369. File `src/agent_debate/llm/factory.py`: Confirm security or secret-safety for LLM provider auto-selection task 009.
+- [ ] 370. File `src/agent_debate/llm/factory.py`: Record submission evidence for LLM provider auto-selection task 010.
+- [ ] 371. File `src/agent_debate/llm/factory.py`: Cross-check README references for LLM provider auto-selection task 011.
+- [ ] 372. File `src/agent_debate/llm/factory.py`: Confirm screenshot or transcript evidence for LLM provider auto-selection task 012.
+- [ ] 373. File `src/agent_debate/llm/factory.py`: Verify LLM provider auto-selection task 013.
+- [ ] 374. File `src/agent_debate/llm/factory.py`: Add or refine a test for LLM provider auto-selection task 014.
+- [ ] 375. File `src/agent_debate/llm/factory.py`: Document LLM provider auto-selection task 015.
+- [ ] 376. File `src/agent_debate/llm/factory.py`: Review error handling for LLM provider auto-selection task 016.
+- [ ] 377. File `src/agent_debate/llm/factory.py`: Confirm configuration coverage for LLM provider auto-selection task 017.
+- [ ] 378. File `src/agent_debate/llm/factory.py`: Check assignment-rubric coverage for LLM provider auto-selection task 018.
+- [ ] 379. File `src/agent_debate/llm/factory.py`: Inspect maintainability of LLM provider auto-selection task 019.
+- [ ] 380. File `src/agent_debate/llm/factory.py`: Validate terminal workflow impact of LLM provider auto-selection task 020.
+- [ ] 381. File `src/agent_debate/llm/factory.py`: Confirm security or secret-safety for LLM provider auto-selection task 021.
+- [ ] 382. File `src/agent_debate/llm/factory.py`: Record submission evidence for LLM provider auto-selection task 022.
+- [ ] 383. File `src/agent_debate/llm/factory.py`: Cross-check README references for LLM provider auto-selection task 023.
+- [ ] 384. File `src/agent_debate/llm/factory.py`: Confirm screenshot or transcript evidence for LLM provider auto-selection task 024.
+- [ ] 385. File `src/agent_debate/llm/factory.py`: Verify LLM provider auto-selection task 025.
+- [ ] 386. File `src/agent_debate/llm/factory.py`: Add or refine a test for LLM provider auto-selection task 026.
+- [ ] 387. File `src/agent_debate/llm/factory.py`: Document LLM provider auto-selection task 027.
+- [ ] 388. File `src/agent_debate/llm/factory.py`: Review error handling for LLM provider auto-selection task 028.
+- [ ] 389. File `src/agent_debate/llm/factory.py`: Confirm configuration coverage for LLM provider auto-selection task 029.
+- [ ] 390. File `src/agent_debate/llm/factory.py`: Check assignment-rubric coverage for LLM provider auto-selection task 030.
+- [ ] 391. File `src/agent_debate/llm/factory.py`: Inspect maintainability of LLM provider auto-selection task 031.
+- [ ] 392. File `src/agent_debate/llm/factory.py`: Validate terminal workflow impact of LLM provider auto-selection task 032.
+- [ ] 393. File `src/agent_debate/llm/factory.py`: Confirm security or secret-safety for LLM provider auto-selection task 033.
+- [ ] 394. File `src/agent_debate/llm/factory.py`: Record submission evidence for LLM provider auto-selection task 034.
+- [ ] 395. File `src/agent_debate/llm/factory.py`: Cross-check README references for LLM provider auto-selection task 035.
+- [ ] 396. File `src/agent_debate/llm/factory.py`: Confirm screenshot or transcript evidence for LLM provider auto-selection task 036.
+
+## Gemini provider integration — `src/agent_debate/llm/gemini_client.py`
+
+- [ ] 397. File `src/agent_debate/llm/gemini_client.py`: Verify Gemini provider integration task 001.
+- [ ] 398. File `src/agent_debate/llm/gemini_client.py`: Add or refine a test for Gemini provider integration task 002.
+- [ ] 399. File `src/agent_debate/llm/gemini_client.py`: Document Gemini provider integration task 003.
+- [ ] 400. File `src/agent_debate/llm/gemini_client.py`: Review error handling for Gemini provider integration task 004.
+- [ ] 401. File `src/agent_debate/llm/gemini_client.py`: Confirm configuration coverage for Gemini provider integration task 005.
+- [ ] 402. File `src/agent_debate/llm/gemini_client.py`: Check assignment-rubric coverage for Gemini provider integration task 006.
+- [ ] 403. File `src/agent_debate/llm/gemini_client.py`: Inspect maintainability of Gemini provider integration task 007.
+- [ ] 404. File `src/agent_debate/llm/gemini_client.py`: Validate terminal workflow impact of Gemini provider integration task 008.
+- [ ] 405. File `src/agent_debate/llm/gemini_client.py`: Confirm security or secret-safety for Gemini provider integration task 009.
+- [ ] 406. File `src/agent_debate/llm/gemini_client.py`: Record submission evidence for Gemini provider integration task 010.
+- [ ] 407. File `src/agent_debate/llm/gemini_client.py`: Cross-check README references for Gemini provider integration task 011.
+- [ ] 408. File `src/agent_debate/llm/gemini_client.py`: Confirm screenshot or transcript evidence for Gemini provider integration task 012.
+- [ ] 409. File `src/agent_debate/llm/gemini_client.py`: Verify Gemini provider integration task 013.
+- [ ] 410. File `src/agent_debate/llm/gemini_client.py`: Add or refine a test for Gemini provider integration task 014.
+- [ ] 411. File `src/agent_debate/llm/gemini_client.py`: Document Gemini provider integration task 015.
+- [ ] 412. File `src/agent_debate/llm/gemini_client.py`: Review error handling for Gemini provider integration task 016.
+- [ ] 413. File `src/agent_debate/llm/gemini_client.py`: Confirm configuration coverage for Gemini provider integration task 017.
+- [ ] 414. File `src/agent_debate/llm/gemini_client.py`: Check assignment-rubric coverage for Gemini provider integration task 018.
+- [ ] 415. File `src/agent_debate/llm/gemini_client.py`: Inspect maintainability of Gemini provider integration task 019.
+- [ ] 416. File `src/agent_debate/llm/gemini_client.py`: Validate terminal workflow impact of Gemini provider integration task 020.
+- [ ] 417. File `src/agent_debate/llm/gemini_client.py`: Confirm security or secret-safety for Gemini provider integration task 021.
+- [ ] 418. File `src/agent_debate/llm/gemini_client.py`: Record submission evidence for Gemini provider integration task 022.
+- [ ] 419. File `src/agent_debate/llm/gemini_client.py`: Cross-check README references for Gemini provider integration task 023.
+- [ ] 420. File `src/agent_debate/llm/gemini_client.py`: Confirm screenshot or transcript evidence for Gemini provider integration task 024.
+- [ ] 421. File `src/agent_debate/llm/gemini_client.py`: Verify Gemini provider integration task 025.
+- [ ] 422. File `src/agent_debate/llm/gemini_client.py`: Add or refine a test for Gemini provider integration task 026.
+- [ ] 423. File `src/agent_debate/llm/gemini_client.py`: Document Gemini provider integration task 027.
+- [ ] 424. File `src/agent_debate/llm/gemini_client.py`: Review error handling for Gemini provider integration task 028.
+- [ ] 425. File `src/agent_debate/llm/gemini_client.py`: Confirm configuration coverage for Gemini provider integration task 029.
+- [ ] 426. File `src/agent_debate/llm/gemini_client.py`: Check assignment-rubric coverage for Gemini provider integration task 030.
+- [ ] 427. File `src/agent_debate/llm/gemini_client.py`: Inspect maintainability of Gemini provider integration task 031.
+- [ ] 428. File `src/agent_debate/llm/gemini_client.py`: Validate terminal workflow impact of Gemini provider integration task 032.
+- [ ] 429. File `src/agent_debate/llm/gemini_client.py`: Confirm security or secret-safety for Gemini provider integration task 033.
+- [ ] 430. File `src/agent_debate/llm/gemini_client.py`: Record submission evidence for Gemini provider integration task 034.
+- [ ] 431. File `src/agent_debate/llm/gemini_client.py`: Cross-check README references for Gemini provider integration task 035.
+- [ ] 432. File `src/agent_debate/llm/gemini_client.py`: Confirm screenshot or transcript evidence for Gemini provider integration task 036.
+
+## OpenAI provider integration — `src/agent_debate/llm/openai_client.py`
+
+- [ ] 433. File `src/agent_debate/llm/openai_client.py`: Verify OpenAI provider integration task 001.
+- [ ] 434. File `src/agent_debate/llm/openai_client.py`: Add or refine a test for OpenAI provider integration task 002.
+- [ ] 435. File `src/agent_debate/llm/openai_client.py`: Document OpenAI provider integration task 003.
+- [ ] 436. File `src/agent_debate/llm/openai_client.py`: Review error handling for OpenAI provider integration task 004.
+- [ ] 437. File `src/agent_debate/llm/openai_client.py`: Confirm configuration coverage for OpenAI provider integration task 005.
+- [ ] 438. File `src/agent_debate/llm/openai_client.py`: Check assignment-rubric coverage for OpenAI provider integration task 006.
+- [ ] 439. File `src/agent_debate/llm/openai_client.py`: Inspect maintainability of OpenAI provider integration task 007.
+- [ ] 440. File `src/agent_debate/llm/openai_client.py`: Validate terminal workflow impact of OpenAI provider integration task 008.
+- [ ] 441. File `src/agent_debate/llm/openai_client.py`: Confirm security or secret-safety for OpenAI provider integration task 009.
+- [ ] 442. File `src/agent_debate/llm/openai_client.py`: Record submission evidence for OpenAI provider integration task 010.
+- [ ] 443. File `src/agent_debate/llm/openai_client.py`: Cross-check README references for OpenAI provider integration task 011.
+- [ ] 444. File `src/agent_debate/llm/openai_client.py`: Confirm screenshot or transcript evidence for OpenAI provider integration task 012.
+- [ ] 445. File `src/agent_debate/llm/openai_client.py`: Verify OpenAI provider integration task 013.
+- [ ] 446. File `src/agent_debate/llm/openai_client.py`: Add or refine a test for OpenAI provider integration task 014.
+- [ ] 447. File `src/agent_debate/llm/openai_client.py`: Document OpenAI provider integration task 015.
+- [ ] 448. File `src/agent_debate/llm/openai_client.py`: Review error handling for OpenAI provider integration task 016.
+- [ ] 449. File `src/agent_debate/llm/openai_client.py`: Confirm configuration coverage for OpenAI provider integration task 017.
+- [ ] 450. File `src/agent_debate/llm/openai_client.py`: Check assignment-rubric coverage for OpenAI provider integration task 018.
+- [ ] 451. File `src/agent_debate/llm/openai_client.py`: Inspect maintainability of OpenAI provider integration task 019.
+- [ ] 452. File `src/agent_debate/llm/openai_client.py`: Validate terminal workflow impact of OpenAI provider integration task 020.
+- [ ] 453. File `src/agent_debate/llm/openai_client.py`: Confirm security or secret-safety for OpenAI provider integration task 021.
+- [ ] 454. File `src/agent_debate/llm/openai_client.py`: Record submission evidence for OpenAI provider integration task 022.
+- [ ] 455. File `src/agent_debate/llm/openai_client.py`: Cross-check README references for OpenAI provider integration task 023.
+- [ ] 456. File `src/agent_debate/llm/openai_client.py`: Confirm screenshot or transcript evidence for OpenAI provider integration task 024.
+- [ ] 457. File `src/agent_debate/llm/openai_client.py`: Verify OpenAI provider integration task 025.
+- [ ] 458. File `src/agent_debate/llm/openai_client.py`: Add or refine a test for OpenAI provider integration task 026.
+- [ ] 459. File `src/agent_debate/llm/openai_client.py`: Document OpenAI provider integration task 027.
+- [ ] 460. File `src/agent_debate/llm/openai_client.py`: Review error handling for OpenAI provider integration task 028.
+- [ ] 461. File `src/agent_debate/llm/openai_client.py`: Confirm configuration coverage for OpenAI provider integration task 029.
+- [ ] 462. File `src/agent_debate/llm/openai_client.py`: Check assignment-rubric coverage for OpenAI provider integration task 030.
+- [ ] 463. File `src/agent_debate/llm/openai_client.py`: Inspect maintainability of OpenAI provider integration task 031.
+- [ ] 464. File `src/agent_debate/llm/openai_client.py`: Validate terminal workflow impact of OpenAI provider integration task 032.
+- [ ] 465. File `src/agent_debate/llm/openai_client.py`: Confirm security or secret-safety for OpenAI provider integration task 033.
+- [ ] 466. File `src/agent_debate/llm/openai_client.py`: Record submission evidence for OpenAI provider integration task 034.
+- [ ] 467. File `src/agent_debate/llm/openai_client.py`: Cross-check README references for OpenAI provider integration task 035.
+- [ ] 468. File `src/agent_debate/llm/openai_client.py`: Confirm screenshot or transcript evidence for OpenAI provider integration task 036.
+
+## mock provider behavior — `src/agent_debate/llm/mock_client.py`
+
+- [ ] 469. File `src/agent_debate/llm/mock_client.py`: Verify mock provider behavior task 001.
+- [ ] 470. File `src/agent_debate/llm/mock_client.py`: Add or refine a test for mock provider behavior task 002.
+- [ ] 471. File `src/agent_debate/llm/mock_client.py`: Document mock provider behavior task 003.
+- [ ] 472. File `src/agent_debate/llm/mock_client.py`: Review error handling for mock provider behavior task 004.
+- [ ] 473. File `src/agent_debate/llm/mock_client.py`: Confirm configuration coverage for mock provider behavior task 005.
+- [ ] 474. File `src/agent_debate/llm/mock_client.py`: Check assignment-rubric coverage for mock provider behavior task 006.
+- [ ] 475. File `src/agent_debate/llm/mock_client.py`: Inspect maintainability of mock provider behavior task 007.
+- [ ] 476. File `src/agent_debate/llm/mock_client.py`: Validate terminal workflow impact of mock provider behavior task 008.
+- [ ] 477. File `src/agent_debate/llm/mock_client.py`: Confirm security or secret-safety for mock provider behavior task 009.
+- [ ] 478. File `src/agent_debate/llm/mock_client.py`: Record submission evidence for mock provider behavior task 010.
+- [ ] 479. File `src/agent_debate/llm/mock_client.py`: Cross-check README references for mock provider behavior task 011.
+- [ ] 480. File `src/agent_debate/llm/mock_client.py`: Confirm screenshot or transcript evidence for mock provider behavior task 012.
+- [ ] 481. File `src/agent_debate/llm/mock_client.py`: Verify mock provider behavior task 013.
+- [ ] 482. File `src/agent_debate/llm/mock_client.py`: Add or refine a test for mock provider behavior task 014.
+- [ ] 483. File `src/agent_debate/llm/mock_client.py`: Document mock provider behavior task 015.
+- [ ] 484. File `src/agent_debate/llm/mock_client.py`: Review error handling for mock provider behavior task 016.
+- [ ] 485. File `src/agent_debate/llm/mock_client.py`: Confirm configuration coverage for mock provider behavior task 017.
+- [ ] 486. File `src/agent_debate/llm/mock_client.py`: Check assignment-rubric coverage for mock provider behavior task 018.
+- [ ] 487. File `src/agent_debate/llm/mock_client.py`: Inspect maintainability of mock provider behavior task 019.
+- [ ] 488. File `src/agent_debate/llm/mock_client.py`: Validate terminal workflow impact of mock provider behavior task 020.
+- [ ] 489. File `src/agent_debate/llm/mock_client.py`: Confirm security or secret-safety for mock provider behavior task 021.
+- [ ] 490. File `src/agent_debate/llm/mock_client.py`: Record submission evidence for mock provider behavior task 022.
+- [ ] 491. File `src/agent_debate/llm/mock_client.py`: Cross-check README references for mock provider behavior task 023.
+- [ ] 492. File `src/agent_debate/llm/mock_client.py`: Confirm screenshot or transcript evidence for mock provider behavior task 024.
+- [ ] 493. File `src/agent_debate/llm/mock_client.py`: Verify mock provider behavior task 025.
+- [ ] 494. File `src/agent_debate/llm/mock_client.py`: Add or refine a test for mock provider behavior task 026.
+- [ ] 495. File `src/agent_debate/llm/mock_client.py`: Document mock provider behavior task 027.
+- [ ] 496. File `src/agent_debate/llm/mock_client.py`: Review error handling for mock provider behavior task 028.
+- [ ] 497. File `src/agent_debate/llm/mock_client.py`: Confirm configuration coverage for mock provider behavior task 029.
+- [ ] 498. File `src/agent_debate/llm/mock_client.py`: Check assignment-rubric coverage for mock provider behavior task 030.
+- [ ] 499. File `src/agent_debate/llm/mock_client.py`: Inspect maintainability of mock provider behavior task 031.
+- [ ] 500. File `src/agent_debate/llm/mock_client.py`: Validate terminal workflow impact of mock provider behavior task 032.
+- [ ] 501. File `src/agent_debate/llm/mock_client.py`: Confirm security or secret-safety for mock provider behavior task 033.
+- [ ] 502. File `src/agent_debate/llm/mock_client.py`: Record submission evidence for mock provider behavior task 034.
+- [ ] 503. File `src/agent_debate/llm/mock_client.py`: Cross-check README references for mock provider behavior task 035.
+- [ ] 504. File `src/agent_debate/llm/mock_client.py`: Confirm screenshot or transcript evidence for mock provider behavior task 036.
+
+## web search evidence collection — `src/agent_debate/tools/web_search.py`
+
+- [ ] 505. File `src/agent_debate/tools/web_search.py`: Verify web search evidence collection task 001.
+- [ ] 506. File `src/agent_debate/tools/web_search.py`: Add or refine a test for web search evidence collection task 002.
+- [ ] 507. File `src/agent_debate/tools/web_search.py`: Document web search evidence collection task 003.
+- [ ] 508. File `src/agent_debate/tools/web_search.py`: Review error handling for web search evidence collection task 004.
+- [ ] 509. File `src/agent_debate/tools/web_search.py`: Confirm configuration coverage for web search evidence collection task 005.
+- [ ] 510. File `src/agent_debate/tools/web_search.py`: Check assignment-rubric coverage for web search evidence collection task 006.
+- [ ] 511. File `src/agent_debate/tools/web_search.py`: Inspect maintainability of web search evidence collection task 007.
+- [ ] 512. File `src/agent_debate/tools/web_search.py`: Validate terminal workflow impact of web search evidence collection task 008.
+- [ ] 513. File `src/agent_debate/tools/web_search.py`: Confirm security or secret-safety for web search evidence collection task 009.
+- [ ] 514. File `src/agent_debate/tools/web_search.py`: Record submission evidence for web search evidence collection task 010.
+- [ ] 515. File `src/agent_debate/tools/web_search.py`: Cross-check README references for web search evidence collection task 011.
+- [ ] 516. File `src/agent_debate/tools/web_search.py`: Confirm screenshot or transcript evidence for web search evidence collection task 012.
+- [ ] 517. File `src/agent_debate/tools/web_search.py`: Verify web search evidence collection task 013.
+- [ ] 518. File `src/agent_debate/tools/web_search.py`: Add or refine a test for web search evidence collection task 014.
+- [ ] 519. File `src/agent_debate/tools/web_search.py`: Document web search evidence collection task 015.
+- [ ] 520. File `src/agent_debate/tools/web_search.py`: Review error handling for web search evidence collection task 016.
+- [ ] 521. File `src/agent_debate/tools/web_search.py`: Confirm configuration coverage for web search evidence collection task 017.
+- [ ] 522. File `src/agent_debate/tools/web_search.py`: Check assignment-rubric coverage for web search evidence collection task 018.
+- [ ] 523. File `src/agent_debate/tools/web_search.py`: Inspect maintainability of web search evidence collection task 019.
+- [ ] 524. File `src/agent_debate/tools/web_search.py`: Validate terminal workflow impact of web search evidence collection task 020.
+- [ ] 525. File `src/agent_debate/tools/web_search.py`: Confirm security or secret-safety for web search evidence collection task 021.
+- [ ] 526. File `src/agent_debate/tools/web_search.py`: Record submission evidence for web search evidence collection task 022.
+- [ ] 527. File `src/agent_debate/tools/web_search.py`: Cross-check README references for web search evidence collection task 023.
+- [ ] 528. File `src/agent_debate/tools/web_search.py`: Confirm screenshot or transcript evidence for web search evidence collection task 024.
+- [ ] 529. File `src/agent_debate/tools/web_search.py`: Verify web search evidence collection task 025.
+- [ ] 530. File `src/agent_debate/tools/web_search.py`: Add or refine a test for web search evidence collection task 026.
+- [ ] 531. File `src/agent_debate/tools/web_search.py`: Document web search evidence collection task 027.
+- [ ] 532. File `src/agent_debate/tools/web_search.py`: Review error handling for web search evidence collection task 028.
+- [ ] 533. File `src/agent_debate/tools/web_search.py`: Confirm configuration coverage for web search evidence collection task 029.
+- [ ] 534. File `src/agent_debate/tools/web_search.py`: Check assignment-rubric coverage for web search evidence collection task 030.
+- [ ] 535. File `src/agent_debate/tools/web_search.py`: Inspect maintainability of web search evidence collection task 031.
+- [ ] 536. File `src/agent_debate/tools/web_search.py`: Validate terminal workflow impact of web search evidence collection task 032.
+- [ ] 537. File `src/agent_debate/tools/web_search.py`: Confirm security or secret-safety for web search evidence collection task 033.
+- [ ] 538. File `src/agent_debate/tools/web_search.py`: Record submission evidence for web search evidence collection task 034.
+- [ ] 539. File `src/agent_debate/tools/web_search.py`: Cross-check README references for web search evidence collection task 035.
+- [ ] 540. File `src/agent_debate/tools/web_search.py`: Confirm screenshot or transcript evidence for web search evidence collection task 036.
+
+## parent orchestration and turn-taking — `src/agent_debate/orchestration/debate_orchestrator.py`
+
+- [ ] 541. File `src/agent_debate/orchestration/debate_orchestrator.py`: Verify parent orchestration and turn-taking task 001.
+- [ ] 542. File `src/agent_debate/orchestration/debate_orchestrator.py`: Add or refine a test for parent orchestration and turn-taking task 002.
+- [ ] 543. File `src/agent_debate/orchestration/debate_orchestrator.py`: Document parent orchestration and turn-taking task 003.
+- [ ] 544. File `src/agent_debate/orchestration/debate_orchestrator.py`: Review error handling for parent orchestration and turn-taking task 004.
+- [ ] 545. File `src/agent_debate/orchestration/debate_orchestrator.py`: Confirm configuration coverage for parent orchestration and turn-taking task 005.
+- [ ] 546. File `src/agent_debate/orchestration/debate_orchestrator.py`: Check assignment-rubric coverage for parent orchestration and turn-taking task 006.
+- [ ] 547. File `src/agent_debate/orchestration/debate_orchestrator.py`: Inspect maintainability of parent orchestration and turn-taking task 007.
+- [ ] 548. File `src/agent_debate/orchestration/debate_orchestrator.py`: Validate terminal workflow impact of parent orchestration and turn-taking task 008.
+- [ ] 549. File `src/agent_debate/orchestration/debate_orchestrator.py`: Confirm security or secret-safety for parent orchestration and turn-taking task 009.
+- [ ] 550. File `src/agent_debate/orchestration/debate_orchestrator.py`: Record submission evidence for parent orchestration and turn-taking task 010.
+- [ ] 551. File `src/agent_debate/orchestration/debate_orchestrator.py`: Cross-check README references for parent orchestration and turn-taking task 011.
+- [ ] 552. File `src/agent_debate/orchestration/debate_orchestrator.py`: Confirm screenshot or transcript evidence for parent orchestration and turn-taking task 012.
+- [ ] 553. File `src/agent_debate/orchestration/debate_orchestrator.py`: Verify parent orchestration and turn-taking task 013.
+- [ ] 554. File `src/agent_debate/orchestration/debate_orchestrator.py`: Add or refine a test for parent orchestration and turn-taking task 014.
+- [ ] 555. File `src/agent_debate/orchestration/debate_orchestrator.py`: Document parent orchestration and turn-taking task 015.
+- [ ] 556. File `src/agent_debate/orchestration/debate_orchestrator.py`: Review error handling for parent orchestration and turn-taking task 016.
+- [ ] 557. File `src/agent_debate/orchestration/debate_orchestrator.py`: Confirm configuration coverage for parent orchestration and turn-taking task 017.
+- [ ] 558. File `src/agent_debate/orchestration/debate_orchestrator.py`: Check assignment-rubric coverage for parent orchestration and turn-taking task 018.
+- [ ] 559. File `src/agent_debate/orchestration/debate_orchestrator.py`: Inspect maintainability of parent orchestration and turn-taking task 019.
+- [ ] 560. File `src/agent_debate/orchestration/debate_orchestrator.py`: Validate terminal workflow impact of parent orchestration and turn-taking task 020.
+- [ ] 561. File `src/agent_debate/orchestration/debate_orchestrator.py`: Confirm security or secret-safety for parent orchestration and turn-taking task 021.
+- [ ] 562. File `src/agent_debate/orchestration/debate_orchestrator.py`: Record submission evidence for parent orchestration and turn-taking task 022.
+- [ ] 563. File `src/agent_debate/orchestration/debate_orchestrator.py`: Cross-check README references for parent orchestration and turn-taking task 023.
+- [ ] 564. File `src/agent_debate/orchestration/debate_orchestrator.py`: Confirm screenshot or transcript evidence for parent orchestration and turn-taking task 024.
+- [ ] 565. File `src/agent_debate/orchestration/debate_orchestrator.py`: Verify parent orchestration and turn-taking task 025.
+- [ ] 566. File `src/agent_debate/orchestration/debate_orchestrator.py`: Add or refine a test for parent orchestration and turn-taking task 026.
+- [ ] 567. File `src/agent_debate/orchestration/debate_orchestrator.py`: Document parent orchestration and turn-taking task 027.
+- [ ] 568. File `src/agent_debate/orchestration/debate_orchestrator.py`: Review error handling for parent orchestration and turn-taking task 028.
+- [ ] 569. File `src/agent_debate/orchestration/debate_orchestrator.py`: Confirm configuration coverage for parent orchestration and turn-taking task 029.
+- [ ] 570. File `src/agent_debate/orchestration/debate_orchestrator.py`: Check assignment-rubric coverage for parent orchestration and turn-taking task 030.
+- [ ] 571. File `src/agent_debate/orchestration/debate_orchestrator.py`: Inspect maintainability of parent orchestration and turn-taking task 031.
+- [ ] 572. File `src/agent_debate/orchestration/debate_orchestrator.py`: Validate terminal workflow impact of parent orchestration and turn-taking task 032.
+- [ ] 573. File `src/agent_debate/orchestration/debate_orchestrator.py`: Confirm security or secret-safety for parent orchestration and turn-taking task 033.
+- [ ] 574. File `src/agent_debate/orchestration/debate_orchestrator.py`: Record submission evidence for parent orchestration and turn-taking task 034.
+- [ ] 575. File `src/agent_debate/orchestration/debate_orchestrator.py`: Cross-check README references for parent orchestration and turn-taking task 035.
+- [ ] 576. File `src/agent_debate/orchestration/debate_orchestrator.py`: Confirm screenshot or transcript evidence for parent orchestration and turn-taking task 036.
+
+## watchdog and failure detection — `src/agent_debate/orchestration/watchdog.py`
+
+- [ ] 577. File `src/agent_debate/orchestration/watchdog.py`: Verify watchdog and failure detection task 001.
+- [ ] 578. File `src/agent_debate/orchestration/watchdog.py`: Add or refine a test for watchdog and failure detection task 002.
+- [ ] 579. File `src/agent_debate/orchestration/watchdog.py`: Document watchdog and failure detection task 003.
+- [ ] 580. File `src/agent_debate/orchestration/watchdog.py`: Review error handling for watchdog and failure detection task 004.
+- [ ] 581. File `src/agent_debate/orchestration/watchdog.py`: Confirm configuration coverage for watchdog and failure detection task 005.
+- [ ] 582. File `src/agent_debate/orchestration/watchdog.py`: Check assignment-rubric coverage for watchdog and failure detection task 006.
+- [ ] 583. File `src/agent_debate/orchestration/watchdog.py`: Inspect maintainability of watchdog and failure detection task 007.
+- [ ] 584. File `src/agent_debate/orchestration/watchdog.py`: Validate terminal workflow impact of watchdog and failure detection task 008.
+- [ ] 585. File `src/agent_debate/orchestration/watchdog.py`: Confirm security or secret-safety for watchdog and failure detection task 009.
+- [ ] 586. File `src/agent_debate/orchestration/watchdog.py`: Record submission evidence for watchdog and failure detection task 010.
+- [ ] 587. File `src/agent_debate/orchestration/watchdog.py`: Cross-check README references for watchdog and failure detection task 011.
+- [ ] 588. File `src/agent_debate/orchestration/watchdog.py`: Confirm screenshot or transcript evidence for watchdog and failure detection task 012.
+- [ ] 589. File `src/agent_debate/orchestration/watchdog.py`: Verify watchdog and failure detection task 013.
+- [ ] 590. File `src/agent_debate/orchestration/watchdog.py`: Add or refine a test for watchdog and failure detection task 014.
+- [ ] 591. File `src/agent_debate/orchestration/watchdog.py`: Document watchdog and failure detection task 015.
+- [ ] 592. File `src/agent_debate/orchestration/watchdog.py`: Review error handling for watchdog and failure detection task 016.
+- [ ] 593. File `src/agent_debate/orchestration/watchdog.py`: Confirm configuration coverage for watchdog and failure detection task 017.
+- [ ] 594. File `src/agent_debate/orchestration/watchdog.py`: Check assignment-rubric coverage for watchdog and failure detection task 018.
+- [ ] 595. File `src/agent_debate/orchestration/watchdog.py`: Inspect maintainability of watchdog and failure detection task 019.
+- [ ] 596. File `src/agent_debate/orchestration/watchdog.py`: Validate terminal workflow impact of watchdog and failure detection task 020.
+- [ ] 597. File `src/agent_debate/orchestration/watchdog.py`: Confirm security or secret-safety for watchdog and failure detection task 021.
+- [ ] 598. File `src/agent_debate/orchestration/watchdog.py`: Record submission evidence for watchdog and failure detection task 022.
+- [ ] 599. File `src/agent_debate/orchestration/watchdog.py`: Cross-check README references for watchdog and failure detection task 023.
+- [ ] 600. File `src/agent_debate/orchestration/watchdog.py`: Confirm screenshot or transcript evidence for watchdog and failure detection task 024.
+- [ ] 601. File `src/agent_debate/orchestration/watchdog.py`: Verify watchdog and failure detection task 025.
+- [ ] 602. File `src/agent_debate/orchestration/watchdog.py`: Add or refine a test for watchdog and failure detection task 026.
+- [ ] 603. File `src/agent_debate/orchestration/watchdog.py`: Document watchdog and failure detection task 027.
+- [ ] 604. File `src/agent_debate/orchestration/watchdog.py`: Review error handling for watchdog and failure detection task 028.
+- [ ] 605. File `src/agent_debate/orchestration/watchdog.py`: Confirm configuration coverage for watchdog and failure detection task 029.
+- [ ] 606. File `src/agent_debate/orchestration/watchdog.py`: Check assignment-rubric coverage for watchdog and failure detection task 030.
+- [ ] 607. File `src/agent_debate/orchestration/watchdog.py`: Inspect maintainability of watchdog and failure detection task 031.
+- [ ] 608. File `src/agent_debate/orchestration/watchdog.py`: Validate terminal workflow impact of watchdog and failure detection task 032.
+- [ ] 609. File `src/agent_debate/orchestration/watchdog.py`: Confirm security or secret-safety for watchdog and failure detection task 033.
+- [ ] 610. File `src/agent_debate/orchestration/watchdog.py`: Record submission evidence for watchdog and failure detection task 034.
+- [ ] 611. File `src/agent_debate/orchestration/watchdog.py`: Cross-check README references for watchdog and failure detection task 035.
+- [ ] 612. File `src/agent_debate/orchestration/watchdog.py`: Confirm screenshot or transcript evidence for watchdog and failure detection task 036.
+
+## JSONL logging and transcript export — `src/agent_debate/logging_utils/debate_logger.py`
+
+- [ ] 613. File `src/agent_debate/logging_utils/debate_logger.py`: Verify JSONL logging and transcript export task 001.
+- [ ] 614. File `src/agent_debate/logging_utils/debate_logger.py`: Add or refine a test for JSONL logging and transcript export task 002.
+- [ ] 615. File `src/agent_debate/logging_utils/debate_logger.py`: Document JSONL logging and transcript export task 003.
+- [ ] 616. File `src/agent_debate/logging_utils/debate_logger.py`: Review error handling for JSONL logging and transcript export task 004.
+- [ ] 617. File `src/agent_debate/logging_utils/debate_logger.py`: Confirm configuration coverage for JSONL logging and transcript export task 005.
+- [ ] 618. File `src/agent_debate/logging_utils/debate_logger.py`: Check assignment-rubric coverage for JSONL logging and transcript export task 006.
+- [ ] 619. File `src/agent_debate/logging_utils/debate_logger.py`: Inspect maintainability of JSONL logging and transcript export task 007.
+- [ ] 620. File `src/agent_debate/logging_utils/debate_logger.py`: Validate terminal workflow impact of JSONL logging and transcript export task 008.
+- [ ] 621. File `src/agent_debate/logging_utils/debate_logger.py`: Confirm security or secret-safety for JSONL logging and transcript export task 009.
+- [ ] 622. File `src/agent_debate/logging_utils/debate_logger.py`: Record submission evidence for JSONL logging and transcript export task 010.
+- [ ] 623. File `src/agent_debate/logging_utils/debate_logger.py`: Cross-check README references for JSONL logging and transcript export task 011.
+- [ ] 624. File `src/agent_debate/logging_utils/debate_logger.py`: Confirm screenshot or transcript evidence for JSONL logging and transcript export task 012.
+- [ ] 625. File `src/agent_debate/logging_utils/debate_logger.py`: Verify JSONL logging and transcript export task 013.
+- [ ] 626. File `src/agent_debate/logging_utils/debate_logger.py`: Add or refine a test for JSONL logging and transcript export task 014.
+- [ ] 627. File `src/agent_debate/logging_utils/debate_logger.py`: Document JSONL logging and transcript export task 015.
+- [ ] 628. File `src/agent_debate/logging_utils/debate_logger.py`: Review error handling for JSONL logging and transcript export task 016.
+- [ ] 629. File `src/agent_debate/logging_utils/debate_logger.py`: Confirm configuration coverage for JSONL logging and transcript export task 017.
+- [ ] 630. File `src/agent_debate/logging_utils/debate_logger.py`: Check assignment-rubric coverage for JSONL logging and transcript export task 018.
+- [ ] 631. File `src/agent_debate/logging_utils/debate_logger.py`: Inspect maintainability of JSONL logging and transcript export task 019.
+- [ ] 632. File `src/agent_debate/logging_utils/debate_logger.py`: Validate terminal workflow impact of JSONL logging and transcript export task 020.
+- [ ] 633. File `src/agent_debate/logging_utils/debate_logger.py`: Confirm security or secret-safety for JSONL logging and transcript export task 021.
+- [ ] 634. File `src/agent_debate/logging_utils/debate_logger.py`: Record submission evidence for JSONL logging and transcript export task 022.
+- [ ] 635. File `src/agent_debate/logging_utils/debate_logger.py`: Cross-check README references for JSONL logging and transcript export task 023.
+- [ ] 636. File `src/agent_debate/logging_utils/debate_logger.py`: Confirm screenshot or transcript evidence for JSONL logging and transcript export task 024.
+- [ ] 637. File `src/agent_debate/logging_utils/debate_logger.py`: Verify JSONL logging and transcript export task 025.
+- [ ] 638. File `src/agent_debate/logging_utils/debate_logger.py`: Add or refine a test for JSONL logging and transcript export task 026.
+- [ ] 639. File `src/agent_debate/logging_utils/debate_logger.py`: Document JSONL logging and transcript export task 027.
+- [ ] 640. File `src/agent_debate/logging_utils/debate_logger.py`: Review error handling for JSONL logging and transcript export task 028.
+- [ ] 641. File `src/agent_debate/logging_utils/debate_logger.py`: Confirm configuration coverage for JSONL logging and transcript export task 029.
+- [ ] 642. File `src/agent_debate/logging_utils/debate_logger.py`: Check assignment-rubric coverage for JSONL logging and transcript export task 030.
+- [ ] 643. File `src/agent_debate/logging_utils/debate_logger.py`: Inspect maintainability of JSONL logging and transcript export task 031.
+- [ ] 644. File `src/agent_debate/logging_utils/debate_logger.py`: Validate terminal workflow impact of JSONL logging and transcript export task 032.
+- [ ] 645. File `src/agent_debate/logging_utils/debate_logger.py`: Confirm security or secret-safety for JSONL logging and transcript export task 033.
+- [ ] 646. File `src/agent_debate/logging_utils/debate_logger.py`: Record submission evidence for JSONL logging and transcript export task 034.
+- [ ] 647. File `src/agent_debate/logging_utils/debate_logger.py`: Cross-check README references for JSONL logging and transcript export task 035.
+- [ ] 648. File `src/agent_debate/logging_utils/debate_logger.py`: Confirm screenshot or transcript evidence for JSONL logging and transcript export task 036.
+
+## terminal menu and user workflow — `src/agent_debate/cli.py`
+
+- [ ] 649. File `src/agent_debate/cli.py`: Verify terminal menu and user workflow task 001.
+- [ ] 650. File `src/agent_debate/cli.py`: Add or refine a test for terminal menu and user workflow task 002.
+- [ ] 651. File `src/agent_debate/cli.py`: Document terminal menu and user workflow task 003.
+- [ ] 652. File `src/agent_debate/cli.py`: Review error handling for terminal menu and user workflow task 004.
+- [ ] 653. File `src/agent_debate/cli.py`: Confirm configuration coverage for terminal menu and user workflow task 005.
+- [ ] 654. File `src/agent_debate/cli.py`: Check assignment-rubric coverage for terminal menu and user workflow task 006.
+- [ ] 655. File `src/agent_debate/cli.py`: Inspect maintainability of terminal menu and user workflow task 007.
+- [ ] 656. File `src/agent_debate/cli.py`: Validate terminal workflow impact of terminal menu and user workflow task 008.
+- [ ] 657. File `src/agent_debate/cli.py`: Confirm security or secret-safety for terminal menu and user workflow task 009.
+- [ ] 658. File `src/agent_debate/cli.py`: Record submission evidence for terminal menu and user workflow task 010.
+- [ ] 659. File `src/agent_debate/cli.py`: Cross-check README references for terminal menu and user workflow task 011.
+- [ ] 660. File `src/agent_debate/cli.py`: Confirm screenshot or transcript evidence for terminal menu and user workflow task 012.
+- [ ] 661. File `src/agent_debate/cli.py`: Verify terminal menu and user workflow task 013.
+- [ ] 662. File `src/agent_debate/cli.py`: Add or refine a test for terminal menu and user workflow task 014.
+- [ ] 663. File `src/agent_debate/cli.py`: Document terminal menu and user workflow task 015.
+- [ ] 664. File `src/agent_debate/cli.py`: Review error handling for terminal menu and user workflow task 016.
+- [ ] 665. File `src/agent_debate/cli.py`: Confirm configuration coverage for terminal menu and user workflow task 017.
+- [ ] 666. File `src/agent_debate/cli.py`: Check assignment-rubric coverage for terminal menu and user workflow task 018.
+- [ ] 667. File `src/agent_debate/cli.py`: Inspect maintainability of terminal menu and user workflow task 019.
+- [ ] 668. File `src/agent_debate/cli.py`: Validate terminal workflow impact of terminal menu and user workflow task 020.
+- [ ] 669. File `src/agent_debate/cli.py`: Confirm security or secret-safety for terminal menu and user workflow task 021.
+- [ ] 670. File `src/agent_debate/cli.py`: Record submission evidence for terminal menu and user workflow task 022.
+- [ ] 671. File `src/agent_debate/cli.py`: Cross-check README references for terminal menu and user workflow task 023.
+- [ ] 672. File `src/agent_debate/cli.py`: Confirm screenshot or transcript evidence for terminal menu and user workflow task 024.
+- [ ] 673. File `src/agent_debate/cli.py`: Verify terminal menu and user workflow task 025.
+- [ ] 674. File `src/agent_debate/cli.py`: Add or refine a test for terminal menu and user workflow task 026.
+- [ ] 675. File `src/agent_debate/cli.py`: Document terminal menu and user workflow task 027.
+- [ ] 676. File `src/agent_debate/cli.py`: Review error handling for terminal menu and user workflow task 028.
+- [ ] 677. File `src/agent_debate/cli.py`: Confirm configuration coverage for terminal menu and user workflow task 029.
+- [ ] 678. File `src/agent_debate/cli.py`: Check assignment-rubric coverage for terminal menu and user workflow task 030.
+- [ ] 679. File `src/agent_debate/cli.py`: Inspect maintainability of terminal menu and user workflow task 031.
+- [ ] 680. File `src/agent_debate/cli.py`: Validate terminal workflow impact of terminal menu and user workflow task 032.
+- [ ] 681. File `src/agent_debate/cli.py`: Confirm security or secret-safety for terminal menu and user workflow task 033.
+- [ ] 682. File `src/agent_debate/cli.py`: Record submission evidence for terminal menu and user workflow task 034.
+- [ ] 683. File `src/agent_debate/cli.py`: Cross-check README references for terminal menu and user workflow task 035.
+- [ ] 684. File `src/agent_debate/cli.py`: Confirm screenshot or transcript evidence for terminal menu and user workflow task 036.
+
+## user-facing setup and run documentation — `README.md`
+
+- [ ] 685. File `README.md`: Verify user-facing setup and run documentation task 001.
+- [ ] 686. File `README.md`: Add or refine a test for user-facing setup and run documentation task 002.
+- [ ] 687. File `README.md`: Document user-facing setup and run documentation task 003.
+- [ ] 688. File `README.md`: Review error handling for user-facing setup and run documentation task 004.
+- [ ] 689. File `README.md`: Confirm configuration coverage for user-facing setup and run documentation task 005.
+- [ ] 690. File `README.md`: Check assignment-rubric coverage for user-facing setup and run documentation task 006.
+- [ ] 691. File `README.md`: Inspect maintainability of user-facing setup and run documentation task 007.
+- [ ] 692. File `README.md`: Validate terminal workflow impact of user-facing setup and run documentation task 008.
+- [ ] 693. File `README.md`: Confirm security or secret-safety for user-facing setup and run documentation task 009.
+- [ ] 694. File `README.md`: Record submission evidence for user-facing setup and run documentation task 010.
+- [ ] 695. File `README.md`: Cross-check README references for user-facing setup and run documentation task 011.
+- [ ] 696. File `README.md`: Confirm screenshot or transcript evidence for user-facing setup and run documentation task 012.
+- [ ] 697. File `README.md`: Verify user-facing setup and run documentation task 013.
+- [ ] 698. File `README.md`: Add or refine a test for user-facing setup and run documentation task 014.
+- [ ] 699. File `README.md`: Document user-facing setup and run documentation task 015.
+- [ ] 700. File `README.md`: Review error handling for user-facing setup and run documentation task 016.
+- [ ] 701. File `README.md`: Confirm configuration coverage for user-facing setup and run documentation task 017.
+- [ ] 702. File `README.md`: Check assignment-rubric coverage for user-facing setup and run documentation task 018.
+- [ ] 703. File `README.md`: Inspect maintainability of user-facing setup and run documentation task 019.
+- [ ] 704. File `README.md`: Validate terminal workflow impact of user-facing setup and run documentation task 020.
+- [ ] 705. File `README.md`: Confirm security or secret-safety for user-facing setup and run documentation task 021.
+- [ ] 706. File `README.md`: Record submission evidence for user-facing setup and run documentation task 022.
+- [ ] 707. File `README.md`: Cross-check README references for user-facing setup and run documentation task 023.
+- [ ] 708. File `README.md`: Confirm screenshot or transcript evidence for user-facing setup and run documentation task 024.
+- [ ] 709. File `README.md`: Verify user-facing setup and run documentation task 025.
+- [ ] 710. File `README.md`: Add or refine a test for user-facing setup and run documentation task 026.
+- [ ] 711. File `README.md`: Document user-facing setup and run documentation task 027.
+- [ ] 712. File `README.md`: Review error handling for user-facing setup and run documentation task 028.
+- [ ] 713. File `README.md`: Confirm configuration coverage for user-facing setup and run documentation task 029.
+- [ ] 714. File `README.md`: Check assignment-rubric coverage for user-facing setup and run documentation task 030.
+- [ ] 715. File `README.md`: Inspect maintainability of user-facing setup and run documentation task 031.
+- [ ] 716. File `README.md`: Validate terminal workflow impact of user-facing setup and run documentation task 032.
+- [ ] 717. File `README.md`: Confirm security or secret-safety for user-facing setup and run documentation task 033.
+- [ ] 718. File `README.md`: Record submission evidence for user-facing setup and run documentation task 034.
+- [ ] 719. File `README.md`: Cross-check README references for user-facing setup and run documentation task 035.
+- [ ] 720. File `README.md`: Confirm screenshot or transcript evidence for user-facing setup and run documentation task 036.
+
+## product requirements documentation — `docs/PRD.md`
+
+- [ ] 721. File `docs/PRD.md`: Verify product requirements documentation task 001.
+- [ ] 722. File `docs/PRD.md`: Add or refine a test for product requirements documentation task 002.
+- [ ] 723. File `docs/PRD.md`: Document product requirements documentation task 003.
+- [ ] 724. File `docs/PRD.md`: Review error handling for product requirements documentation task 004.
+- [ ] 725. File `docs/PRD.md`: Confirm configuration coverage for product requirements documentation task 005.
+- [ ] 726. File `docs/PRD.md`: Check assignment-rubric coverage for product requirements documentation task 006.
+- [ ] 727. File `docs/PRD.md`: Inspect maintainability of product requirements documentation task 007.
+- [ ] 728. File `docs/PRD.md`: Validate terminal workflow impact of product requirements documentation task 008.
+- [ ] 729. File `docs/PRD.md`: Confirm security or secret-safety for product requirements documentation task 009.
+- [ ] 730. File `docs/PRD.md`: Record submission evidence for product requirements documentation task 010.
+- [ ] 731. File `docs/PRD.md`: Cross-check README references for product requirements documentation task 011.
+- [ ] 732. File `docs/PRD.md`: Confirm screenshot or transcript evidence for product requirements documentation task 012.
+- [ ] 733. File `docs/PRD.md`: Verify product requirements documentation task 013.
+- [ ] 734. File `docs/PRD.md`: Add or refine a test for product requirements documentation task 014.
+- [ ] 735. File `docs/PRD.md`: Document product requirements documentation task 015.
+- [ ] 736. File `docs/PRD.md`: Review error handling for product requirements documentation task 016.
+- [ ] 737. File `docs/PRD.md`: Confirm configuration coverage for product requirements documentation task 017.
+- [ ] 738. File `docs/PRD.md`: Check assignment-rubric coverage for product requirements documentation task 018.
+- [ ] 739. File `docs/PRD.md`: Inspect maintainability of product requirements documentation task 019.
+- [ ] 740. File `docs/PRD.md`: Validate terminal workflow impact of product requirements documentation task 020.
+- [ ] 741. File `docs/PRD.md`: Confirm security or secret-safety for product requirements documentation task 021.
+- [ ] 742. File `docs/PRD.md`: Record submission evidence for product requirements documentation task 022.
+- [ ] 743. File `docs/PRD.md`: Cross-check README references for product requirements documentation task 023.
+- [ ] 744. File `docs/PRD.md`: Confirm screenshot or transcript evidence for product requirements documentation task 024.
+- [ ] 745. File `docs/PRD.md`: Verify product requirements documentation task 025.
+- [ ] 746. File `docs/PRD.md`: Add or refine a test for product requirements documentation task 026.
+- [ ] 747. File `docs/PRD.md`: Document product requirements documentation task 027.
+- [ ] 748. File `docs/PRD.md`: Review error handling for product requirements documentation task 028.
+- [ ] 749. File `docs/PRD.md`: Confirm configuration coverage for product requirements documentation task 029.
+- [ ] 750. File `docs/PRD.md`: Check assignment-rubric coverage for product requirements documentation task 030.
+- [ ] 751. File `docs/PRD.md`: Inspect maintainability of product requirements documentation task 031.
+- [ ] 752. File `docs/PRD.md`: Validate terminal workflow impact of product requirements documentation task 032.
+- [ ] 753. File `docs/PRD.md`: Confirm security or secret-safety for product requirements documentation task 033.
+- [ ] 754. File `docs/PRD.md`: Record submission evidence for product requirements documentation task 034.
+- [ ] 755. File `docs/PRD.md`: Cross-check README references for product requirements documentation task 035.
+- [ ] 756. File `docs/PRD.md`: Confirm screenshot or transcript evidence for product requirements documentation task 036.
+
+## implementation plan documentation — `docs/PLAN.md`
+
+- [ ] 757. File `docs/PLAN.md`: Verify implementation plan documentation task 001.
+- [ ] 758. File `docs/PLAN.md`: Add or refine a test for implementation plan documentation task 002.
+- [ ] 759. File `docs/PLAN.md`: Document implementation plan documentation task 003.
+- [ ] 760. File `docs/PLAN.md`: Review error handling for implementation plan documentation task 004.
+- [ ] 761. File `docs/PLAN.md`: Confirm configuration coverage for implementation plan documentation task 005.
+- [ ] 762. File `docs/PLAN.md`: Check assignment-rubric coverage for implementation plan documentation task 006.
+- [ ] 763. File `docs/PLAN.md`: Inspect maintainability of implementation plan documentation task 007.
+- [ ] 764. File `docs/PLAN.md`: Validate terminal workflow impact of implementation plan documentation task 008.
+- [ ] 765. File `docs/PLAN.md`: Confirm security or secret-safety for implementation plan documentation task 009.
+- [ ] 766. File `docs/PLAN.md`: Record submission evidence for implementation plan documentation task 010.
+- [ ] 767. File `docs/PLAN.md`: Cross-check README references for implementation plan documentation task 011.
+- [ ] 768. File `docs/PLAN.md`: Confirm screenshot or transcript evidence for implementation plan documentation task 012.
+- [ ] 769. File `docs/PLAN.md`: Verify implementation plan documentation task 013.
+- [ ] 770. File `docs/PLAN.md`: Add or refine a test for implementation plan documentation task 014.
+- [ ] 771. File `docs/PLAN.md`: Document implementation plan documentation task 015.
+- [ ] 772. File `docs/PLAN.md`: Review error handling for implementation plan documentation task 016.
+- [ ] 773. File `docs/PLAN.md`: Confirm configuration coverage for implementation plan documentation task 017.
+- [ ] 774. File `docs/PLAN.md`: Check assignment-rubric coverage for implementation plan documentation task 018.
+- [ ] 775. File `docs/PLAN.md`: Inspect maintainability of implementation plan documentation task 019.
+- [ ] 776. File `docs/PLAN.md`: Validate terminal workflow impact of implementation plan documentation task 020.
+- [ ] 777. File `docs/PLAN.md`: Confirm security or secret-safety for implementation plan documentation task 021.
+- [ ] 778. File `docs/PLAN.md`: Record submission evidence for implementation plan documentation task 022.
+- [ ] 779. File `docs/PLAN.md`: Cross-check README references for implementation plan documentation task 023.
+- [ ] 780. File `docs/PLAN.md`: Confirm screenshot or transcript evidence for implementation plan documentation task 024.
+- [ ] 781. File `docs/PLAN.md`: Verify implementation plan documentation task 025.
+- [ ] 782. File `docs/PLAN.md`: Add or refine a test for implementation plan documentation task 026.
+- [ ] 783. File `docs/PLAN.md`: Document implementation plan documentation task 027.
+- [ ] 784. File `docs/PLAN.md`: Review error handling for implementation plan documentation task 028.
+- [ ] 785. File `docs/PLAN.md`: Confirm configuration coverage for implementation plan documentation task 029.
+- [ ] 786. File `docs/PLAN.md`: Check assignment-rubric coverage for implementation plan documentation task 030.
+- [ ] 787. File `docs/PLAN.md`: Inspect maintainability of implementation plan documentation task 031.
+- [ ] 788. File `docs/PLAN.md`: Validate terminal workflow impact of implementation plan documentation task 032.
+- [ ] 789. File `docs/PLAN.md`: Confirm security or secret-safety for implementation plan documentation task 033.
+- [ ] 790. File `docs/PLAN.md`: Record submission evidence for implementation plan documentation task 034.
+- [ ] 791. File `docs/PLAN.md`: Cross-check README references for implementation plan documentation task 035.
+- [ ] 792. File `docs/PLAN.md`: Confirm screenshot or transcript evidence for implementation plan documentation task 036.
+
+## prompt documentation and examples — `docs/PROMPT_BOOK.md`
+
+- [ ] 793. File `docs/PROMPT_BOOK.md`: Verify prompt documentation and examples task 001.
+- [ ] 794. File `docs/PROMPT_BOOK.md`: Add or refine a test for prompt documentation and examples task 002.
+- [ ] 795. File `docs/PROMPT_BOOK.md`: Document prompt documentation and examples task 003.
+- [ ] 796. File `docs/PROMPT_BOOK.md`: Review error handling for prompt documentation and examples task 004.
+- [ ] 797. File `docs/PROMPT_BOOK.md`: Confirm configuration coverage for prompt documentation and examples task 005.
+- [ ] 798. File `docs/PROMPT_BOOK.md`: Check assignment-rubric coverage for prompt documentation and examples task 006.
+- [ ] 799. File `docs/PROMPT_BOOK.md`: Inspect maintainability of prompt documentation and examples task 007.
+- [ ] 800. File `docs/PROMPT_BOOK.md`: Validate terminal workflow impact of prompt documentation and examples task 008.
+- [ ] 801. File `docs/PROMPT_BOOK.md`: Confirm security or secret-safety for prompt documentation and examples task 009.
+- [ ] 802. File `docs/PROMPT_BOOK.md`: Record submission evidence for prompt documentation and examples task 010.
+- [ ] 803. File `docs/PROMPT_BOOK.md`: Cross-check README references for prompt documentation and examples task 011.
+- [ ] 804. File `docs/PROMPT_BOOK.md`: Confirm screenshot or transcript evidence for prompt documentation and examples task 012.
+- [ ] 805. File `docs/PROMPT_BOOK.md`: Verify prompt documentation and examples task 013.
+- [ ] 806. File `docs/PROMPT_BOOK.md`: Add or refine a test for prompt documentation and examples task 014.
+- [ ] 807. File `docs/PROMPT_BOOK.md`: Document prompt documentation and examples task 015.
+- [ ] 808. File `docs/PROMPT_BOOK.md`: Review error handling for prompt documentation and examples task 016.
+- [ ] 809. File `docs/PROMPT_BOOK.md`: Confirm configuration coverage for prompt documentation and examples task 017.
+- [ ] 810. File `docs/PROMPT_BOOK.md`: Check assignment-rubric coverage for prompt documentation and examples task 018.
+- [ ] 811. File `docs/PROMPT_BOOK.md`: Inspect maintainability of prompt documentation and examples task 019.
+- [ ] 812. File `docs/PROMPT_BOOK.md`: Validate terminal workflow impact of prompt documentation and examples task 020.
+- [ ] 813. File `docs/PROMPT_BOOK.md`: Confirm security or secret-safety for prompt documentation and examples task 021.
+- [ ] 814. File `docs/PROMPT_BOOK.md`: Record submission evidence for prompt documentation and examples task 022.
+- [ ] 815. File `docs/PROMPT_BOOK.md`: Cross-check README references for prompt documentation and examples task 023.
+- [ ] 816. File `docs/PROMPT_BOOK.md`: Confirm screenshot or transcript evidence for prompt documentation and examples task 024.
+- [ ] 817. File `docs/PROMPT_BOOK.md`: Verify prompt documentation and examples task 025.
+- [ ] 818. File `docs/PROMPT_BOOK.md`: Add or refine a test for prompt documentation and examples task 026.
+- [ ] 819. File `docs/PROMPT_BOOK.md`: Document prompt documentation and examples task 027.
+- [ ] 820. File `docs/PROMPT_BOOK.md`: Review error handling for prompt documentation and examples task 028.
+- [ ] 821. File `docs/PROMPT_BOOK.md`: Confirm configuration coverage for prompt documentation and examples task 029.
+- [ ] 822. File `docs/PROMPT_BOOK.md`: Check assignment-rubric coverage for prompt documentation and examples task 030.
+- [ ] 823. File `docs/PROMPT_BOOK.md`: Inspect maintainability of prompt documentation and examples task 031.
+- [ ] 824. File `docs/PROMPT_BOOK.md`: Validate terminal workflow impact of prompt documentation and examples task 032.
+- [ ] 825. File `docs/PROMPT_BOOK.md`: Confirm security or secret-safety for prompt documentation and examples task 033.
+- [ ] 826. File `docs/PROMPT_BOOK.md`: Record submission evidence for prompt documentation and examples task 034.
+- [ ] 827. File `docs/PROMPT_BOOK.md`: Cross-check README references for prompt documentation and examples task 035.
+- [ ] 828. File `docs/PROMPT_BOOK.md`: Confirm screenshot or transcript evidence for prompt documentation and examples task 036.
+
+## test coverage and verification — `tests/`
+
+- [ ] 829. File `tests/`: Verify test coverage and verification task 001.
+- [ ] 830. File `tests/`: Add or refine a test for test coverage and verification task 002.
+- [ ] 831. File `tests/`: Document test coverage and verification task 003.
+- [ ] 832. File `tests/`: Review error handling for test coverage and verification task 004.
+- [ ] 833. File `tests/`: Confirm configuration coverage for test coverage and verification task 005.
+- [ ] 834. File `tests/`: Check assignment-rubric coverage for test coverage and verification task 006.
+- [ ] 835. File `tests/`: Inspect maintainability of test coverage and verification task 007.
+- [ ] 836. File `tests/`: Validate terminal workflow impact of test coverage and verification task 008.
+- [ ] 837. File `tests/`: Confirm security or secret-safety for test coverage and verification task 009.
+- [ ] 838. File `tests/`: Record submission evidence for test coverage and verification task 010.
+- [ ] 839. File `tests/`: Cross-check README references for test coverage and verification task 011.
+- [ ] 840. File `tests/`: Confirm screenshot or transcript evidence for test coverage and verification task 012.
+- [ ] 841. File `tests/`: Verify test coverage and verification task 013.
+- [ ] 842. File `tests/`: Add or refine a test for test coverage and verification task 014.
+- [ ] 843. File `tests/`: Document test coverage and verification task 015.
+- [ ] 844. File `tests/`: Review error handling for test coverage and verification task 016.
+- [ ] 845. File `tests/`: Confirm configuration coverage for test coverage and verification task 017.
+- [ ] 846. File `tests/`: Check assignment-rubric coverage for test coverage and verification task 018.
+- [ ] 847. File `tests/`: Inspect maintainability of test coverage and verification task 019.
+- [ ] 848. File `tests/`: Validate terminal workflow impact of test coverage and verification task 020.
+- [ ] 849. File `tests/`: Confirm security or secret-safety for test coverage and verification task 021.
+- [ ] 850. File `tests/`: Record submission evidence for test coverage and verification task 022.
+- [ ] 851. File `tests/`: Cross-check README references for test coverage and verification task 023.
+- [ ] 852. File `tests/`: Confirm screenshot or transcript evidence for test coverage and verification task 024.
+- [ ] 853. File `tests/`: Verify test coverage and verification task 025.
+- [ ] 854. File `tests/`: Add or refine a test for test coverage and verification task 026.
+- [ ] 855. File `tests/`: Document test coverage and verification task 027.
+- [ ] 856. File `tests/`: Review error handling for test coverage and verification task 028.
+- [ ] 857. File `tests/`: Confirm configuration coverage for test coverage and verification task 029.
+- [ ] 858. File `tests/`: Check assignment-rubric coverage for test coverage and verification task 030.
+- [ ] 859. File `tests/`: Inspect maintainability of test coverage and verification task 031.
+- [ ] 860. File `tests/`: Validate terminal workflow impact of test coverage and verification task 032.
+- [ ] 861. File `tests/`: Confirm security or secret-safety for test coverage and verification task 033.
+- [ ] 862. File `tests/`: Record submission evidence for test coverage and verification task 034.
+- [ ] 863. File `tests/`: Cross-check README references for test coverage and verification task 035.
+- [ ] 864. File `tests/`: Confirm screenshot or transcript evidence for test coverage and verification task 036.
+
+## submission checklist maintenance — `docs/TODO.md`
+
+- [ ] 865. File `docs/TODO.md`: Verify submission checklist maintenance task 001.
+- [ ] 866. File `docs/TODO.md`: Add or refine a test for submission checklist maintenance task 002.
+- [ ] 867. File `docs/TODO.md`: Document submission checklist maintenance task 003.
+- [ ] 868. File `docs/TODO.md`: Review error handling for submission checklist maintenance task 004.
+- [ ] 869. File `docs/TODO.md`: Confirm configuration coverage for submission checklist maintenance task 005.
+- [ ] 870. File `docs/TODO.md`: Check assignment-rubric coverage for submission checklist maintenance task 006.
+- [ ] 871. File `docs/TODO.md`: Inspect maintainability of submission checklist maintenance task 007.
+- [ ] 872. File `docs/TODO.md`: Validate terminal workflow impact of submission checklist maintenance task 008.
+- [ ] 873. File `docs/TODO.md`: Confirm security or secret-safety for submission checklist maintenance task 009.
+- [ ] 874. File `docs/TODO.md`: Record submission evidence for submission checklist maintenance task 010.
+- [ ] 875. File `docs/TODO.md`: Cross-check README references for submission checklist maintenance task 011.
+- [ ] 876. File `docs/TODO.md`: Confirm screenshot or transcript evidence for submission checklist maintenance task 012.
+- [ ] 877. File `docs/TODO.md`: Verify submission checklist maintenance task 013.
+- [ ] 878. File `docs/TODO.md`: Add or refine a test for submission checklist maintenance task 014.
+- [ ] 879. File `docs/TODO.md`: Document submission checklist maintenance task 015.
+- [ ] 880. File `docs/TODO.md`: Review error handling for submission checklist maintenance task 016.
+- [ ] 881. File `docs/TODO.md`: Confirm configuration coverage for submission checklist maintenance task 017.
+- [ ] 882. File `docs/TODO.md`: Check assignment-rubric coverage for submission checklist maintenance task 018.
+- [ ] 883. File `docs/TODO.md`: Inspect maintainability of submission checklist maintenance task 019.
+- [ ] 884. File `docs/TODO.md`: Validate terminal workflow impact of submission checklist maintenance task 020.
+- [ ] 885. File `docs/TODO.md`: Confirm security or secret-safety for submission checklist maintenance task 021.
+- [ ] 886. File `docs/TODO.md`: Record submission evidence for submission checklist maintenance task 022.
+- [ ] 887. File `docs/TODO.md`: Cross-check README references for submission checklist maintenance task 023.
+- [ ] 888. File `docs/TODO.md`: Confirm screenshot or transcript evidence for submission checklist maintenance task 024.
+- [ ] 889. File `docs/TODO.md`: Verify submission checklist maintenance task 025.
+- [ ] 890. File `docs/TODO.md`: Add or refine a test for submission checklist maintenance task 026.
+- [ ] 891. File `docs/TODO.md`: Document submission checklist maintenance task 027.
+- [ ] 892. File `docs/TODO.md`: Review error handling for submission checklist maintenance task 028.
+- [ ] 893. File `docs/TODO.md`: Confirm configuration coverage for submission checklist maintenance task 029.
+- [ ] 894. File `docs/TODO.md`: Check assignment-rubric coverage for submission checklist maintenance task 030.
+- [ ] 895. File `docs/TODO.md`: Inspect maintainability of submission checklist maintenance task 031.
+- [ ] 896. File `docs/TODO.md`: Validate terminal workflow impact of submission checklist maintenance task 032.
+- [ ] 897. File `docs/TODO.md`: Confirm security or secret-safety for submission checklist maintenance task 033.
+- [ ] 898. File `docs/TODO.md`: Record submission evidence for submission checklist maintenance task 034.
+- [ ] 899. File `docs/TODO.md`: Cross-check README references for submission checklist maintenance task 035.
+- [ ] 900. File `docs/TODO.md`: Confirm screenshot or transcript evidence for submission checklist maintenance task 036.
+
+Total tasks: 900
