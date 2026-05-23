@@ -1,0 +1,62 @@
+topic: "Should universities require students to use AI agents in software engineering courses?"
+turns_per_side: 5
+language: "English"
+
+agents:
+  judge:
+    name: "Judge"
+    model: "gemini-2.0-flash"
+    provider: "gemini"
+  pro:
+    name: "Pro Agent"
+    stance: "Support the topic"
+    model: "gemini-2.0-flash"
+    provider: "gemini"
+  con:
+    name: "Con Agent"
+    stance: "Oppose the topic"
+    model: "gemini-2.0-flash"
+    provider: "gemini"
+
+llm:
+  provider: "auto"
+  preferred_provider: "gemini"
+  timeout_seconds: 45
+  max_output_tokens: 450
+  temperature: 0.4
+  mock_when_no_api_key: true
+  fallback_to_mock_on_provider_error: true
+
+web_search:
+  enabled: true
+  provider: "duckduckgo_html"
+  timeout_seconds: 10
+  max_results: 3
+
+debate_rules:
+  max_words_per_turn: 170
+  require_respectful_tone: true
+  require_rebuttal: true
+  require_sources: true
+  no_tie: true
+
+scoring:
+  persuasion: 35
+  evidence_quality: 25
+  factual_correctness: 20
+  direct_rebuttal: 20
+
+logging:
+  directory: "logs"
+  jsonl_file: "debate.jsonl"
+  transcript_file: "transcript.txt"
+  max_jsonl_lines: 500
+  backup_count: 20
+
+watchdog:
+  response_timeout_seconds: 75
+  restart_attempts: 1
+
+gatekeeper:
+  max_calls_per_debate: 30
+  max_estimated_input_chars: 90000

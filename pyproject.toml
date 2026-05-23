@@ -1,0 +1,47 @@
+[project]
+name = "agent-debate"
+version = "1.0.0"
+description = "Exercise 02: multiprocessing AI agent debate with judge orchestration"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+  "google-genai>=1.0.0",
+  "openai>=1.82.0",
+  "python-dotenv>=1.0.1",
+  "pyyaml>=6.0.2",
+  "requests>=2.32.3",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8.3.5",
+  "pytest-cov>=6.1.1",
+  "ruff>=0.11.11",
+]
+
+[project.scripts]
+agent-debate = "agent_debate.cli:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/agent_debate"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py39"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP", "SIM"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "--cov=agent_debate --cov-report=term-missing --cov-fail-under=85"
+
+[tool.coverage.run]
+omit = [
+  "src/agent_debate/llm/gemini_client.py",
+  "src/agent_debate/llm/openai_client.py",
+]
