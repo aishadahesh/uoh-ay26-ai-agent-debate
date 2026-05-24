@@ -166,8 +166,10 @@ Select:
 
 ## 11. Provider Behavior
 
-- Gemini: configured through `GEMINI_API_KEY`; selected first in auto mode.
-- OpenAI: configured through `OPENAI_API_KEY`; selected if Gemini is unavailable.
+- Gemini: configured through `GEMINI_API_KEY`; default provider for the judge.
+- Groq: configured through `GROQ_API_KEY`; default provider for the pro agent.
+- Mistral: configured through `MISTRAL_API_KEY`; default provider for the con agent.
+- OpenAI: configured through `OPENAI_API_KEY`; optional provider if the config is changed.
 - Mock: deterministic dry-run provider for tests, missing keys, and fallback.
 
 Provider errors should not be inserted into agent speech. Fallback reason is stored in
