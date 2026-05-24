@@ -42,7 +42,7 @@ class DebateAgent(BaseAgent):
     def run(self) -> None:
         """Main process loop."""
 
-        llm = self.llm or build_llm_client(self.config)
+        llm = self.llm or build_llm_client(self.config, self.role)
         while True:
             request = self.receive(self.timeout)
             if request.type == "stop":
