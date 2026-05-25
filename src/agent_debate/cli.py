@@ -5,7 +5,7 @@ from __future__ import annotations
 from pathlib import Path
 
 from agent_debate.config import load_config
-from agent_debate.llm.factory import build_llm_client, provider_name
+from agent_debate.llm.factory import build_llm_client, provider_name, provider_names_by_role
 from agent_debate.llm.mock_client import MockLLMClient
 from agent_debate.logging_utils.debate_logger import DebateLogger
 from agent_debate.orchestration.debate_orchestrator import DebateOrchestrator
@@ -20,12 +20,14 @@ def run_debate(config_path: Path = DEFAULT_CONFIG, topic: str | None = None) -> 
     _load_dotenv_if_available()
     config = load_config(config_path)
     config = config.with_topic(topic or _ask_topic(config.topic))
-    llm = build_llm_client(config)
+    llm = build_llm_client(config, "judge")
     if isinstance(llm, MockLLMClient):
-        print("\nNo real provider API key found. Running in mock mode for a dry run.")
-        print("Add GEMINI_API_KEY or OPENAI_API_KEY to .env for a real LLM debate.\n")
+        print("\nJudge provider key not found. Running the judge in mock mode for a dry run.")
+        print("Add GEMINI_API_KEY, GROQ_API_KEY, and MISTRAL_API_KEY to .env for a real debate.\n")
     else:
-        print(f"\nUsing LLM provider: {provider_name(config)}\n")
+        providers = provider_names_by_role(config)
+        provider_text = ", ".join(f"{role}={provider}" for role, provider in providers.items())
+        print(f"\nUsing LLM providers: {provider_text}\n")
     try:
         decision = DebateOrchestrator(config, llm).run()
     except RuntimeError as exc:
@@ -123,6 +125,10 @@ def _provider_from_error(error: str) -> str | None:
     lowered = error.lower()
     if "gemini" in lowered:
         return "gemini"
+    if "groq" in lowered:
+        return "groq"
+    if "mistral" in lowered:
+        return "mistral"
     if "openai" in lowered:
         return "openai"
     return None

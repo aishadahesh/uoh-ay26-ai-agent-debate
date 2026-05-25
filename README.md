@@ -86,23 +86,29 @@ uv sync --extra dev
 copy .env.example .env
 ```
 
-Edit `.env` and add one real provider key. Gemini is the recommended free/cloud option:
+Edit `.env` and add the three provider keys used by the default agent setup:
 
 ```env
 GEMINI_API_KEY=your_real_google_ai_studio_key
+GROQ_API_KEY=your_real_groq_key
+MISTRAL_API_KEY=your_real_mistral_key
 ```
 
-OpenAI is also supported:
+The default config maps one provider to each real agent:
 
-```env
-OPENAI_API_KEY=your_real_openai_key
-```
+- `judge`: Gemini, model `gemini-2.0-flash`
+- `pro`: Groq, model `llama-3.1-8b-instant`
+- `con`: Mistral, model `mistral-small-latest`
+
+OpenAI remains supported as an optional fallback if you change
+`configs/debate_config.yaml` to use `provider: "openai"` for an agent.
 
 The real `.env` file is ignored by Git.
 
-The config uses `provider: auto`. It selects Gemini when `GEMINI_API_KEY` exists, OpenAI
-when only `OPENAI_API_KEY` exists, and mock mode when no real key exists. For real
-assignment runs, use a real Gemini or OpenAI key.
+Each agent can set its own `provider` in `configs/debate_config.yaml`. If an agent's
+configured key is missing and `mock_when_no_api_key: true`, that agent uses mock mode
+instead of crashing. Global `provider: auto` still supports automatic fallback in this
+order: Gemini, Groq, Mistral, OpenAI, then mock mode.
 
 If a provider returns a quota, billing, or key error, the default config also enables
 `fallback_to_mock_on_provider_error: true`. The transcript will clearly mark mock fallback

@@ -9,7 +9,7 @@ engineering path, not only the final code.
 ## 2. Architecture Flow
 
 1. CLI loads configuration and asks for a topic.
-2. Provider factory chooses Gemini, OpenAI, or mock mode.
+2. Provider factory chooses the configured role provider: Gemini, Groq, Mistral, OpenAI, or mock mode.
 3. DebateOrchestrator starts pro and con child processes.
 4. Judge/orchestrator sends compact instructions through queues.
 5. Child agents generate one turn and send JSON messages back to the parent.
@@ -73,7 +73,7 @@ Exit criteria:
 - Implement provider-neutral LLM contract.
 - Implement mock provider.
 - Implement Gemini provider.
-- Implement OpenAI provider.
+- Implement Groq, Mistral, and OpenAI-compatible providers.
 - Implement provider auto-selection.
 - Implement provider fallback metadata.
 
@@ -128,15 +128,25 @@ Expected results:
 
 ## 5. Provider Plan
 
+Default role providers:
+
+1. Judge uses Gemini.
+2. Pro uses Groq.
+3. Con uses Mistral.
+
 Provider priority in `provider: auto` mode:
 
 1. Gemini if `GEMINI_API_KEY` is present and not a placeholder.
-2. OpenAI if `OPENAI_API_KEY` is present and not a placeholder.
-3. Mock mode if no real key exists and mock fallback is enabled.
+2. Groq if `GROQ_API_KEY` is present and not a placeholder.
+3. Mistral if `MISTRAL_API_KEY` is present and not a placeholder.
+4. OpenAI if `OPENAI_API_KEY` is present and not a placeholder.
+5. Mock mode if no real key exists and mock fallback is enabled.
 
 Provider errors:
 
 - Gemini quota errors are summarized.
+- Groq quota errors are summarized.
+- Mistral quota errors are summarized.
 - OpenAI quota errors are summarized.
 - Provider fallback is stored in message metadata.
 - Transcript debate content remains clean.

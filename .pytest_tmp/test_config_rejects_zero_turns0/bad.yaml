@@ -1,0 +1,10 @@
+
+topic: hello
+turns_per_side: 0
+agents:
+  judge: {}
+  pro: {}
+  con: {}
+llm: {}
+logging: {}
+watchdog: {}

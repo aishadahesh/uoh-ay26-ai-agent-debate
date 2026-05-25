@@ -25,7 +25,7 @@ design, testability, safe API key handling, full debate logs, and compact prompt
 - Use JSON-serializable messages for IPC.
 - Support at least 10 total pings by default.
 - Let the user choose a debate topic at runtime.
-- Support Gemini, OpenAI, and deterministic mock mode.
+- Support Gemini, Groq, Mistral, OpenAI, and deterministic mock mode.
 - Handle provider quota/key failures without crashing.
 - Save full JSONL logs and readable transcript files.
 - Implement Select/Write context window engineering.
@@ -121,8 +121,8 @@ The system supports real LLM providers and mock mode.
 
 Acceptance criteria:
 
-- Auto provider mode prefers Gemini when `GEMINI_API_KEY` is valid.
-- Auto provider mode uses OpenAI when only `OPENAI_API_KEY` is valid.
+- Default agent mapping uses Gemini for judge, Groq for pro, and Mistral for con.
+- Auto provider mode prefers Gemini, then Groq, then Mistral, then OpenAI when keys exist.
 - Mock mode runs when no real key exists.
 - Provider errors are summarized and can fall back to mock.
 

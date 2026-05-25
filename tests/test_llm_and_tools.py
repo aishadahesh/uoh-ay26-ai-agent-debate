@@ -2,7 +2,12 @@ import pytest
 
 from agent_debate.config import load_config
 from agent_debate.llm.base import Gatekeeper
-from agent_debate.llm.factory import _valid_env_key, build_llm_client, provider_name
+from agent_debate.llm.factory import (
+    _valid_env_key,
+    build_llm_client,
+    provider_name,
+    provider_names_by_role,
+)
 from agent_debate.llm.mock_client import MockLLMClient
 from agent_debate.tools.web_search import WebSearchTool
 from tests.helpers import write_test_config
@@ -36,6 +41,48 @@ def test_provider_auto_uses_openai_when_only_openai_key_exists(monkeypatch, tmp_
     monkeypatch.delenv("GEMINI_API_KEY", raising=False)
     monkeypatch.setenv("OPENAI_API_KEY", "test-key")
     assert provider_name(config) == "openai"
+
+
+def test_provider_auto_uses_groq_when_only_groq_key_exists(monkeypatch, tmp_path) -> None:
+    config = load_config(write_test_config(tmp_path))
+    config.raw["llm"]["provider"] = "auto"
+    monkeypatch.delenv("GEMINI_API_KEY", raising=False)
+    monkeypatch.delenv("OPENAI_API_KEY", raising=False)
+    monkeypatch.delenv("MISTRAL_API_KEY", raising=False)
+    monkeypatch.setenv("GROQ_API_KEY", "test-key")
+    assert provider_name(config) == "groq"
+
+
+def test_provider_auto_uses_mistral_when_only_mistral_key_exists(monkeypatch, tmp_path) -> None:
+    config = load_config(write_test_config(tmp_path))
+    config.raw["llm"]["provider"] = "auto"
+    monkeypatch.delenv("GEMINI_API_KEY", raising=False)
+    monkeypatch.delenv("OPENAI_API_KEY", raising=False)
+    monkeypatch.delenv("GROQ_API_KEY", raising=False)
+    monkeypatch.setenv("MISTRAL_API_KEY", "test-key")
+    assert provider_name(config) == "mistral"
+
+
+def test_provider_names_follow_agent_role_config(monkeypatch, tmp_path) -> None:
+    config = load_config(write_test_config(tmp_path))
+    config.raw["agents"]["judge"]["provider"] = "gemini"
+    config.raw["agents"]["pro"]["provider"] = "groq"
+    config.raw["agents"]["con"]["provider"] = "mistral"
+    monkeypatch.setenv("GEMINI_API_KEY", "test-key")
+    monkeypatch.setenv("GROQ_API_KEY", "test-key")
+    monkeypatch.setenv("MISTRAL_API_KEY", "test-key")
+    assert provider_names_by_role(config) == {
+        "judge": "gemini",
+        "pro": "groq",
+        "con": "mistral",
+    }
+
+
+def test_role_provider_missing_key_uses_mock_when_allowed(monkeypatch, tmp_path) -> None:
+    config = load_config(write_test_config(tmp_path))
+    config.raw["agents"]["pro"]["provider"] = "groq"
+    monkeypatch.delenv("GROQ_API_KEY", raising=False)
+    assert provider_name(config, "pro") == "mock"
 
 
 def test_mock_client_generates_role_and_round_specific_text() -> None:

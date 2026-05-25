@@ -1,62 +1,53 @@
-topic: "Should universities require students to use AI agents in software engineering courses?"
-turns_per_side: 5
+topic: "Test debate topic"
+turns_per_side: 1
 language: "English"
-
 agents:
   judge:
     name: "Judge"
-    model: "gemini-2.0-flash"
-    provider: "gemini"
+    model: "mock-model"
+    provider: "mock"
   pro:
     name: "Pro Agent"
     stance: "Support the topic"
-    model: "llama-3.1-8b-instant"
-    provider: "groq"
+    model: "mock-model"
+    provider: "mock"
   con:
     name: "Con Agent"
     stance: "Oppose the topic"
-    model: "mistral-small-latest"
-    provider: "mistral"
-
+    model: "mock-model"
+    provider: "mock"
 llm:
-  provider: "auto"
-  preferred_provider: "gemini"
-  timeout_seconds: 45
-  max_output_tokens: 450
-  temperature: 0.4
+  provider: "mock"
+  timeout_seconds: 5
+  max_output_tokens: 100
+  temperature: 0.0
   mock_when_no_api_key: true
   fallback_to_mock_on_provider_error: true
-
 web_search:
-  enabled: true
+  enabled: false
   provider: "duckduckgo_html"
-  timeout_seconds: 10
-  max_results: 3
-
+  timeout_seconds: 1
+  max_results: 1
 debate_rules:
-  max_words_per_turn: 170
+  max_words_per_turn: 100
   require_respectful_tone: true
   require_rebuttal: true
-  require_sources: true
+  require_sources: false
   no_tie: true
-
 scoring:
   persuasion: 35
   evidence_quality: 25
   factual_correctness: 20
   direct_rebuttal: 20
-
 logging:
   directory: "logs"
   jsonl_file: "debate.jsonl"
   transcript_file: "transcript.txt"
   max_jsonl_lines: 500
   backup_count: 20
-
 watchdog:
-  response_timeout_seconds: 75
-  restart_attempts: 1
-
+  response_timeout_seconds: 10
+  restart_attempts: 0
 gatekeeper:
-  max_calls_per_debate: 30
-  max_estimated_input_chars: 90000
+  max_calls_per_debate: 10
+  max_estimated_input_chars: 10000
