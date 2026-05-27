@@ -128,6 +128,23 @@ def test_mock_client_generates_default_topic_specific_text() -> None:
     assert "the proposition better satisfies" not in pro.content
 
 
+def test_mock_judge_scores_latest_arguments_not_fixed_pro_win() -> None:
+    client = MockLLMClient()
+    result = client.complete(
+        "FINAL DECISION: choose one winner; no tie allowed.\n"
+        "Topic: Test topic\n"
+        "Latest pro: brief claim.\n"
+        "Latest con: Addressing the opponent directly, this argument gives specific "
+        "evidence because privacy, access, testing, risk, criteria, and rebuttal all "
+        "matter for the selected topic.\n"
+        "Scoring criteria: {'persuasion': 35}",
+        model="mock",
+        timeout=1,
+    )
+    assert "Winner: Con Agent" in result.content
+    assert "Score: Pro 62, Con" in result.content
+
+
 def test_gatekeeper_blocks_call_budget() -> None:
     gatekeeper = Gatekeeper(max_calls=1, max_input_chars=100)
     gatekeeper.check("first")
