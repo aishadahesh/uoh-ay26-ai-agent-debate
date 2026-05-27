@@ -32,7 +32,9 @@ def test_logger_writes_jsonl_and_transcript(tmp_path) -> None:
     config = load_config(write_test_config(tmp_path))
     logger = DebateLogger(config)
     logger.log(Message(1, "pro", "judge", "argument", "Hello", ["https://example.com"]))
-    assert "Hello" in logger.last_transcript()
+    transcript = logger.last_transcript()
+    assert "pro LLM: Pro Agent (mock/mock-model)" in transcript
+    assert "Hello" in transcript
     assert (tmp_path / "logs" / "debate.jsonl").exists()
 
 
@@ -49,7 +51,7 @@ def test_logger_exports_transcript_to_requested_path(tmp_path) -> None:
     logger = DebateLogger(config)
     logger.log(Message(1, "pro", "judge", "argument", "Saved"))
     export_path = logger.export_transcript(tmp_path / "exports" / "saved.txt")
-    assert export_path.read_text(encoding="utf-8").startswith("[round 1]")
+    assert export_path.read_text(encoding="utf-8").startswith("[round 1] pro LLM")
 
 
 def test_logger_export_fails_without_transcript(tmp_path) -> None:

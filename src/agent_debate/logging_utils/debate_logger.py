@@ -14,6 +14,7 @@ class DebateLogger:
     """Writes full debate logs for auditability and submission evidence."""
 
     def __init__(self, config: Config) -> None:
+        self.config = config
         settings = config.logging
         root = config.path.parent.parent
         self.directory = root / settings["directory"]
@@ -28,7 +29,8 @@ class DebateLogger:
             jsonl.write(json.dumps(message.to_dict(), ensure_ascii=False) + "\n")
         with self.transcript_path.open("a", encoding="utf-8") as transcript:
             transcript.write(
-                f"[round {message.round}] {message.sender} -> {message.receiver} "
+                f"[round {message.round}] {self._participant_label(message.sender)} "
+                f"-> {self._participant_label(message.receiver)} "
                 f"({message.type})\n{message.content}\nSources: {message.sources}\n\n"
             )
 
@@ -59,3 +61,12 @@ class DebateLogger:
     def _default_export_path(self) -> Path:
         stamp = datetime.now().strftime("%Y%m%d-%H%M%S")
         return self.directory / f"transcript-{stamp}.txt"
+
+    def _participant_label(self, role: str) -> str:
+        if role not in self.config.raw.get("agents", {}):
+            return role
+        agent = self.config.agent(role)
+        name = agent.get("name", role.title())
+        provider = agent.get("provider", self.config.llm.get("provider", "unknown"))
+        model = agent.get("model", "unknown-model")
+        return f"{role} LLM: {name} ({provider}/{model})"

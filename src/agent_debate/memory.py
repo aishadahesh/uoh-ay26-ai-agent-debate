@@ -67,7 +67,14 @@ class PromptBuilder:
         round_number: int,
         final: bool,
     ) -> str:
-        mode = "FINAL DECISION: choose one winner; no tie allowed." if final else "Judge the round."
+        mode = (
+            "FINAL DECISION: choose exactly one winner; no tie allowed. "
+            "Your answer must include these lines: "
+            "Winner: <Pro Agent or Con Agent>; Score: Pro <0-100>, Con <0-100>; "
+            "Reason: <one concise explanation>."
+            if final
+            else "Judge the round."
+        )
         return (
             f"{mode}\nTopic: {topic}\nRules: {rules}\nRound: {round_number}\n"
             f"Running summary: {summary}\nLatest pro: {latest_pro}\nLatest con: {latest_con}\n"

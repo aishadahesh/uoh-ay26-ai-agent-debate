@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import re
 from multiprocessing import Queue
 
 from agent_debate.config import Config
@@ -52,14 +53,34 @@ class JudgeAgent:
                 timeout=float(self.config.llm["timeout_seconds"]),
             )
             metadata = {"provider_fallback": "mock", "provider_error": str(exc)}
+        content, decision_metadata = self._ensure_final_decision(result.content, prompt)
+        metadata.update(decision_metadata)
         return Message(
             round=self.config.turns_per_side,
             sender="judge",
             receiver="system",
             type="decision",
-            content=result.content,
+            content=content,
             sources=result.sources,
             metadata=metadata,
+        )
+
+    def _ensure_final_decision(self, content: str, prompt: str) -> tuple[str, dict[str, str]]:
+        """Guarantee the logged final answer contains a winner and both scores."""
+
+        has_winner = re.search(r"\bWinner\s*:\s*(Pro Agent|Con Agent)\b", content, re.I)
+        has_scores = re.search(r"\bScore\s*:\s*Pro\s+\d{1,3}\s*,\s*Con\s+\d{1,3}\b", content, re.I)
+        if has_winner and has_scores:
+            return content, {}
+
+        fallback = MockLLMClient().complete(
+            prompt,
+            model="mock",
+            timeout=float(self.config.llm["timeout_seconds"]),
+        )
+        return (
+            f"{content.strip()}\n\nRequired final verdict: {fallback.content}",
+            {"decision_format_safeguard": "mock"},
         )
 
 
