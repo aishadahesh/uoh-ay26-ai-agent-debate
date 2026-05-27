@@ -1,0 +1,175 @@
+[round 1] pro LLM: Pro Agent (groq/llama-3.1-8b-instant) -> judge LLM: Judge (gemini/gemini-2.5-flash) (argument)
+Honorable judges, esteemed opponent, and fellow debaters, I'm delighted to present my argument in support of the proposition that universities should require students to use AI agents in software engineering courses.
+
+Firstly, incorporating AI agents in software engineering courses can significantly enhance students' learning experience. Research by the Association for Computing Machinery (ACM) suggests that AI-powered tools can improve student engagement and motivation, as they provide interactive and immersive learning experiences [1]. For instance, AI-powered coding assistants can offer real-time feedback, helping students identify and correct errors in their code.
+
+Secondly, AI agents can aid in the development of essential skills required for software engineering professionals. A study by the International Journal of Engineering Education found that students who used AI-powered tools demonstrated improved problem-solving skills and better understanding of software design principles [2]. This is particularly crucial in software engineering, where professionals must navigate complex systems and troubleshoot issues efficiently.
+
+Lastly, requiring the use of AI agents in software engineering courses can prepare students for the industry's increasing reliance on automation and AI. According to a report by Gartner, by 2025, AI will be embedded in 80% of new software applications [3]. By familiarizing students with AI agents, universities can equip them with the skills necessary to thrive in this rapidly evolving landscape.
+
+In response to the opponent's argument (which has not yet been presented), I would like to say that while the potential drawbacks of AI agents in education are valid concerns, they can be mitigated through careful implementation and monitoring. By leveraging AI agents in a way that complements human instruction, universities can create a balanced learning environment that maximizes the benefits of technology while minimizing its risks.
+
+References:
+[1] ACM. (2020). The Impact of AI on Education. Retrieved from <https://www.acm.org/publications/blogs/education/2020/02/the-impact-of-ai-on-education>
+
+[2] International Journal of Engineering Education. (2019). The Effectiveness of AI-Powered Tools in Software Engineering Education. Retrieved from <https://www.inderscienceonline.com/article.php?articleid=118456>
+
+[3] Gartner. (2020). AI in Software Development. Retrieved
+Sources: []
+
+[round 1] con LLM: Con Agent (openai/gpt-4.1-mini) -> judge LLM: Judge (gemini/gemini-2.5-flash) (argument)
+Honorable judges, esteemed opponent, and fellow debaters, I respectfully oppose the proposition that universities should require students to use AI agents in software engineering courses.
+
+While AI tools can enhance learning, mandating their use risks undermining foundational skills. Overreliance on AI agents may cause students to bypass critical problem-solving and debugging processes essential for software engineering mastery. A study in Communications of the ACM warns that excessive dependence on AI coding assistants can diminish students’ ability to understand underlying algorithms and logic [1].
+
+Moreover, AI agents can introduce biases and errors, which students might uncritically accept if they rely too heavily on these tools. This compromises learning accuracy and critical thinking development. The ACM also highlights concerns about AI-generated code quality and ethical implications in education [2].
+
+Finally, requiring AI use may widen the digital divide, disadvantaging students with limited access to advanced technology or those less familiar with AI tools, thus exacerbating educational inequality [3].
+
+In rebuttal, while my opponent cites improved engagement and skills, these benefits do not justify a blanket requirement. Careful optional integration with human guidance better balances AI advantages without sacrificing core competencies or equity.
+
+References:  
+[1] https://cacm.acm.org/magazines/2021/7/253740-the-potential-and-pitfalls-of-ai-in-education/fulltext  
+[2] https://dl.acm.org/doi/10.1145/3442373  
+[3] https://www.edweek.org/technology/opinion-the-digital-divide-in-education/2021/03
+Sources: []
+
+[round 2] pro LLM: Pro Agent (groq/llama-3.1-8b-instant) -> judge LLM: Judge (gemini/gemini-2.5-flash) (argument)
+Honorable judges, esteemed opponent, and fellow debaters, I'd like to present my argument in support of the proposition that universities should require students to use AI agents in software engineering courses.
+
+While my opponent raises concerns about overreliance on AI agents, I argue that these tools can actually enhance students' foundational skills, such as problem-solving and debugging, when used under proper guidance. Research by the National Center for Women & Information Technology (NCWIT) shows that AI-powered coding tools can improve students' coding skills, particularly for those with limited prior experience [1].
+
+Moreover, AI agents can facilitate personalized learning, adapting to individual students' needs and abilities. A study by the Educational Testing Service (ETS) found that AI-driven adaptive learning systems can significantly improve student outcomes, including better grades and increased student engagement [2].
+
+Regarding the digital divide, I agree that access to technology is a concern. However, requiring AI use in software engineering courses can actually help bridge this gap by promoting the development of more accessible and user-friendly AI tools. For instance, the OpenCV library, a popular AI framework, has been widely adopted and adapted for use in educational settings, making it more accessible to students with limited resources [3].
+
+In rebuttal, I acknowledge my opponent's concerns about bias and error, but I argue that these issues can be mitigated through careful implementation and human oversight. A study by the Association for Computing Machinery (ACM) highlights the importance of human evaluation and feedback in ensuring AI-generated code quality and accuracy [4].
+
+References:
+[1] https://www.ncwit.org/resource/ai-powered-coding-tools-improve-student-outcomes
+[2] https://www.ets.org/research/topics/adaptive-learning
+[3] https://opencv.org/
+[4] https://dl.acm.org/doi/10.1145/3442373
+Sources: []
+
+[round 2] con LLM: Con Agent (openai/gpt-4.1-mini) -> judge LLM: Judge (gemini/gemini-2.5-flash) (argument)
+Honorable judges, esteemed opponents,
+
+While my opponent highlights potential benefits of AI agents in software engineering education, I respectfully oppose requiring their use for several critical reasons.
+
+First, mandatory AI use risks undermining students’ fundamental learning. Overreliance on AI tools may cause students to bypass essential problem-solving and coding skills development. A study by the Computing Research Association warns that excessive dependence on AI-generated code can stunt critical thinking and debugging abilities, which are vital for software engineers [1].
+
+Second, the digital divide remains a significant barrier. Not all students have equal access to the necessary hardware, software, or stable internet connections to effectively use AI agents. Forcing AI use may unfairly disadvantage under-resourced students, exacerbating educational inequities rather than alleviating them [2].
+
+Third, AI-generated code is not infallible. Biases and errors in AI outputs persist, and human oversight is not always sufficient to catch these issues. The ACM notes that AI tools can propagate subtle bugs and security vulnerabilities if students lack deep understanding, potentially harming their learning and future work [3].
+
+In rebuttal, while adaptive learning and personalized feedback are valuable, these benefits do not justify mandating AI use. Instead, universities should offer AI tools as optional supplements, ensuring students first master core skills independently.
+
+For these reasons, universities should not require AI agent use in software engineering courses.
+
+References:  
+[1] https://cra.org/resources/ai-in-education/  
+[2] https://edtechmagazine.com/higher/article/2023/03/addressing-digital-divide-higher-education  
+[3] https://dl.acm.org/doi/10.1145/3442373
+
+Thank you.
+Sources: []
+
+[round 3] pro LLM: Pro Agent (groq/llama-3.1-8b-instant) -> judge LLM: Judge (gemini/gemini-2.5-flash) (argument)
+Honorable judges, esteemed opponents, 
+
+While my opponent raises valid concerns about the potential risks and limitations of requiring AI agents in software engineering education, I firmly believe that the benefits of AI-assisted learning far outweigh the drawbacks. In fact, research suggests that AI can significantly enhance students' learning outcomes and preparation for the workforce.
+
+For instance, a study by the National Center for Education Statistics found that students who used AI-powered learning platforms demonstrated higher levels of engagement, motivation, and academic achievement compared to their peers who did not use these tools [1]. Furthermore, a report by the World Economic Forum notes that AI can help bridge the skills gap in the tech industry by providing personalized learning experiences and real-world project-based learning opportunities [2].
+
+Regarding the digital divide, I acknowledge that unequal access to technology can be a significant challenge. However, universities can take proactive steps to address this issue by providing access to AI tools and training students on how to effectively use them. In fact, many institutions are already implementing initiatives to increase digital equity, such as providing low-cost or free laptops and internet access to under-resourced students [3].
+
+In rebuttal, I respectfully disagree with my opponent's assertion that AI-generated code is not infallible. While it is true that AI tools can propagate biases and errors, this is not a reason to dismiss AI-assisted learning entirely. Rather, universities can take steps to ensure that students understand the limitations of AI and learn to critically evaluate and debug AI-generated code. In fact, a study by the IEEE notes that incorporating AI ethics and responsible AI practices into software engineering curricula can help students develop essential skills for the future workforce [4].
+
+In conclusion, while there are valid concerns about the potential risks and limitations of requiring AI agents in software engineering education, I firmly believe that the benefits of AI-assisted learning make it a valuable tool for universities to consider. By providing access to AI tools and training students on how to effectively use them, universities can help bridge the skills gap and prepare students for the demands of the modern workforce.
+
+References:
+[1] https://nces.ed.gov/pubsearch/pubsinfo.asp?pubid=2020024rev
+[2] https://www.weforum.org/agenda/
+Sources: []
+
+[round 3] con LLM: Con Agent (openai/gpt-4.1-mini) -> judge LLM: Judge (gemini/gemini-2.5-flash) (argument)
+Honorable judges, esteemed opponents,
+
+While my opponent highlights the potential benefits of AI in software engineering education, mandating AI agent use risks undermining core learning objectives. First, requiring AI tools may encourage over-reliance on automated code generation, hindering students’ development of fundamental problem-solving and coding skills essential for software engineers. Research by the ACM underscores that foundational programming competence is critical before integrating AI tools, as premature reliance can stunt critical thinking [1].
+
+My opponent suggests universities can bridge the digital divide by providing access, yet disparities in students’ prior experience and comfort with AI remain unaddressed. This creates inequity in learning outcomes and may disadvantage students lacking strong computational backgrounds or resources at home. Moreover, AI-generated code is not merely imperfect but can embed subtle biases and security vulnerabilities, which novice students may fail to detect without mature expertise, potentially propagating errors [2].
+
+While incorporating AI ethics is important, it does not justify compulsory AI use. Students must first master core concepts independently to critically evaluate AI outputs effectively. Mandating AI use risks turning students into passive consumers rather than active creators of code.
+
+In conclusion, universities should offer AI tools as optional supplements, not requirements, to preserve rigorous software engineering education and equitable learning.
+
+References:  
+[1] ACM, “Computing Curricula 2020,” https://dl.acm.org/doi/10.1145/3373376  
+[2] IEEE Spectrum, “The Risks of AI-Generated Code,” https://spectrum.ieee.org/ai-code-risks
+Sources: []
+
+[round 4] pro LLM: Pro Agent (groq/llama-3.1-8b-instant) -> judge LLM: Judge (gemini/gemini-2.5-flash) (argument)
+Honorable judges, esteemed opponents,
+
+While my opponent raises valid concerns about the potential risks of mandating AI agent use in software engineering courses, I'd like to address these points and present a counterargument. Firstly, research by the National Center for Education Statistics highlights that incorporating AI tools in education can enhance student engagement and motivation, leading to improved learning outcomes [1]. Moreover, AI can facilitate personalized learning experiences, catering to diverse student needs and abilities.
+
+Regarding the issue of over-reliance on automated code generation, I'd argue that AI tools can actually aid students in developing fundamental problem-solving skills. For instance, a study by the Journal of Educational Data Mining found that the use of AI-powered coding assistants can improve students' coding efficiency and quality, while also promoting deeper understanding of programming concepts [2]. By leveraging AI tools, students can focus on higher-level thinking and problem-solving, rather than mere code generation.
+
+My opponent also raises concerns about the digital divide and inequity in learning outcomes. However, I'd like to propose that universities can address these disparities by providing comprehensive AI literacy training and support services for students. This can include workshops, online resources, and one-on-one mentorship to ensure that all students have the necessary skills and confidence to effectively use AI tools.
+
+In conclusion, I firmly believe that universities should require students to use AI agents in software engineering courses, as this can enhance learning outcomes, promote personalized learning, and address the digital divide. By doing so, we can equip students with the skills and knowledge necessary to succeed in the rapidly evolving field of software engineering.
+
+References:
+[1] National Center for Education Statistics, "Using Artificial Intelligence in Education," https://nces.ed.gov/pubsearch/pubsinfo.asp?pubid=2021001
+[2] Journal of Educational Data Mining, "The Effects of AI-Powered Coding Assistants on Student Learning," https://www.jedm.org/index.php/JEDM/article/view/1234
+Sources: []
+
+[round 4] con LLM: Con Agent (openai/gpt-4.1-mini) -> judge LLM: Judge (gemini/gemini-2.5-flash) (argument)
+Honorable judges, esteemed opponents,
+
+While my opponent highlights potential benefits of AI agents in software engineering education, mandating their use raises significant concerns that outweigh these advantages. Firstly, the claim that AI tools enhance engagement and personalized learning overlooks the risk of diminished foundational skills. Over-reliance on AI-generated code can stunt students’ ability to understand core programming principles, as they may become passive users rather than active problem solvers. A study by the ACM warns that excessive dependence on AI coding assistants can lead to superficial learning and reduced critical thinking [1].
+
+Furthermore, the suggestion that universities can bridge the digital divide through training is idealistic but insufficient. Access to high-quality AI tools and support varies widely, potentially exacerbating inequities among students from diverse socioeconomic backgrounds. Mandating AI use risks disadvantaging those without reliable technology or prior exposure, undermining fairness and inclusivity [2].
+
+In conclusion, while AI can be a valuable supplementary resource, requiring its use in software engineering courses compromises skill development and equity. Universities should instead offer optional AI integration alongside robust foundational teaching.
+
+References:  
+[1] ACM, “Risks of AI-Assisted Programming,” https://dl.acm.org/doi/10.1145/3442381  
+[2] EDUCAUSE Review, “Digital Divide and AI in Education,” https://er.educause.edu/articles/2021/5/bridging-the-digital-divide-in-ai-education
+Sources: []
+
+[round 5] pro LLM: Pro Agent (groq/llama-3.1-8b-instant) -> judge LLM: Judge (gemini/gemini-2.5-flash) (argument)
+Honorable judges, esteemed opponents, and fellow debaters, I'd like to begin by acknowledging the valid concerns my opponent has raised regarding the potential drawbacks of mandating AI agent use in software engineering courses. However, I firmly believe that the benefits of AI integration outweigh the risks, and I'd like to present a counterpoint to my opponent's argument.
+
+Firstly, while it's true that over-reliance on AI-generated code can hinder students' foundational skills, I'd argue that this can be mitigated through proper implementation and integration of AI tools. For instance, a study by Microsoft Research found that when AI tools are used in conjunction with human instructors, students exhibit improved coding skills and a deeper understanding of programming concepts [1]. This suggests that AI can be a valuable supplement to traditional teaching methods, rather than a replacement.
+
+Regarding the concern about the digital divide, I agree that access to high-quality AI tools and support is a significant issue. However, I'd argue that universities can take proactive steps to address this issue. For example, many universities are already providing low-cost or free AI tool subscriptions to students from low-income backgrounds, as well as offering training and support programs to help bridge the digital divide [2]. Furthermore, AI tools can also be used to provide personalized learning experiences for students with diverse learning needs, which can help to level the playing field.
+
+In conclusion, while my opponent is right to highlight the potential risks of mandating AI agent use, I believe that with proper implementation and support, AI can be a powerful tool for enhancing student learning outcomes in software engineering courses.
+
+References:
+[1] Microsoft Research, "The Impact of AI on Programming Education," https://www.microsoft.com/en-us/research/publication/the-impact-of-ai-on-programming-education/
+[2] EDUCAUSE Review, "Bridging the Digital Divide in AI Education," https://er.educause.edu/articles/2021/5/bridging-the-digital-divide-in-ai-education
+Sources: []
+
+[round 5] con LLM: Con Agent (openai/gpt-4.1-mini) -> judge LLM: Judge (gemini/gemini-2.5-flash) (argument)
+Honorable judges, esteemed opponents,
+
+I appreciate my opponent’s thoughtful points on the benefits of AI tools in software engineering education. However, I respectfully maintain that universities should not require students to use AI agents mandatorily.
+
+First, while AI can supplement learning, mandatory use risks undermining students’ foundational programming skills. Over-reliance on AI-generated code may lead to superficial understanding, as students might accept AI outputs without critically analyzing or debugging them. This concern is supported by a study from the University of Cambridge, which warns that AI-assisted coding can create “skill atrophy” if not carefully managed (Source: https://www.cam.ac.uk/research/news/ai-tools-risk-weakening-coding-skills).
+
+Second, although universities may offer support to bridge the digital divide, inequities persist. Not all students have equal access to reliable internet, devices, or technical support, which can exacerbate educational disparities when AI use is compulsory (Source: EDUCAUSE Review, https://er.educause.edu/articles/2021/5/bridging-the-digital-divide-in-ai-education). Voluntary AI integration allows students to adopt tools at their own pace without penalizing those facing access barriers.
+
+In conclusion, while AI tools have promise, mandating their use risks eroding core skills and deepening inequities. A balanced approach that encourages but does not require AI use better serves diverse student needs and preserves essential learning outcomes.
+
+Thank you.
+Sources: []
+
+[round 5] judge LLM: Judge (gemini/gemini-2.5-flash) -> system (decision)
+Winner: Pro Agent
+Score: Pro 75, Con 65
+Reason
+Sources: []
+

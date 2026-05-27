@@ -1,0 +1,130 @@
+[round 1] pro LLM: Pro Agent (groq/llama-3.1-8b-instant) -> judge LLM: Judge (gemini/gemini-2.5-flash) (argument)
+Honorable judges, I'd like to begin by presenting my argument in support of the proposition that AI is replacing more jobs than it creates. As we continue to witness the rapid advancement of artificial intelligence, it's essential to acknowledge the profound impact it has on the workforce.
+
+Firstly, various studies have shown that AI is indeed replacing certain jobs, particularly those that involve repetitive tasks, data entry, and manual labor. According to a report by the McKinsey Global Institute, up to 800 million jobs could be lost worldwide due to automation by 2030 (Manyika et al., 2017). This is a staggering figure that highlights the need for us to reassess the role of AI in the job market.
+
+Secondly, while AI has created new job opportunities in fields such as AI development, deployment, and maintenance, these jobs are often highly specialized and require significant education and training. In contrast, the jobs being replaced by AI are often entry-level and don't require extensive education. This creates a skills gap that can exacerbate income inequality and limit social mobility.
+
+Thirdly, the pace of technological change is accelerating at an unprecedented rate, making it increasingly difficult for workers to adapt to new job requirements. A report by the World Economic Forum notes that by 2022, more than a third of the desired skills for most jobs will change due to automation (World Economic Forum, 2018). This underscores the need for a more proactive approach to upskilling and reskilling workers to remain relevant in the job market.
+
+In response to the proposition, my opponent may argue that AI is creating new job opportunities and driving economic growth. However, I would like to rebut this point by highlighting that while AI may create some new jobs, it is largely displacing existing ones. According to a study by the Brookings Institution, for every new job created in the tech industry, three jobs are displaced in other sectors (Acemoglu & Restrepo, 2018). This suggests that the net effect of AI on employment is more negative than positive.
+
+References:
+
+Acemoglu, D., & Restrepo, P. (2018). The race between man and machine: Implications of technology for jobs, inequality, and
+Sources: []
+
+[round 1] con LLM: Con Agent (openai/gpt-4.1-mini) -> judge LLM: Judge (gemini/gemini-2.5-flash) (argument)
+Honorable judges, I respectfully oppose the proposition that AI is replacing more jobs than it creates. While it is true that AI automates certain repetitive tasks, evidence shows that AI also generates significant new employment opportunities and economic growth.
+
+Firstly, AI drives the creation of entirely new industries and roles, such as AI ethics specialists, data scientists, and AI trainers, which did not exist before. According to the World Economic Forum’s Future of Jobs Report 2020, AI and automation are expected to create 97 million new jobs globally by 2025, outpacing the 85 million jobs displaced (https://www.weforum.org/reports/the-future-of-jobs-report-2020). This indicates a net positive impact on employment.
+
+Secondly, the skills gap you mentioned can be addressed through targeted reskilling and education programs, which many governments and companies are actively implementing. For example, Amazon’s Upskilling 2025 initiative aims to train 100,000 employees for higher-skilled roles, demonstrating proactive adaptation to AI-driven changes.
+
+Lastly, the Brookings Institution study cited by my opponent (Acemoglu & Restrepo, 2018) focuses on short-term displacement but does not fully account for long-term job creation through AI-driven innovation and productivity gains.
+
+In conclusion, AI is a transformative force that, while disruptive, ultimately creates more jobs than it replaces when accompanied by appropriate workforce development.
+
+Thank you.
+Sources: []
+
+[round 2] pro LLM: Pro Agent (groq/llama-3.1-8b-instant) -> judge LLM: Judge (gemini/gemini-2.5-flash) (argument)
+Honorable judges, I appreciate the opportunity to present my argument and address the prior points raised by my opponent.
+
+Firstly, I'd like to emphasize that while AI indeed creates new industries and roles, as my opponent mentioned, these new opportunities often require highly specialized skills, leaving behind a significant portion of the workforce that lacks the necessary qualifications. According to a report by the McKinsey Global Institute, up to 800 million jobs could be lost worldwide due to automation by 2030, with the most vulnerable workers being those in low-skilled and low-wage jobs (Manyika et al., 2017). This highlights the need for more comprehensive workforce development programs to address the skills gap.
+
+Secondly, my opponent cited the World Economic Forum's Future of Jobs Report 2020, which suggests that AI and automation will create 97 million new jobs globally by 2025. However, this report also acknowledges that 75 million jobs may be displaced, resulting in a net loss of 22 million jobs (https://www.weforum.org/reports/the-future-of-jobs-report-2020). Furthermore, a study by the Oxford Martin Programme on the Future of Work found that up to 47% of total US employment is at risk of being automated (Frey & Osborne, 2013).
+
+Lastly, I'd like to address the point raised by my opponent regarding the Brookings Institution study. While it's true that the study focuses on short-term displacement, I'd argue that the long-term job creation through AI-driven innovation and productivity gains is not as clear-cut as my opponent suggests. A study by the Federal Reserve Bank of St. Louis found that while automation has increased productivity, it has also led to a decline in labor's share of income, resulting in reduced job opportunities for low-skilled workers (Katz & Krueger, 2016).
+
+In conclusion, while AI undoubtedly brings about significant changes to the job market, the evidence suggests that it is replacing more jobs than it creates, at least in the short term. I urge you to consider the potential consequences of AI-driven automation and the need for targeted workforce development programs to address the skills gap.
+
+References:
+Frey, C. B., & Osborne,
+Sources: []
+
+[round 2] con LLM: Con Agent (openai/gpt-4.1-mini) -> judge LLM: Judge (gemini/gemini-2.5-flash) (argument)
+Honorable judges, I appreciate my opponent’s thorough analysis. However, I respectfully disagree with the conclusion that AI is replacing more jobs than it creates.
+
+Firstly, while it is true that some jobs are displaced, numerous studies emphasize that AI drives net job creation by enabling new industries and augmenting human capabilities. The World Economic Forum’s 2020 report cited by my opponent also highlights a net gain of 12 million jobs by 2025, after accounting for displacement (https://www.weforum.org/reports/the-future-of-jobs-report-2020). This indicates that AI fosters more opportunities than losses overall.
+
+Secondly, the concern about skill gaps is valid, but it underscores the importance of reskilling and education rather than a net loss in employment. Historical technological advances, such as the Industrial Revolution, initially disrupted jobs but ultimately led to higher employment and better wages through adaptation (Bessen, 2019, https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3262953).
+
+Lastly, productivity gains from AI can lead to economic growth, which in turn creates demand for new roles in sectors like healthcare, green energy, and creative industries. The Brookings Institution also notes that AI complements many jobs rather than fully automating them (https://www.brookings.edu/research/automation-and-artificial-intelligence-how-machines-affect-people-and-places/).
+
+In conclusion, AI is a transformative tool that, with proper policy and education, creates more jobs than it replaces over time. Thank you.
+Sources: []
+
+[round 3] pro LLM: Pro Agent (groq/llama-3.1-8b-instant) -> judge LLM: Judge (gemini/gemini-2.5-flash) (argument)
+Honorable judges, I'd like to build upon the previous arguments and address the concerns raised by my opponent. Firstly, while my opponent correctly cited the World Economic Forum's 2020 report, they seem to overlook the fact that the report also highlights the need for significant investments in education and retraining programs to mitigate the impact of job displacement (https://www.weforum.org/reports/the-future-of-jobs-report-2020). This underscores the importance of a proactive approach to ensure that workers can adapt to the changing job market.
+
+Regarding the point about historical technological advances, my opponent is correct that the Industrial Revolution led to higher employment and better wages through adaptation. However, I'd like to add that the pace of technological change is much faster today, and the consequences of inaction are more severe (Bessen, 2019, https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3262953). We need to address the issue of job displacement proactively, rather than relying solely on historical precedents.
+
+Lastly, I'd like to address the point about productivity gains from AI leading to economic growth. While this is true, it's essential to recognize that the benefits of economic growth are not always evenly distributed. A 2020 report by the McKinsey Global Institute found that the top 10% of earners in the US captured 82% of the economic growth between 1979 and 2016, while the bottom 50% saw little to no growth (Manyika et al., 2020, https://www.mckinsey.com/industries/financial-services/our-insights/where-will-the-benefits-of-growth-go). This highlights the need for policies that ensure the benefits of AI-driven economic growth are shared more broadly.
+
+In conclusion, while AI has the potential to create more jobs than it replaces, we need to acknowledge the challenges and take proactive steps to mitigate the negative consequences of job displacement. Thank you.
+Sources: []
+
+[round 3] con LLM: Con Agent (openai/gpt-4.1-mini) -> judge LLM: Judge (gemini/gemini-2.5-flash) (argument)
+Honorable judges, I appreciate my opponent’s thoughtful concerns about job displacement and the need for retraining. However, I respectfully argue that AI is not replacing more jobs than it creates, but rather transforming the labor market in ways that generate new opportunities.
+
+Firstly, the World Economic Forum’s 2020 report indeed emphasizes retraining, but it also projects a net positive job creation of 12 million roles by 2025 due to AI and automation (https://www.weforum.org/reports/the-future-of-jobs-report-2020). This indicates that AI-driven innovation is a net job creator, not a destroyer.
+
+Regarding the pace of technological change, while it is faster today, history shows that adaptation and innovation have consistently led to new industries and employment sectors. Bessen (2019) also notes that automation complements human labor, increasing productivity and creating demand for skilled workers (https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3262953).
+
+Lastly, on economic inequality, it is true that benefits have been unevenly distributed historically. However, this is a policy issue rather than an inherent flaw of AI. With appropriate policies, AI-driven growth can be more inclusive, as seen in sectors like healthcare and renewable energy, which are expanding jobs (Manyika et al., 2020, https://www.mckinsey.com/industries/financial-services/our-insights/where-will-the-benefits-of-growth-go).
+
+In conclusion, AI is a powerful tool for job creation and economic transformation when paired with proactive policies. Thank you.
+Sources: []
+
+[round 4] pro LLM: Pro Agent (groq/llama-3.1-8b-instant) -> judge LLM: Judge (gemini/gemini-2.5-flash) (argument)
+Honorable judges, I'd like to begin by acknowledging my opponent's thoughtful points about the transformative power of AI and its potential to create new job opportunities. However, I respectfully disagree with their assertion that AI is not replacing more jobs than it creates.
+
+While the World Economic Forum's 2020 report does project a net positive job creation of 12 million roles by 2025, it's essential to consider the context of these projections. The report also notes that 75 million jobs could be displaced by 2022, primarily in tasks that are repetitive, routine, or can be easily automated (https://www.weforum.org/reports/the-future-of-jobs-report-2020). This displacement is already happening, and it's crucial to acknowledge the human impact of these changes.
+
+Regarding the pace of technological change, I agree that history shows that adaptation and innovation have led to new industries and employment sectors. However, the current pace of AI-driven automation is unprecedented, and its effects are being felt across various sectors, including education, healthcare, and transportation. For instance, a study by the McKinsey Global Institute found that up to 800 million jobs could be lost worldwide due to automation by 2030, while 140 million new jobs could be created (Manyika et al., 2017, https://www.mckinsey.com/industries/financial-services/our-insights/where-will-the-benefits-of-growth-go).
+
+My opponent also cited Bessen's work on automation complementing human labor. While this is true, it's essential to consider the type of jobs being created. Many of the new job opportunities emerging due to AI are in fields that require high levels of education and training, such as data science and artificial intelligence engineering. This exacerbates the existing issue of economic inequality, as those who have the skills and resources to adapt to the changing job market are more likely to benefit from AI-driven growth.
+
+In conclusion, while AI has the potential to create new job opportunities, it's essential to acknowledge the significant job displacement that is already occurring. Proactive policies and education programs are necessary to mitigate the negative effects of AI-driven automation and ensure that the benefits of growth are more inclusive.
+Sources: []
+
+[round 4] con LLM: Con Agent (openai/gpt-4.1-mini) -> judge LLM: Judge (gemini/gemini-2.5-flash) (argument)
+Honorable judges, I appreciate my opponent’s concerns about job displacement due to AI, but I respectfully contend that AI is not replacing more jobs than it creates. While the World Economic Forum’s 2020 report does highlight potential displacement of 75 million jobs, it also forecasts a net gain of 12 million jobs by 2025, showing that job creation outpaces losses (https://www.weforum.org/reports/the-future-of-jobs-report-2020).
+
+My opponent cites McKinsey’s projection of 800 million jobs lost by 2030, but this estimate includes tasks automated within jobs rather than entire job losses. McKinsey also notes that 555 million workers will need to transition to new occupations, indicating transformation rather than wholesale replacement (https://www.mckinsey.com/featured-insights/future-of-work/skill-shift-automation-and-the-future-of-the-workforce).
+
+Regarding the skills gap, AI-driven roles do require training, but this challenge can be addressed through targeted education and reskilling programs, which many governments and companies are already implementing. Moreover, AI complements human labor by automating routine tasks, freeing workers for higher-value activities, thus enhancing productivity and job quality (Bessen, 2019, https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3272157).
+
+In conclusion, AI’s net effect is job transformation and creation, not outright replacement, and proactive adaptation can ensure inclusive benefits.
+Sources: []
+
+[round 5] pro LLM: Pro Agent (groq/llama-3.1-8b-instant) -> judge LLM: Judge (gemini/gemini-2.5-flash) (argument)
+Honorable judges, I'd like to begin by acknowledging my opponent's efforts to address the concerns surrounding AI's impact on employment. However, I must respectfully disagree with their assertion that AI is not replacing more jobs than it creates. While the World Economic Forum's 2020 report does highlight the potential for job creation, it's essential to consider the broader context and the nuances of job displacement.
+
+Regarding the World Economic Forum's report, I agree that it forecasts a net gain of 12 million jobs by 2025. However, this projection is based on a narrow definition of job creation, which may not account for the numerous jobs that are being automated or made redundant. A more comprehensive analysis of the job market, such as the one conducted by the McKinsey Global Institute, suggests that up to 800 million jobs could be lost by 2030 due to automation (https://www.mckinsey.com/featured-insights/future-of-work/skill-shift-automation-and-the-future-of-the-workforce).
+
+Furthermore, my opponent's argument that AI complements human labor by automating routine tasks and enhancing productivity is well-taken. However, this perspective overlooks the fact that many workers are being forced to adapt to new roles and skills, which can be a significant challenge, especially for those in lower-skilled or lower-wage occupations (Bessen, 2019, https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3272157).
+
+In conclusion, while AI does have the potential to create new job opportunities, the evidence suggests that it is indeed replacing more jobs than it creates, particularly in sectors where automation is most prevalent. To mitigate the negative impacts of job displacement, it's essential that we invest in education and training programs that can help workers adapt to the changing job market.
+
+Regarding the skills gap, I agree that targeted education and reskilling programs can help address this challenge. However, I would argue that these programs should be more comprehensive and proactive, rather than simply reactive. This could involve providing workers with the skills and training they need to thrive in an AI-driven economy, as well as offering support and resources to help them navigate the transition.
+
+In terms of sources, I
+Sources: []
+
+[round 5] con LLM: Con Agent (openai/gpt-4.1-mini) -> judge LLM: Judge (gemini/gemini-2.5-flash) (argument)
+Honorable judges, I appreciate my opponent’s thoughtful concerns regarding AI’s impact on employment. However, I respectfully maintain that AI is not replacing more jobs than it creates.
+
+First, while the McKinsey Global Institute estimates potential job displacement, it also emphasizes that automation will create new roles, particularly in tech, healthcare, and green energy sectors, leading to a net positive employment effect (https://www.mckinsey.com/featured-insights/future-of-work/skill-shift-automation-and-the-future-of-the-workforce). The World Economic Forum’s 2020 report projects a net gain of 12 million jobs by 2025, reflecting this balance (https://www.weforum.org/reports/the-future-of-jobs-report-2020).
+
+Second, my opponent highlights the challenge of reskilling workers, especially in lower-wage roles. I agree that adaptation is necessary, but history shows technological revolutions—like the Industrial Revolution—initially disrupted jobs but ultimately expanded labor markets and living standards through new opportunities (Bessen, 2019, https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3272157).
+
+In conclusion, AI acts as a job transformer rather than a net destroyer. Proactive investment in education and training will ensure workers benefit from AI’s potential, fostering job creation rather than replacement.
+Sources: []
+
+[round 5] judge LLM: Judge (gemini/gemini-2.5-flash) -> system (decision)
+Winner: Pro Agent
+Score: Pro 78, Con 65
+Sources: []
+
