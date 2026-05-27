@@ -23,7 +23,7 @@ def run_debate(config_path: Path = DEFAULT_CONFIG, topic: str | None = None) -> 
     llm = build_llm_client(config, "judge")
     if isinstance(llm, MockLLMClient):
         print("\nJudge provider key not found. Running the judge in mock mode for a dry run.")
-        print("Add GEMINI_API_KEY, GROQ_API_KEY, and MISTRAL_API_KEY to .env for a real debate.\n")
+        print("Add GEMINI_API_KEY, GROQ_API_KEY, and OPENAI_API_KEY to .env for a real debate.\n")
     else:
         providers = provider_names_by_role(config)
         provider_text = ", ".join(f"{role}={provider}" for role, provider in providers.items())

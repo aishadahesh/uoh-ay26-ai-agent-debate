@@ -64,6 +64,11 @@ def _friendly_gemini_error(error: str, model: str) -> str:
         )
     if "api_key" in lowered or "permission" in lowered or "unauthenticated" in lowered:
         return "Gemini API key was rejected. Check GEMINI_API_KEY in .env."
+    if "not_found" in lowered or "not found" in lowered or "no longer available" in lowered:
+        return (
+            f"Gemini model {model} is unavailable for this API key. "
+            "Update the configured Gemini model, for example to gemini-2.5-flash."
+        )
     return _truncate_error(f"Gemini API error: {error}")
 
 

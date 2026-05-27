@@ -132,14 +132,14 @@ Default role providers:
 
 1. Judge uses Gemini.
 2. Pro uses Groq.
-3. Con uses Mistral.
+3. Con uses OpenAI.
 
 Provider priority in `provider: auto` mode:
 
 1. Gemini if `GEMINI_API_KEY` is present and not a placeholder.
 2. Groq if `GROQ_API_KEY` is present and not a placeholder.
-3. Mistral if `MISTRAL_API_KEY` is present and not a placeholder.
-4. OpenAI if `OPENAI_API_KEY` is present and not a placeholder.
+3. OpenAI if `OPENAI_API_KEY` is present and not a placeholder.
+4. Mistral if `MISTRAL_API_KEY` is present and not a placeholder.
 5. Mock mode if no real key exists and mock fallback is enabled.
 
 Provider errors:

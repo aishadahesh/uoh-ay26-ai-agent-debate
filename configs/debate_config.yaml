@@ -5,7 +5,7 @@ language: "English"
 agents:
   judge:
     name: "Judge"
-    model: "gemini-2.0-flash"
+    model: "gemini-2.5-flash"
     provider: "gemini"
   pro:
     name: "Pro Agent"
@@ -15,8 +15,8 @@ agents:
   con:
     name: "Con Agent"
     stance: "Oppose the topic"
-    model: "mistral-small-latest"
-    provider: "mistral"
+    model: "gpt-4.1-mini"
+    provider: "openai"
 
 llm:
   provider: "auto"

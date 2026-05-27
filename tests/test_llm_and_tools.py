@@ -53,6 +53,16 @@ def test_provider_auto_uses_groq_when_only_groq_key_exists(monkeypatch, tmp_path
     assert provider_name(config) == "groq"
 
 
+def test_provider_auto_prefers_openai_over_mistral(monkeypatch, tmp_path) -> None:
+    config = load_config(write_test_config(tmp_path))
+    config.raw["llm"]["provider"] = "auto"
+    monkeypatch.delenv("GEMINI_API_KEY", raising=False)
+    monkeypatch.delenv("GROQ_API_KEY", raising=False)
+    monkeypatch.setenv("OPENAI_API_KEY", "test-key")
+    monkeypatch.setenv("MISTRAL_API_KEY", "test-key")
+    assert provider_name(config) == "openai"
+
+
 def test_provider_auto_uses_mistral_when_only_mistral_key_exists(monkeypatch, tmp_path) -> None:
     config = load_config(write_test_config(tmp_path))
     config.raw["llm"]["provider"] = "auto"
@@ -67,14 +77,14 @@ def test_provider_names_follow_agent_role_config(monkeypatch, tmp_path) -> None:
     config = load_config(write_test_config(tmp_path))
     config.raw["agents"]["judge"]["provider"] = "gemini"
     config.raw["agents"]["pro"]["provider"] = "groq"
-    config.raw["agents"]["con"]["provider"] = "mistral"
+    config.raw["agents"]["con"]["provider"] = "openai"
     monkeypatch.setenv("GEMINI_API_KEY", "test-key")
     monkeypatch.setenv("GROQ_API_KEY", "test-key")
-    monkeypatch.setenv("MISTRAL_API_KEY", "test-key")
+    monkeypatch.setenv("OPENAI_API_KEY", "test-key")
     assert provider_names_by_role(config) == {
         "judge": "gemini",
         "pro": "groq",
-        "con": "mistral",
+        "con": "openai",
     }
 
 

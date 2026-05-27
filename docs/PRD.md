@@ -121,8 +121,8 @@ The system supports real LLM providers and mock mode.
 
 Acceptance criteria:
 
-- Default agent mapping uses Gemini for judge, Groq for pro, and Mistral for con.
-- Auto provider mode prefers Gemini, then Groq, then Mistral, then OpenAI when keys exist.
+- Default agent mapping uses Gemini for judge, Groq for pro, and OpenAI for con.
+- Auto provider mode prefers Gemini, then Groq, then OpenAI, then Mistral when keys exist.
 - Mock mode runs when no real key exists.
 - Provider errors are summarized and can fall back to mock.
 

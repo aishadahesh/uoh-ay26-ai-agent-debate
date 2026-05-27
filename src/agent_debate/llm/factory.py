@@ -99,18 +99,18 @@ def _resolve_auto_provider(llm_config: dict[str, object]) -> str:
         return "gemini"
     if preferred == "groq" and _valid_env_key("GROQ_API_KEY"):
         return "groq"
-    if preferred == "mistral" and _valid_env_key("MISTRAL_API_KEY"):
-        return "mistral"
     if preferred == "openai" and _valid_env_key("OPENAI_API_KEY"):
         return "openai"
+    if preferred == "mistral" and _valid_env_key("MISTRAL_API_KEY"):
+        return "mistral"
     if _valid_env_key("GEMINI_API_KEY"):
         return "gemini"
     if _valid_env_key("GROQ_API_KEY"):
         return "groq"
-    if _valid_env_key("MISTRAL_API_KEY"):
-        return "mistral"
     if _valid_env_key("OPENAI_API_KEY"):
         return "openai"
+    if _valid_env_key("MISTRAL_API_KEY"):
+        return "mistral"
     return "mock"
 
 
