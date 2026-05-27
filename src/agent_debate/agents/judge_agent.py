@@ -2,15 +2,18 @@
 
 from __future__ import annotations
 
+from multiprocessing import Queue
+
 from agent_debate.config import Config
 from agent_debate.ipc.messages import Message
 from agent_debate.llm.base import LLMClient, LLMProviderError
+from agent_debate.llm.factory import build_llm_client
 from agent_debate.llm.mock_client import MockLLMClient
 from agent_debate.memory import DebateMemory, PromptBuilder
 
 
 class JudgeAgent:
-    """Parent agent that evaluates the debate and decides the winner."""
+    """Agent that evaluates the debate and decides the winner."""
 
     def __init__(self, config: Config, llm: LLMClient) -> None:
         self.config = config
@@ -58,3 +61,26 @@ class JudgeAgent:
             sources=result.sources,
             metadata=metadata,
         )
+
+
+def run_judge_agent(
+    config: Config,
+    message_payloads: list[dict[str, object]],
+    outbox: Queue,
+) -> None:
+    """Pickle-friendly multiprocessing target for the judge agent."""
+
+    try:
+        memory = DebateMemory()
+        for payload in message_payloads:
+            memory.write(Message.from_dict(payload))
+        decision = JudgeAgent(config, build_llm_client(config, "judge")).decide(memory)
+    except Exception as exc:
+        decision = Message(
+            round=config.turns_per_side,
+            sender="judge",
+            receiver="system",
+            type="error",
+            content=str(exc),
+        )
+    outbox.put(decision.to_dict())

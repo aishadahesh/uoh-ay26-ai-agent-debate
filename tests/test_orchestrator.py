@@ -7,9 +7,13 @@ from tests.helpers import write_test_config
 
 def test_orchestrator_runs_mock_debate_and_logs_decision(tmp_path) -> None:
     config = load_config(write_test_config(tmp_path))
-    decision = DebateOrchestrator(config, build_llm_client(config)).run()
+    orchestrator = DebateOrchestrator(config, build_llm_client(config))
+    decision = orchestrator.run()
     assert decision.type == "decision"
     assert "Winner:" in decision.content
+    assert set(orchestrator.processes) == {"pro", "con", "judge"}
+    assert orchestrator.processes["judge"].name == "judge-agent"
+    assert orchestrator.processes["judge"].exitcode == 0
     assert (tmp_path / "logs" / "transcript.txt").exists()
 
 
