@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import hashlib
 import re
 
 from agent_debate.llm.base import LLMResult
@@ -28,13 +29,11 @@ class MockLLMClient:
                 sources=[],
             )
         if "FINAL DECISION" in prompt:
-            winner = self._decision_winner(prompt)
+            winner, pro_score, con_score, reason = self._score_decision(prompt)
             return LLMResult(
                 content=(
-                    f"Winner: {winner}. Score: Pro 84, Con 78. "
-                    "The winning side gave clearer criteria, answered the strongest "
-                    "opposing point more directly, and kept the argument better tied "
-                    "to the selected topic."
+                    f"Winner: {winner}. Score: Pro {pro_score}, Con {con_score}. "
+                    f"{reason}"
                 ),
                 sources=[],
             )
@@ -166,8 +165,66 @@ class MockLLMClient:
             "the comparison more completely."
         )
 
-    def _decision_winner(self, prompt: str) -> str:
-        return "Pro Agent" if "Latest pro:" in prompt else "Con Agent"
+    def _score_decision(self, prompt: str) -> tuple[str, int, int, str]:
+        pro = self._extract_block(prompt, "Latest pro:", "Latest con:")
+        con = self._extract_block(prompt, "Latest con:", "Scoring criteria:")
+        pro_score = self._argument_score(pro)
+        con_score = self._argument_score(con)
+        if pro_score == con_score:
+            tie_break = int(hashlib.sha256(f"{pro}|{con}".encode()).hexdigest(), 16) % 2
+            if tie_break == 0:
+                pro_score += 1
+            else:
+                con_score += 1
+        if pro_score > con_score:
+            return (
+                "Pro Agent",
+                pro_score,
+                con_score,
+                "The pro side gave the stronger final argument based on specificity, "
+                "direct rebuttal, and connection to the selected topic.",
+            )
+        return (
+            "Con Agent",
+            pro_score,
+            con_score,
+            "The con side gave the stronger final argument based on specificity, "
+            "direct rebuttal, and connection to the selected topic.",
+        )
+
+    def _argument_score(self, text: str) -> int:
+        lowered = text.lower()
+        score = 62 + min(14, len(text.split()) // 9)
+        score += self._keyword_points(
+            lowered,
+            [
+                "because",
+                "risk",
+                "evidence",
+                "source",
+                "testing",
+                "privacy",
+                "access",
+                "specific",
+                "criteria",
+                "trade-off",
+                "rebut",
+                "stronger",
+            ],
+        )
+        if "addressing the opponent" in lowered or "addressing the opening" in lowered:
+            score += 4
+        if "my main point" in lowered:
+            score += 3
+        return min(score, 95)
+
+    def _keyword_points(self, text: str, keywords: list[str]) -> int:
+        return min(12, sum(2 for keyword in keywords if keyword in text))
+
+    def _extract_block(self, prompt: str, start: str, end: str) -> str:
+        pattern = rf"{re.escape(start)}(.*?){re.escape(end)}"
+        match = re.search(pattern, prompt, flags=re.DOTALL)
+        return match.group(1).strip() if match else ""
 
     def _possessive(self, value: str) -> str:
         return f"{value}'" if value.endswith("s") else f"{value}'s"

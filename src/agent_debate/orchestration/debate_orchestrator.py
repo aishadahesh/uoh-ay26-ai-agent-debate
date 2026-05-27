@@ -7,7 +7,7 @@ from multiprocessing import Process, Queue
 from queue import Empty
 
 from agent_debate.agents.debate_agent import DebateAgent, run_debate_agent
-from agent_debate.agents.judge_agent import JudgeAgent
+from agent_debate.agents.judge_agent import run_judge_agent
 from agent_debate.config import Config
 from agent_debate.ipc.messages import Message
 from agent_debate.ipc.queues import MessageRouter
@@ -54,7 +54,7 @@ class DebateOrchestrator:
             for round_number in range(1, self.config.turns_per_side + 1):
                 previous_argument = self._take_turn("pro", round_number, previous_argument)
                 previous_argument = self._take_turn("con", round_number, previous_argument)
-            decision = JudgeAgent(self.config, self.llm).decide(self.memory)
+            decision = self._decide_with_judge_process()
             self._record(decision)
             return decision
         finally:
@@ -113,6 +113,30 @@ class DebateOrchestrator:
     def _record(self, message: Message) -> None:
         self.memory.write(message)
         self.logger.log(message)
+
+    def _decide_with_judge_process(self) -> Message:
+        judge_queue: Queue = Queue()
+        payloads = [message.to_dict() for message in self.memory.messages]
+        process = Process(
+            target=run_judge_agent,
+            args=(self.config, payloads, judge_queue),
+            name="judge-agent",
+        )
+        process.start()
+        self.processes["judge"] = process
+        try:
+            payload = judge_queue.get(timeout=self.watchdog.response_timeout)
+        except Empty as exc:
+            raise TimeoutError("judge did not respond before watchdog timeout") from exc
+        finally:
+            process.join(timeout=2)
+            if process.is_alive():
+                process.terminate()
+                process.join(timeout=2)
+        decision = Message.from_dict(payload)
+        if decision.type == "error":
+            raise RuntimeError(f"judge failed: {decision.content}")
+        return decision
 
     def _stop_children(self) -> None:
         for role in ["pro", "con"]:
