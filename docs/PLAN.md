@@ -2,114 +2,211 @@
 
 ## 1. Purpose
 
-This plan explains how the AI Agent Debate project is built, verified, and prepared for
-course submission. It is written for maintainers and graders who need to understand the
-engineering path, not only the final code.
+This plan describes the current implementation and the remaining verification workflow
+for the AI Agent Debate project. It is written for a grader or maintainer who needs to
+understand how the code satisfies the assignment requirements.
 
-## 2. Architecture Flow
+## 2. Current Architecture Flow
 
-1. CLI loads configuration and asks for a topic.
-2. Provider factory chooses the configured role provider: Gemini, Groq, Mistral, OpenAI, or mock mode.
-3. DebateOrchestrator starts pro and con child processes.
-4. Judge/orchestrator sends compact instructions through queues.
-5. Child agents generate one turn and send JSON messages back to the parent.
-6. DebateMemory stores full messages and updates a compact summary.
-7. JudgeAgent produces a final no-tie decision.
-8. DebateLogger writes JSONL and transcript files.
+1. `src/agent_debate/cli.py` loads `.env`, reads `configs/debate_config.yaml`, and asks
+   the user for a topic.
+2. `Config.with_topic()` frames the runtime topic and creates role-specific Pro and Con
+   stances.
+3. `build_llm_client()` resolves providers by role. The default role mapping is Gemini
+   for Judge, Groq for Pro, and OpenAI for Con.
+4. `DebateOrchestrator` starts `pro-agent` and `con-agent` as child processes.
+5. The parent sends each child a compact instruction through a queue.
+6. Each child builds a prompt, optionally gathers web evidence, calls its provider, and
+   returns a JSON-ready message.
+7. `DebateMemory` stores full message objects and updates a compact running summary.
+8. After all rounds finish, the parent starts `judge-agent` as a separate process.
+9. `judge-agent` rebuilds memory from serialized message payloads, calls the judge
+   provider, and returns a final decision.
+10. `DebateLogger` writes JSONL and readable transcript output.
+11. The CLI prints the final decision and provider fallback notices when needed.
 
-## 3. Milestones
+## 3. Implemented Milestones
 
 ### Milestone 1: Project Skeleton
 
-- Create `pyproject.toml`.
-- Create `src/agent_debate`.
-- Add `tests`, `configs`, `docs`, and `logs`.
-- Add `.env.example`, `.gitignore`, and requirements files.
+Status: complete.
 
-Exit criteria:
+Implemented files:
 
-- Package imports correctly.
-- `uv sync --extra dev` succeeds.
+- `pyproject.toml`
+- `requirements.txt`
+- `requirements-dev.txt`
+- `configs/debate_config.yaml`
+- `src/agent_debate/`
+- `tests/`
+- `docs/`
+- `logs/.gitkeep`
+- `results/`
+- `.env.example`
+- `.gitignore`
 
 ### Milestone 2: IPC Foundation
 
-- Implement `Message`.
-- Implement route validation.
-- Implement `MessageRouter`.
-- Test direct child-to-child rejection.
+Status: complete.
 
-Exit criteria:
+Implemented files:
 
-- Schema tests pass.
-- Routing tests pass.
+- `src/agent_debate/ipc/messages.py`
+- `src/agent_debate/ipc/queues.py`
+- `tests/test_messages.py`
+- `tests/test_routing.py`
 
-### Milestone 3: Agents and Orchestration
+Completed behavior:
 
-- Implement `BaseAgent`.
-- Implement `DebateAgent`.
-- Implement `JudgeAgent`.
-- Implement `DebateOrchestrator`.
-- Implement `Watchdog`.
+- JSON-ready message objects.
+- Message validation.
+- Direct child-to-child route rejection.
+- Queue-based routing.
 
-Exit criteria:
+### Milestone 3: Agent Processes and Orchestration
 
-- Mock end-to-end debate runs.
-- Child processes terminate cleanly.
+Status: complete.
+
+Implemented files:
+
+- `src/agent_debate/agents/base.py`
+- `src/agent_debate/agents/debate_agent.py`
+- `src/agent_debate/agents/judge_agent.py`
+- `src/agent_debate/orchestration/debate_orchestrator.py`
+- `src/agent_debate/orchestration/watchdog.py`
+- `tests/test_agents.py`
+- `tests/test_judge_agent.py`
+- `tests/test_orchestrator.py`
+- `tests/test_watchdog.py`
+
+Completed behavior:
+
+- `pro-agent` process.
+- `con-agent` process.
+- `judge-agent` process for the final decision.
+- Parent process supervision and cleanup.
+- Watchdog response timeout.
 
 ### Milestone 4: Context Engineering
 
-- Implement `DebateMemory`.
-- Implement `PromptBuilder`.
-- Select compact context per role.
-- Write full logs outside prompt context.
+Status: complete.
 
-Exit criteria:
+Implemented files:
 
-- Prompt tests prove full transcript is not blindly passed.
-- README and Prompt Book document Select/Write behavior.
+- `src/agent_debate/memory.py`
+- `docs/PROMPT_BOOK.md`
+- `tests/test_memory_and_logging.py`
+
+Completed behavior:
+
+- Write full messages to memory/logs.
+- Select compact prompt fields for each role.
+- Avoid sending the full transcript on every turn.
+- Keep judge scoring criteria explicit.
 
 ### Milestone 5: Provider Integration
 
-- Implement provider-neutral LLM contract.
-- Implement mock provider.
-- Implement Gemini provider.
-- Implement Groq, Mistral, and OpenAI-compatible providers.
-- Implement provider auto-selection.
-- Implement provider fallback metadata.
+Status: complete.
 
-Exit criteria:
+Implemented files:
 
-- Provider selection tests pass.
-- Provider errors are concise and non-crashing.
+- `src/agent_debate/llm/base.py`
+- `src/agent_debate/llm/factory.py`
+- `src/agent_debate/llm/gemini_client.py`
+- `src/agent_debate/llm/openai_client.py`
+- `src/agent_debate/llm/openai_compatible_client.py`
+- `src/agent_debate/llm/mock_client.py`
+- `tests/test_llm_and_tools.py`
+- `tests/test_gemini_client.py`
+
+Completed behavior:
+
+- Gemini provider.
+- Groq provider through OpenAI-compatible API behavior.
+- OpenAI provider.
+- Mistral-compatible provider.
+- Mock provider.
+- Per-role provider selection.
+- Missing-key mock fallback.
+- Provider-error mock fallback.
+- Concise quota/network error reporting.
 
 ### Milestone 6: CLI and Transcript Workflow
 
-- Add terminal menu.
-- Add topic selection.
-- Add transcript display.
-- Add transcript export.
-- Add config validation.
+Status: complete.
 
-Exit criteria:
+Implemented files:
 
-- CLI tests pass.
-- Manual menu smoke test works.
+- `src/agent_debate/cli.py`
+- `src/agent_debate/logging_utils/debate_logger.py`
+- `tests/test_cli.py`
+- `tests/test_memory_and_logging.py`
 
-### Milestone 7: Documentation and Submission
+Completed behavior:
 
-- Write README.
-- Write PRD.
-- Write PLAN.
-- Write PROMPT_BOOK.
-- Expand TODO backlog.
-- Add screenshot placeholders.
+- Run debate.
+- Show latest transcript.
+- Save timestamped transcript.
+- Validate config.
+- Print role provider information.
+- Print concise fallback notices.
 
-Exit criteria:
+### Milestone 7: Documentation and Results
 
-- Required docs exist.
-- Docs match implemented behavior.
+Status: complete and refreshed.
 
-## 4. Verification Commands
+Implemented files:
+
+- `README.md`
+- `docs/PRD.md`
+- `docs/PLAN.md`
+- `docs/PROMPT_BOOK.md`
+- `docs/TODO.md`
+- `results/transcript-20260528-004720.txt`
+- `results/transcript-20260528-005218.txt`
+- `results/transcript-20260528-005609.txt`
+
+Completed behavior:
+
+- README explains implementation details.
+- Docs match current three-process design.
+- Results folder is described.
+- TODO list records completed work and future checks.
+
+## 4. Provider Plan
+
+Current default role providers:
+
+1. Judge uses Gemini: `gemini-2.5-flash`.
+2. Pro uses Groq: `llama-3.1-8b-instant`.
+3. Con uses OpenAI: `gpt-4.1-mini`.
+
+Supported environment keys:
+
+- `GEMINI_API_KEY`
+- `GROQ_API_KEY`
+- `OPENAI_API_KEY`
+- `MISTRAL_API_KEY`
+
+Auto provider mode checks keys in this order when no role override is present:
+
+1. Gemini.
+2. Groq.
+3. OpenAI.
+4. Mistral.
+5. Mock.
+
+Provider fallback behavior:
+
+- Missing keys can fall back to mock when `mock_when_no_api_key: true`.
+- Provider runtime errors can fall back to mock when `fallback_to_mock_on_provider_error:
+  true`.
+- Fallback details are stored in message metadata.
+- CLI notices are concise and provider-specific.
+
+## 5. Verification Commands
+
+Run from the project root:
 
 ```powershell
 uv sync --extra dev
@@ -121,70 +218,65 @@ uv run agent-debate
 Expected results:
 
 - Ruff reports no violations.
-- Pytest passes with coverage above 85 percent.
+- Pytest passes with coverage at or above 85 percent.
 - CLI menu opens.
-- Debate can run with Gemini, OpenAI, or mock fallback.
-- Transcript can be shown and saved.
-
-## 5. Provider Plan
-
-Default role providers:
-
-1. Judge uses Gemini.
-2. Pro uses Groq.
-3. Con uses OpenAI.
-
-Provider priority in `provider: auto` mode:
-
-1. Gemini if `GEMINI_API_KEY` is present and not a placeholder.
-2. Groq if `GROQ_API_KEY` is present and not a placeholder.
-3. OpenAI if `OPENAI_API_KEY` is present and not a placeholder.
-4. Mistral if `MISTRAL_API_KEY` is present and not a placeholder.
-5. Mock mode if no real key exists and mock fallback is enabled.
-
-Provider errors:
-
-- Gemini quota errors are summarized.
-- Groq quota errors are summarized.
-- Mistral quota errors are summarized.
-- OpenAI quota errors are summarized.
-- Provider fallback is stored in message metadata.
-- Transcript debate content remains clean.
+- Debate runs with real providers when keys and quotas are available.
+- Debate falls back cleanly to mock when configured providers are unavailable.
+- Transcript display and export work.
 
 ## 6. Testing Strategy
 
 Unit tests cover:
 
-- Message schema validation.
-- Routing rules.
 - Config loading and topic framing.
+- Message validation.
+- Router validation.
 - Provider selection.
-- Mock provider behavior.
-- Gemini error summarization.
-- Logging and transcript export.
-- CLI menu behavior.
-- Watchdog behavior.
+- Mock argument generation and scoring.
+- Gemini error handling.
+- Judge decision formatting.
+- Logger reset, transcript read, and transcript export.
+- CLI command behavior.
+- Watchdog checks.
 
 Integration tests cover:
 
 - Mock debate orchestration.
+- Process startup for Pro, Con, and Judge.
 - Transcript creation.
-- Child process turn-taking.
+- Child process cleanup.
 
-## 7. Submission Checklist
+## 7. Results Evidence Plan
+
+The `results/` folder is used for saved transcript examples that can be inspected without
+rerunning the app. Current examples cover:
+
+- Default assignment topic.
+- A custom sports comparison topic.
+- A custom labor-market AI topic.
+
+For submission, keep at least one transcript from a real-provider run if quota and
+network access allow it. If only mock fallback is available, clearly explain that the run
+demonstrates system behavior but not real LLM quality.
+
+## 8. Submission Checklist
 
 - Confirm `.env` is not tracked.
-- Confirm `.env.example` has placeholders only.
-- Save at least one transcript export.
-- Capture screenshots of menu, debate run, transcript, tests, and Ruff.
-- Confirm GitHub repository is public or shared with the lecturer.
-- Submit the same repository link for both pair members if working in pairs.
+- Confirm `.env.example` contains placeholders only.
+- Run tests and Ruff.
+- Save transcript evidence.
+- Confirm docs match the current implementation.
+- Confirm `results/` contains relevant transcript examples.
+- Confirm GitHub repository is accessible to the grader.
+- Submit the repository link requested by the course.
 
-## 8. Future Improvements
+## 9. Future Improvements
 
-- Add Groq or OpenRouter provider.
-- Add local LM Studio provider.
-- Add richer source extraction and citation formatting.
-- Add configurable debate order.
+- Add OpenRouter as another OpenAI-compatible provider.
+- Add local LM Studio or Ollama provider support.
+- Add Markdown/PDF transcript export.
 - Add per-round judge feedback.
-- Add transcript export to Markdown and PDF.
+- Add richer citation extraction.
+- Add a simple web UI while preserving the CLI.
+- Add configurable debate order.
+- Add stronger evidence validation for source URLs.
