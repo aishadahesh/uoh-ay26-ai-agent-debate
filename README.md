@@ -352,16 +352,51 @@ uoh-ay26-ai-agent-debate/
 │   ├── PROMPT_BOOK.md
 │   ├── TODO.md
 │   └── assets/
+│       ├── architecture-overview.svg
+│       └── run-workflow.svg
 ├── results/
 │   ├── transcript-20260528-004720.txt
 │   ├── transcript-20260528-005218.txt
 │   └── transcript-20260528-005609.txt
 ├── src/
 │   └── agent_debate/
+│       ├── agents/
+│       │   ├── base.py
+│       │   ├── debate_agent.py
+│       │   └── judge_agent.py
+│       ├── ipc/
+│       │   ├── messages.py
+│       │   └── queues.py
+│       ├── llm/
+│       │   ├── base.py
+│       │   ├── factory.py
+│       │   ├── gemini_client.py
+│       │   ├── mock_client.py
+│       │   ├── mock_content.py
+│       │   ├── mock_scoring.py
+│       │   ├── openai_client.py
+│       │   └── openai_compatible_client.py
+│       ├── logging_utils/
+│       │   └── debate_logger.py
+│       ├── orchestration/
+│       │   ├── debate_orchestrator.py
+│       │   └── watchdog.py
+│       ├── tools/
+│       │   └── web_search.py
+│       ├── cli.py
+│       ├── config.py
+│       ├── config_yaml.py
+│       └── memory.py
 ├── tests/
+│   ├── test_agents.py
+│   ├── test_cli.py
+│   ├── test_config.py
+│   ├── test_judge_agent.py
+│   ├── test_llm_and_tools.py
+│   ├── test_mock_and_tools.py
+│   └── ...
 ├── pyproject.toml
 ├── requirements.txt
 ├── requirements-dev.txt
 └── README.md
 ```
-
