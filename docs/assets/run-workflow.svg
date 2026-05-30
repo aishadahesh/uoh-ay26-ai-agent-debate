@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="430" viewBox="0 0 1200 430" role="img" aria-labelledby="title desc">
+  <title id="title">AI Agent Debate Run Workflow</title>
+  <desc id="desc">CLI workflow from setup to debate run, transcript view, saved results, and verification.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#334e68"/>
+    </marker>
+    <style>
+      .bg { fill: #fbfcfd; }
+      .title { font: 700 28px Arial, sans-serif; fill: #102a43; }
+      .step { fill: #ffffff; stroke: #9fb3c8; stroke-width: 2; rx: 12; }
+      .accent { fill: #eefcf3; stroke: #2f855a; stroke-width: 2; rx: 12; }
+      .label { font: 700 16px Arial, sans-serif; fill: #102a43; }
+      .small { font: 14px Arial, sans-serif; fill: #334e68; }
+      .line { stroke: #334e68; stroke-width: 2.4; fill: none; marker-end: url(#arrow); }
+    </style>
+  </defs>
+  <rect class="bg" width="1200" height="430"/>
+  <text class="title" x="55" y="55">Run and Submission Workflow</text>
+
+  <rect class="step" x="55" y="125" width="170" height="105"/>
+  <text class="label" x="94" y="162">1. Setup</text>
+  <text class="small" x="78" y="190">uv sync --extra dev</text>
+  <text class="small" x="82" y="212">create .env</text>
+
+  <rect class="step" x="275" y="125" width="170" height="105"/>
+  <text class="label" x="310" y="162">2. Validate</text>
+  <text class="small" x="309" y="190">menu option 4</text>
+  <text class="small" x="304" y="212">check YAML config</text>
+
+  <rect class="step" x="495" y="125" width="170" height="105"/>
+  <text class="label" x="537" y="162">3. Debate</text>
+  <text class="small" x="522" y="190">choose topic</text>
+  <text class="small" x="515" y="212">10 agent pings</text>
+
+  <rect class="step" x="715" y="125" width="170" height="105"/>
+  <text class="label" x="755" y="162">4. Review</text>
+  <text class="small" x="742" y="190">show transcript</text>
+  <text class="small" x="751" y="212">menu option 2</text>
+
+  <rect class="accent" x="935" y="125" width="190" height="105"/>
+  <text class="label" x="985" y="162">5. Results</text>
+  <text class="small" x="960" y="190">save transcript</text>
+  <text class="small" x="960" y="212">commit examples</text>
+
+  <path class="line" d="M225 178 L275 178"/>
+  <path class="line" d="M445 178 L495 178"/>
+  <path class="line" d="M665 178 L715 178"/>
+  <path class="line" d="M885 178 L935 178"/>
+
+  <rect class="accent" x="300" y="300" width="245" height="70"/>
+  <text class="label" x="348" y="328">Quality Gate</text>
+  <text class="small" x="326" y="352">ruff check + pytest coverage</text>
+
+  <rect class="accent" x="655" y="300" width="245" height="70"/>
+  <text class="label" x="704" y="328">Submission Evidence</text>
+  <text class="small" x="684" y="352">README + docs + results folder</text>
+
+  <path class="line" d="M580 230 C560 280, 520 305, 545 335"/>
+  <path class="line" d="M1030 230 C990 285, 930 320, 900 335"/>
+</svg>
