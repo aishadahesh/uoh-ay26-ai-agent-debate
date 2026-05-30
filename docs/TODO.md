@@ -1,6 +1,13 @@
 ﻿# TODO
 
-This backlog is organized by file or directory. Every checklist item names the exact file or folder to inspect and states the concrete work area. It intentionally contains exactly 900 tasks, which is within the requested 800-1000 task range for submission readiness. Completed items are checked to show work already performed in the current implementation; unchecked items remain as review, hardening, or submission-polish tasks.
+This backlog is organized by file or directory. Every checklist item names the exact file or folder to inspect and states the concrete work area. It intentionally contains exactly 900 tasks, which is within the requested 800-1000 task range for submission readiness.
+
+Checklist meaning:
+
+- `[x]` means the task has been performed or covered by the current implementation, tests, documentation, or saved evidence.
+- `[ ]` means the task is intentionally kept as a future review, hardening, or submission-polish backlog item.
+- The unchecked items do not mean the project is broken; they show a realistic remaining-maintenance backlog.
+
 
 ## Package metadata and dependency management — `pyproject.toml`
 
