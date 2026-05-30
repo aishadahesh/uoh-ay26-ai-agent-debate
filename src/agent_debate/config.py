@@ -8,6 +8,8 @@ from dataclasses import dataclass
 from pathlib import Path
 from typing import Any
 
+from agent_debate.config_yaml import load_yaml
+
 
 @dataclass(frozen=True)
 class Config:
@@ -92,7 +94,7 @@ def load_config(path: str | Path) -> Config:
 
     config_path = Path(path)
     with config_path.open("r", encoding="utf-8") as handle:
-        raw = _load_yaml(handle.read())
+        raw = load_yaml(handle.read())
     required = ["topic", "turns_per_side", "agents", "llm", "logging", "watchdog"]
     missing = [key for key in required if key not in raw]
     if missing:
@@ -103,54 +105,3 @@ def load_config(path: str | Path) -> Config:
         if role not in raw["agents"]:
             raise ValueError(f"missing agent config: {role}")
     return Config(raw=raw, path=config_path)
-
-
-def _load_yaml(text: str) -> dict[str, Any]:
-    """Load YAML with PyYAML when present, otherwise parse the simple config format."""
-
-    try:
-        import yaml
-
-        return yaml.safe_load(text) or {}
-    except ModuleNotFoundError:
-        return _parse_simple_yaml(text)
-
-
-def _parse_simple_yaml(text: str) -> dict[str, Any]:
-    """Parse the nested key-value YAML subset used by this project."""
-
-    root: dict[str, Any] = {}
-    stack: list[tuple[int, dict[str, Any]]] = [(-1, root)]
-    for raw_line in text.splitlines():
-        if not raw_line.strip() or raw_line.lstrip().startswith("#"):
-            continue
-        indent = len(raw_line) - len(raw_line.lstrip(" "))
-        key, _, value = raw_line.strip().partition(":")
-        while stack and indent <= stack[-1][0]:
-            stack.pop()
-        parent = stack[-1][1]
-        if value.strip() == "":
-            child: dict[str, Any] = {}
-            parent[key] = child
-            stack.append((indent, child))
-        else:
-            parent[key] = _parse_scalar(value.strip())
-    return root
-
-
-def _parse_scalar(value: str) -> Any:
-    """Parse strings, booleans, integers, and floats from simple YAML."""
-
-    clean = value.strip("'\"")
-    if clean.lower() == "true":
-        return True
-    if clean.lower() == "false":
-        return False
-    try:
-        return int(clean)
-    except ValueError:
-        pass
-    try:
-        return float(clean)
-    except ValueError:
-        return clean

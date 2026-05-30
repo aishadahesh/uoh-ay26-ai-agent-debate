@@ -2,7 +2,8 @@ from pathlib import Path
 
 import pytest
 
-from agent_debate.config import _parse_simple_yaml, frame_topic, load_config
+from agent_debate.config import frame_topic, load_config
+from agent_debate.config_yaml import parse_simple_yaml
 
 
 def test_load_config() -> None:
@@ -60,7 +61,7 @@ watchdog: {}
 
 
 def test_simple_yaml_fallback_parser_handles_scalars() -> None:
-    parsed = _parse_simple_yaml(
+    parsed = parse_simple_yaml(
         """
 root:
   enabled: true
