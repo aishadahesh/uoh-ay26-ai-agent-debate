@@ -1,5 +1,18 @@
+# Runtime dependencies for AI Agent Debate.
+#
+# Keep this file aligned with [project].dependencies in pyproject.toml.
+
+# Gemini provider.
 google-genai>=1.0.0
+
+# OpenAI SDK. Also used for OpenAI-compatible providers such as Groq and Mistral.
 openai>=1.82.0
+
+# Local .env loading for API keys.
 python-dotenv>=1.0.1
+
+# YAML configuration loading.
 pyyaml>=6.0.2
+
+# Best-effort DuckDuckGo HTML web search.
 requests>=2.32.3
